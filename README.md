@@ -6,6 +6,11 @@ $ python3 -m venv venv
 $ source venv/bin/activate
 (venv) $ pip install pytest
 ```
+```windows
+> python -m venv venv
+> venv\Scripts\activate.bat
+> pip install pytest
+```
 
 ## Original source code: 
 
