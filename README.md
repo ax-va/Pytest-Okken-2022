@@ -1,7 +1,6 @@
 ## Install using PyPI
 
-Create a virtual environment and install `pytest`
-on POSIX systems:
+Create a virtual environment and install `pytest` on POSIX systems:
 ```unix
 $ python3 -m venv venv
 $ source venv/bin/activate
@@ -42,7 +41,7 @@ test_example-1--passing.py::test_passing PASSED                                 
 ====================================================================================================== 1 passed in 0.00s =======================================================================================================
 ```
 
-Run all tests starting with test_ or ending with _test in the current working directory without traceback
+Run all tests starting with `test_` or ending with `_test` in the current working directory without traceback
 ```unix
 $ pytest --tb=no
 ```
@@ -60,10 +59,10 @@ $ cd examples
 $ pytest -v test_example-1--passing.py::test_passing
 ```
 
-Conventions to keep your test code discoverable by pytest:
-- test_<something>.py or <something>_test.py for files
-- test_<something> for methods and functions
-- Test<Something> for classes
+Conventions to keep your test code discoverable by `pytest`:
+- `test_<something>.py` or `<something>_test.py` for files
+- `test_<something>` for methods and functions
+- `Test<Something>` for classes
 
 ## Original source code: 
 
