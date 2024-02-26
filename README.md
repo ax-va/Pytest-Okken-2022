@@ -7,9 +7,9 @@ $ source venv/bin/activate
 (venv) $ pip install pytest
 ```
 ```windows
-> python -m venv venv
-> venv\Scripts\activate.bat
-> pip install pytest
+C:\> python -m venv venv
+C:\> venv\Scripts\activate.bat
+C:\> pip install pytest
 ```
 
 ## Original source code: 
