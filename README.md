@@ -47,7 +47,7 @@ Run all tests starting with test_ or ending with _test in the current working di
 $ pytest --tb=no
 ```
 
-Run tests given by their names or directories in which they are located
+Run tests given by their names or directories and subdirectories in which they are located
 ```unix
 $ pytest --tb=no test_example-1--passing.py test_example-2--failing.py
 $ cd ..
