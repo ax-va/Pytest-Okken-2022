@@ -19,6 +19,8 @@ C:\> venv\Scripts\activate.bat
 C:\> pip install pytest
 ```
 
+## Run pytest
+
 Run `pytest` in the terminal:
 ```unix
 pytest test_example-1--passing.py
@@ -59,7 +61,8 @@ $ cd examples
 $ pytest -v test_example-1--passing.py::test_passing
 ```
 
-Conventions to keep your test code discoverable by `pytest`:
+## Conventions to keep your test code discoverable by `pytest`
+
 - `test_<something>.py` or `<something>_test.py` for files
 - `test_<something>` for methods and functions
 - `Test<Something>` for classes
