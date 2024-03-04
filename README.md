@@ -1,3 +1,6 @@
+## Original source code
+https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
+
 ## Install using PyPI
 
 Create a virtual environment and install `pytest` on POSIX systems:
@@ -27,7 +30,6 @@ Deactivate the venv
 ```unix
 (venv) $ deactivate
 ```
-
 
 ## Run pytest
 
@@ -84,4 +86,50 @@ https://pragprog.com/titles/bopytest2/source_code
 ## pytest site
 
 https://pytest.org
+
+## Install the application code stored locally
+```unix
+(venv) $ pip install ./cards_proj/
+```
+
+## Play with the application (under test)
+```unix
+$ cards add do something --owner ax-va
+$ cards add do something else
+                                     
+  ID   state   owner   summary       
+ ─────────────────────────────────── 
+  1    todo    ax-va   do something  
+
+$ cards add do something --owner Brian
+$ cards
+                                     
+  ID   state   owner   summary       
+ ─────────────────────────────────── 
+  1    todo    ax-va   do something  
+  2    todo    Brian   do something  
+
+$ cards start 1cards start 1
+$ cards
+                                       
+  ID   state     owner   summary       
+ ───────────────────────────────────── 
+  1    in prog   ax-va   do something  
+  2    todo      Brian   do something  
+                                       
+$ cards finish 1
+$ cards start 2
+                                       
+  ID   state     owner   summary       
+ ───────────────────────────────────── 
+  1    done      ax-va   do something  
+  2    in prog   Brian   do something  
+
+$ cards delete 1   
+
+  ID   state     owner   summary       
+ ───────────────────────────────────── 
+  2    in prog   Brian   do something  
+                    
+```                              
 
