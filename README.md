@@ -18,6 +18,16 @@ C:\> python -m venv venv
 C:\> venv\Scripts\activate.bat
 C:\> pip install pytest
 ```
+for PowerShell
+```windows
+C:>venv\Scripts\Activate.ps1
+```
+
+Deactivate the venv
+```unix
+(venv) $ deactivate
+```
+
 
 ## Run pytest
 
@@ -52,12 +62,12 @@ Run tests given by their names or (sub)directories in which they are located
 ```unix
 $ pytest --tb=no test_example-1--passing.py test_example-2--failing.py
 $ cd ..
-$ pytest --tb=no examples
+$ pytest --tb=no test_examples
 ```
 
 Run only specified functions
 ```unix
-$ cd examples
+$ cd test_examples
 $ pytest -v test_example-1--passing.py::test_passing
 ```
 
