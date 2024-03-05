@@ -86,3 +86,7 @@ https://pragprog.com/titles/bopytest2/source_code
 ## pytest site
 
 https://pytest.org
+
+## Demo of Python failure reports with pytest
+
+https://doc.pytest.org/en/latest/example/reportingdemo.html
