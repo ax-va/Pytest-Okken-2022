@@ -90,3 +90,19 @@ https://pytest.org
 ## Demo of Python failure reports with pytest
 
 https://doc.pytest.org/en/latest/example/reportingdemo.html
+
+## Assertion rewriting
+
+https://docs.pytest.org/en/latest/how-to/assert.html#assertion-introspection-details
+
+## ExceptionInfo
+
+https://docs.pytest.org/en/latest/reference/reference.html#exceptioninfo
+
+## The Arrange-Act-Assert or Given-When-Then pattern
+
+https://xp123.com/3a-arrange-act-assert/
+
+https://en.wikipedia.org/wiki/Test-driven_development
+
+https://dannorth.net/introducing-bdd/

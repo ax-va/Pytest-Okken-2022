@@ -1,7 +1,13 @@
 ## Command-Line Flags 
 
+- `-k pattern`: match a name pattern of tests
+
 - `-v`, `--verbose`: reveal more verbose output
 
-- `--tb=no`: turn off tracebacks
+- `-vv`: show all mismatches in a test
 
-- `-vv`: show all mismatches
+- `--help`: show help
+
+- `--tb=short`: use the shorter traceback format
+
+- `--tb=no`: turn off tracebacks

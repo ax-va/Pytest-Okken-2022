@@ -16,8 +16,7 @@ if __name__ == "__main__":
 """
 $ pytest test_examples/test_example-4--card-fail.py
 ===================================================================================================== test session starts ======================================================================================================
-platform linux -- Python 3.11.0rc1, pytest-8.0.1, pluggy-1.4.0
-...                                                                                                                                                                                                             
+...                                                                                                                                                                                                          
 
 test_examples/test_example-4--card-fail.py F                                                                                                                                                                             [100%]
 
