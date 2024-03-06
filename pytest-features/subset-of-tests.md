@@ -70,7 +70,7 @@ test_examples/test_example-9--classes.py::TestEquality::test_inequality PASSED  
 =============================================================================================== 6 passed, 14 deselected in 0.04s ===============================================================================================
 ```
 
-Run of all tests with "dict" or "ids" in the name, but not ones in the "TestEquality" class
+Run of all tests with `dict` or `ids` in the name, but not ones in the `TestEquality` class
 ```unix
 $ pytest -v --tb=no -k "(dict or ids) and not TestEquality"
 ===================================================================================================== test session starts ======================================================================================================
