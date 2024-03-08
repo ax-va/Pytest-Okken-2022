@@ -8,6 +8,8 @@
 
 - `--help`: show help
 
+- `--setup-show`: show the order of operations of tests and fixtures, including the setup and teardown phases
+
 - `--tb=short`: use the shorter traceback format
 
 - `--tb=no`: turn off tracebacks
