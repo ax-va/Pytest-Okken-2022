@@ -6,6 +6,8 @@
 
 - `-vv`: show all mismatches in a test
 
+- `--fixtures -v`: show a list of all available fixtures, include with `-v` the entire docstring
+
 - `--help`: show help
 
 - `--setup-show`: show the order of operations of tests and fixtures, including the setup and teardown phases
