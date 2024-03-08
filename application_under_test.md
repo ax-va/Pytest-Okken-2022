@@ -60,6 +60,8 @@ $ cards update 2 --owner NoName
   2    in prog   NoName   do something       
   3    todo               do something else  
 
+$ cards count
+2
 ```                              
 
 ## The Cards source code consists of three layers: CLI, API, and DB.

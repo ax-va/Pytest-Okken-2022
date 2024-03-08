@@ -106,3 +106,7 @@ https://xp123.com/3a-arrange-act-assert/
 https://en.wikipedia.org/wiki/Test-driven_development
 
 https://dannorth.net/introducing-bdd/
+
+## Pathlib
+
+https://docs.python.org/3/library/pathlib.html#basic-use
