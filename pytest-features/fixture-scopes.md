@@ -1,3 +1,5 @@
+## Fixture Scopes 
+
 - `scope='function'`: run once per test function, set as the default scope
 
 - `scope='class'`: run once per test class, regardless of how many test methods are in the class
