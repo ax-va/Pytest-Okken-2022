@@ -1,3 +1,5 @@
+## How to run subsets of tests
+
 | Subset                        | Syntax                                               |
 |-------------------------------|------------------------------------------------------|
 | Single test method            | `pytest path/test_module.py::TestClass::test_method` |
