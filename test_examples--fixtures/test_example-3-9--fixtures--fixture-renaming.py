@@ -18,7 +18,7 @@ $ pytest -v -s -k test_example-3-9
 ===================================================================================================== test session starts ======================================================================================================
 ...                                                                                                                                                                             
 
-test_examples--fixtures/test_example-3-9--fixtures--fixture-name.py::test_rounded_pi 
+test_examples--fixtures/test_example-3-9--fixtures--fixture-renaming.py::test_rounded_pi 
 The false Pi is 3
 PASSED
 
