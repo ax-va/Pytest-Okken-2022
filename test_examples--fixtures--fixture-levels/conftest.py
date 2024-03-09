@@ -1,7 +1,7 @@
 from pathlib import Path
 from tempfile import TemporaryDirectory
-import cards
 import pytest
+import cards
 
 
 @pytest.fixture(scope="session")

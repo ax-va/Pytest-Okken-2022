@@ -35,10 +35,10 @@ $ pytest --setup-show -k test_example-3-3
 ===================================================================================================== test session starts ======================================================================================================
 ...                                                                                                                                                                              
 
-test_examples/test_example-3-3--fixtures--module-scope.py 
+test_examples--fixtures/test_example-3-3--fixtures--module-scope.py 
     SETUP    M cards_db
-        test_examples/test_example-3-3--fixtures--module-scope.py::test_empty (fixtures used: cards_db).
-        test_examples/test_example-3-3--fixtures--module-scope.py::test_two (fixtures used: cards_db).
+        test_examples--fixtures/test_example-3-3--fixtures--module-scope.py::test_empty (fixtures used: cards_db).
+        test_examples--fixtures/test_example-3-3--fixtures--module-scope.py::test_two (fixtures used: cards_db).
     TEARDOWN M cards_db
 
 =============================================================================================== 2 passed, 23 deselected in 0.07s ===============================================================================================

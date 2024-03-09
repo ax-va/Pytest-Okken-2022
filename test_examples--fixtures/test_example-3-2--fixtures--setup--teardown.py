@@ -34,7 +34,7 @@ $ pytest -k test_example-3-2
 ===================================================================================================== test session starts ======================================================================================================
 ...                                                                                                                                                                             
 
-test_examples/test_example-3-2--fixtures--setup--teardown.py ..                                                                                                                                                          [100%]
+test_examples--fixtures/test_example-3-2--fixtures--setup--teardown.py ..                                                                                                                                                          [100%]
 
 =============================================================================================== 2 passed, 21 deselected in 0.04s ===============================================================================================
 """
@@ -45,12 +45,12 @@ $ pytest --setup-show -k test_example-3-2
 ===================================================================================================== test session starts ======================================================================================================
 ...                                                                                                                                                                            
 
-test_examples/test_example-3-2--fixtures--setup--teardown.py 
+test_examples--fixtures/test_example-3-2--fixtures--setup--teardown.py 
         SETUP    F cards_db
-        test_examples/test_example-3-2--fixtures--setup--teardown.py::test_empty (fixtures used: cards_db).
+        test_examples--fixtures/test_example-3-2--fixtures--setup--teardown.py::test_empty (fixtures used: cards_db).
         TEARDOWN F cards_db
         SETUP    F cards_db
-        test_examples/test_example-3-2--fixtures--setup--teardown.py::test_two (fixtures used: cards_db).
+        test_examples--fixtures/test_example-3-2--fixtures--setup--teardown.py::test_two (fixtures used: cards_db).
         TEARDOWN F cards_db
 
 =============================================================================================== 2 passed, 21 deselected in 0.07s ===============================================================================================
