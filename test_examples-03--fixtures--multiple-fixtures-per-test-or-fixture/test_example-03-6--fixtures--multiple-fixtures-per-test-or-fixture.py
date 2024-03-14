@@ -11,11 +11,11 @@ def test_non_empty(non_empty_db):
 
 
 """
-$ pytest -k test_example-3-6
+$ pytest -k test_example-03-6
 ===================================================================================================== test session starts ======================================================================================================
 ...                                                                                                                                                                               
 
-test_examples--fixtures--multiple-fixtures-per-test-or-fixture/test_example-3-6--fixtures--multiple-fixtures-per-test-or-fixture.py ..                                                                                   [100%]
+test_examples-03--fixtures--multiple-fixtures-per-test-or-fixture/test_example-03-6--fixtures--multiple-fixtures-per-test-or-fixture.py ..                                                                                   [100%]
 
 =============================================================================================== 2 passed, 30 deselected in 0.06s ===============================================================================================
 ("""

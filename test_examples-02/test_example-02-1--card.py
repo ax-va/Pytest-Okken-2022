@@ -63,28 +63,28 @@ def test_to_dict():
 
 
 """
-$ pytest test_examples/test_example-2-1--card.py
+$ pytest test_examples-02/test_example-02-1--card.py
 ===================================================================================================== test session starts ======================================================================================================
 platform linux -- Python 3.11.0rc1, pytest-8.0.1, pluggy-1.4.0
 rootdir: /home/delorian/PycharmProjects/pytest-Okken-2022
 collected 7 items                                                                                                                                                                                                              
 
-test_examples/test_example-2-1--card.py .......                                                                                                                                                                            [100%]
+test_examples-02/test_example-02-1--card.py .......                                                                                                                                                                            [100%]
 
 ====================================================================================================== 7 passed in 0.06s =======================================================================================================
 
-$ pytest test_examples/test_example-2-1--card.py --verbose
+$ pytest test_examples-02/test_example-02-1--card.py --verbose
 ===================================================================================================== test session starts ======================================================================================================
 ...
 collected 7 items                                                                                                                                                                                                              
 
-test_examples/test_example-2-1--card.py::test_field_access PASSED                                                                                                                                                          [ 14%]
-test_examples/test_example-2-1--card.py::test_defaults PASSED                                                                                                                                                              [ 28%]
-test_examples/test_example-2-1--card.py::test_equality PASSED                                                                                                                                                              [ 42%]
-test_examples/test_example-2-1--card.py::test_equality_with_diff_ids PASSED                                                                                                                                                [ 57%]
-test_examples/test_example-2-1--card.py::test_inequality PASSED                                                                                                                                                            [ 71%]
-test_examples/test_example-2-1--card.py::test_from_dict PASSED                                                                                                                                                             [ 85%]
-test_examples/test_example-2-1--card.py::test_to_dict PASSED                                                                                                                                                               [100%]
+test_examples-02/test_example-02-1--card.py::test_field_access PASSED                                                                                                                                                          [ 14%]
+test_examples-02/test_example-02-1--card.py::test_defaults PASSED                                                                                                                                                              [ 28%]
+test_examples-02/test_example-02-1--card.py::test_equality PASSED                                                                                                                                                              [ 42%]
+test_examples-02/test_example-02-1--card.py::test_equality_with_diff_ids PASSED                                                                                                                                                [ 57%]
+test_examples-02/test_example-02-1--card.py::test_inequality PASSED                                                                                                                                                            [ 71%]
+test_examples-02/test_example-02-1--card.py::test_from_dict PASSED                                                                                                                                                             [ 85%]
+test_examples-02/test_example-02-1--card.py::test_to_dict PASSED                                                                                                                                                               [100%]
 
 ====================================================================================================== 7 passed in 0.05s =======================================================================================================
 """

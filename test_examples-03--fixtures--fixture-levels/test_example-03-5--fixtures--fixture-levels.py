@@ -19,21 +19,21 @@ def test_three(cards_db):
 
 
 """
-$ pytest --setup-show test_examples--fixtures--fixture-levels
+$ pytest --setup-show test_examples-03--fixtures--fixture-levels
 ===================================================================================================== test session starts ======================================================================================================
 ...
 collected 3 items                                                                                                                                                                                                              
 
-test_examples--fixtures--fixture-levels/test_example-3-5--fixtures--fixture-levels.py 
+test_examples-03--fixtures--fixture-levels/test_example-03-5--fixtures--fixture-levels.py 
 SETUP    S db
         SETUP    F cards_db (fixtures used: db)
-        test_examples--fixtures--fixture-levels/test_example-3-5--fixtures--fixture-levels.py::test_empty (fixtures used: cards_db, db).
+        test_examples-03--fixtures--fixture-levels/test_example-03-5--fixtures--fixture-levels.py::test_empty (fixtures used: cards_db, db).
         TEARDOWN F cards_db
         SETUP    F cards_db (fixtures used: db)
-        test_examples--fixtures--fixture-levels/test_example-3-5--fixtures--fixture-levels.py::test_two (fixtures used: cards_db, db).
+        test_examples-03--fixtures--fixture-levels/test_example-03-5--fixtures--fixture-levels.py::test_two (fixtures used: cards_db, db).
         TEARDOWN F cards_db
         SETUP    F cards_db (fixtures used: db)
-        test_examples--fixtures--fixture-levels/test_example-3-5--fixtures--fixture-levels.py::test_three (fixtures used: cards_db, db).
+        test_examples-03--fixtures--fixture-levels/test_example-03-5--fixtures--fixture-levels.py::test_three (fixtures used: cards_db, db).
         TEARDOWN F cards_db
 TEARDOWN S db
 

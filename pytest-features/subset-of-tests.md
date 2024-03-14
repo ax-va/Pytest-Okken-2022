@@ -16,9 +16,9 @@ $ pytest -v -k TestEquality
 ...
 collected 20 items / 17 deselected / 3 selected                                                                                                                                                                                
 
-test_examples/test_example-9--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 33%]
-test_examples/test_example-9--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                               [ 66%]
-test_examples/test_example-9--classes.py::TestEquality::test_inequality PASSED                                                                                                                                           [100%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 33%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                               [ 66%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_inequality PASSED                                                                                                                                           [100%]
 
 =============================================================================================== 3 passed, 17 deselected in 0.05s ===============================================================================================
 ```
@@ -29,9 +29,9 @@ $ pytest -v -k TestEq
 ...
 collected 20 items / 17 deselected / 3 selected                                                                                                                                                                                
 
-test_examples/test_example-9--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 33%]
-test_examples/test_example-9--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                               [ 66%]
-test_examples/test_example-9--classes.py::TestEquality::test_inequality PASSED                                                                                                                                           [100%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 33%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                               [ 66%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_inequality PASSED                                                                                                                                           [100%]
 
 =============================================================================================== 3 passed, 17 deselected in 0.05s ===============================================================================================
 ```
@@ -42,16 +42,16 @@ $ pytest -v --tb=no -k equality
 ...
 collected 20 items / 13 deselected / 7 selected                                                                                                                                                                                
 
-test_examples/test_example-3--card.py::test_equality PASSED                                                                                                                                                              [ 14%]
-test_examples/test_example-3--card.py::test_equality_with_diff_ids PASSED                                                                                                                                                [ 28%]
-test_examples/test_example-3--card.py::test_inequality PASSED                                                                                                                                                            [ 42%]
-test_examples/test_example-4--card-fail.py::test_equality_fail FAILED                                                                                                                                                    [ 57%]
-test_examples/test_example-9--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 71%]
-test_examples/test_example-9--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                               [ 85%]
-test_examples/test_example-9--classes.py::TestEquality::test_inequality PASSED                                                                                                                                           [100%]
+test_examples-02/test_example-02-1--card.py::test_equality PASSED                                                                                                                                                              [ 14%]
+test_examples-02/test_example-02-1--card.py::test_equality_with_diff_ids PASSED                                                                                                                                                [ 28%]
+test_examples-02/test_example-02-1--card.py::test_inequality PASSED                                                                                                                                                            [ 42%]
+test_examples-02/test_example-02-2--card-fail.py::test_equality_fail FAILED                                                                                                                                                    [ 57%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 71%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                               [ 85%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_inequality PASSED                                                                                                                                           [100%]
 
 =================================================================================================== short test summary info ====================================================================================================
-FAILED test_examples/test_example-4--card-fail.py::test_equality_fail - AssertionError: assert Card(summary=...odo', id=None) == Card(summary=...odo', id=None)
+FAILED test_examples-02/test_example-02-2--card-fail.py::test_equality_fail - AssertionError: assert Card(summary=...odo', id=None) == Card(summary=...odo', id=None)
 ========================================================================================== 1 failed, 6 passed, 13 deselected in 0.06s ==========================================================================================
 ```
 
@@ -62,12 +62,12 @@ $ pytest -v --tb=no -k "equality and not equality_fail"
 ...
 collected 20 items / 14 deselected / 6 selected                                                                                                                                                                                
 
-test_examples/test_example-3--card.py::test_equality PASSED                                                                                                                                                              [ 16%]
-test_examples/test_example-3--card.py::test_equality_with_diff_ids PASSED                                                                                                                                                [ 33%]
-test_examples/test_example-3--card.py::test_inequality PASSED                                                                                                                                                            [ 50%]
-test_examples/test_example-9--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 66%]
-test_examples/test_example-9--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                               [ 83%]
-test_examples/test_example-9--classes.py::TestEquality::test_inequality PASSED                                                                                                                                           [100%]
+test_examples-02/test_example-02-1--card.py::test_equality PASSED                                                                                                                                                              [ 16%]
+test_examples-02/test_example-02-1--card.py::test_equality_with_diff_ids PASSED                                                                                                                                                [ 33%]
+test_examples-02/test_example-02-1--card.py::test_inequality PASSED                                                                                                                                                            [ 50%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 66%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                               [ 83%]
+test_examples-02/test_example-02-7--classes.py::TestEquality::test_inequality PASSED                                                                                                                                           [100%]
 
 =============================================================================================== 6 passed, 14 deselected in 0.04s ===============================================================================================
 ```
@@ -81,10 +81,10 @@ cachedir: .pytest_cache
 rootdir: /home/delorian/PycharmProjects/pytest-Okken-2022
 collected 20 items / 16 deselected / 4 selected                                                                                                                                                                                
 
-test_examples/test_example-3--card.py::test_equality_with_diff_ids PASSED                                                                                                                                                [ 25%]
-test_examples/test_example-3--card.py::test_from_dict PASSED                                                                                                                                                             [ 50%]
-test_examples/test_example-3--card.py::test_to_dict PASSED                                                                                                                                                               [ 75%]
-test_examples/test_example-8--structure.py::test_to_dict PASSED                                                                                                                                                          [100%]
+test_examples-02/test_example-02-1--card.py::test_equality_with_diff_ids PASSED                                                                                                                                                [ 25%]
+test_examples-02/test_example-02-1--card.py::test_from_dict PASSED                                                                                                                                                             [ 50%]
+test_examples-02/test_example-02-1--card.py::test_to_dict PASSED                                                                                                                                                               [ 75%]
+test_examples-02/test_example-02-6--structure--given--when--then.py::test_to_dict PASSED                                                                                                                                                          [100%]
 
 =============================================================================================== 4 passed, 16 deselected in 0.03s ===============================================================================================
 ```

@@ -14,11 +14,11 @@ if __name__ == "__main__":
     test_equality_fail()
 
 """
-$ pytest test_examples/test_example-2-2--card-fail.py
+$ pytest test_examples-02/test_example-02-2--card-fail.py
 ===================================================================================================== test session starts ======================================================================================================
 ...                                                                                                                                                                                                          
 
-test_examples/test_example-2-2--card-fail.py F                                                                                                                                                                             [100%]
+test_examples-02/test_example-02-2--card-fail.py F                                                                                                                                                                             [100%]
 
 =========================================================================================================== FAILURES ===========================================================================================================
 ______________________________________________________________________________________________________ test_equality_fail ______________________________________________________________________________________________________
@@ -38,19 +38,19 @@ E           summary: 'sit there' != 'do something'...
 E         
 E         ...Full output truncated (7 lines hidden), use '-vv' to show
 
-test_examples/test_example-2-2--card-fail.py:7: AssertionError
+test_examples-02/test_example-02-2--card-fail.py:7: AssertionError
 =================================================================================================== short test summary info ====================================================================================================
-FAILED test_examples/test_example-2-2--card-fail.py::test_equality_fail - AssertionError: assert Card(summary=...odo', id=None) == Card(summary=...odo', id=None)
+FAILED test_examples-02/test_example-02-2--card-fail.py::test_equality_fail - AssertionError: assert Card(summary=...odo', id=None) == Card(summary=...odo', id=None)
 ====================================================================================================== 1 failed in 0.12s =======================================================================================================
 """
 
 # Show all mismatches
 """
-$ pytest -vv test_examples/test_example-2-2--card-fail.py
+$ pytest -vv test_examples-02/test_example-02-2--card-fail.py
 ===================================================================================================== test session starts ======================================================================================================
 ...                                                                                                                                                                                                           
 
-test_examples/test_example-2-2--card-fail.py::test_equality_fail FAILED                                                                                                                                                    [100%]
+test_examples-02/test_example-02-2--card-fail.py::test_equality_fail FAILED                                                                                                                                                    [100%]
 
 =========================================================================================================== FAILURES ===========================================================================================================
 ______________________________________________________________________________________________________ test_equality_fail ______________________________________________________________________________________________________
@@ -76,19 +76,19 @@ E           owner: 'brian' != 'okken'
 E           - okken
 E           + brian
 
-test_examples/test_example-2-2--card-fail.py:7: AssertionError
+test_examples-02/test_example-02-2--card-fail.py:7: AssertionError
 =================================================================================================== short test summary info ====================================================================================================
-FAILED test_examples/test_example-2-2--card-fail.py::test_equality_fail - AssertionError: assert Card(summary='sit there', owner='brian', state='todo', id=None) == Card(summary='do something', owner='okken', state='todo', id=None)
+FAILED test_examples-02/test_example-02-2--card-fail.py::test_equality_fail - AssertionError: assert Card(summary='sit there', owner='brian', state='todo', id=None) == Card(summary='do something', owner='okken', state='todo', id=None)
 ====================================================================================================== 1 failed in 0.11s =======================================================================================================
 """
 
 # With "if __name__ == "__main__":" we can start the test with Python
 """
-$ python test_examples/test_example-2-2--card-fail.py
+$ python test_examples-02/test_example-02-2--card-fail.py
 Traceback (most recent call last):
-  File ".../test_examples/test_example-2-2--card-fail.py", line 11, in <module>
+  File ".../test_examples-02/test_example-02-2--card-fail.py", line 11, in <module>
     test_equality_fail()
-  File ".../test_examples/test_example-2-2--card-fail.py", line 7, in test_equality_fail
+  File ".../test_examples-02/test_example-02-2--card-fail.py", line 7, in test_equality_fail
     assert c1 == c2
 AssertionError
 """

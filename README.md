@@ -35,22 +35,22 @@ Deactivate the venv
 
 Run `pytest` in the terminal:
 ```unix
-$ pytest test_example-1-1-1--passing.py
+$ pytest test_example-01-1--passing.py
 ===================================================================================================== test session starts ======================================================================================================
  ...
 collected 1 item
 
-test_example-1-1--passing.py .                                                                                                                                                                                                      [100%]
+test_example-01-1--passing.py .                                                                                                                                                                                                      [100%]
 
 ====================================================================================================== 1 passed in 0.00s =======================================================================================================
 ```
 ```unix
-$ pytest -v test_example-1-1--passing.py
+$ pytest -v test_example-01-1--passing.py
 ===================================================================================================== test session starts ======================================================================================================
 ...
 collected 1 item
 
-test_example-1-1--passing.py::test_passing PASSED                                                                                                                                                                                   [100%]
+test_example-01-1--passing.py::test_passing PASSED                                                                                                                                                                                   [100%]
 
 ====================================================================================================== 1 passed in 0.00s =======================================================================================================
 ```
@@ -62,15 +62,15 @@ $ pytest --tb=no
 
 Run tests given by their names or (sub)directories in which they are located
 ```unix
-$ pytest --tb=no test_example-1-1--passing.py test_example-2--failing.py
+$ pytest --tb=no test_example-01-1--passing.py test_example-01-2--failing.py
 $ cd ..
-$ pytest --tb=no test_examples
+$ pytest --tb=no test_examples-01
 ```
 
 Run only specified functions
 ```unix
-$ cd test_examples
-$ pytest -v test_example-1-1--passing.py::test_passing
+$ cd test_examples-01
+$ pytest -v test_example-01-1--passing.py::test_passing
 ```
 
 ## Conventions to keep your test code discoverable by `pytest`
