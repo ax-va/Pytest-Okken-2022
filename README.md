@@ -19,7 +19,7 @@ on Windows systems
 ```windows
 C:\> python -m venv venv
 C:\> venv\Scripts\activate.bat
-C:\> pip install pytest
+(venv) C:\> pip install pytest
 ```
 for PowerShell
 ```windows
