@@ -5,6 +5,18 @@
 
 ## Play with the application (under test)
 
+```unix
+$ cards version
+1.0.0
+```
+
+```unix
+$ python -i
+>>> import cards
+>>> cards.__version__
+'1.0.0'
+```
+
 CLI: `cards`, `cards add`, `cards update`, `cards start`, `cards finish`, and `cards delete`
 
 ```unix

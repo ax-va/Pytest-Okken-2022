@@ -8,16 +8,15 @@ and includes a pytest-<NUMBER> part, where <NUMBER> is incremented for every ses
 
 Specify your own base directory with
 $ pytest --basetemp=<MYDIR>
+e.g.,
+$ pytest --basetemp=test_examples-04--buildin-fixtures/tmp -k=test_example-04
 """
-import logging
-
-logger = logging.getLogger(__name__)
 
 
 def test_tmp_path(tmp_path):
     # tmp_path is function scope
-    logger.info(f"type(tmp_path): {type(tmp_path)}")
-    logger.info(f"str(tmp_path): {str(tmp_path)}")
+    print(f"\ntype(tmp_path): {type(tmp_path)}")
+    print(f"\nstr(tmp_path): {str(tmp_path)}")
     file = tmp_path / "file.txt"
     file.write_text("Hello")
     assert file.read_text() == "Hello"
@@ -25,8 +24,8 @@ def test_tmp_path(tmp_path):
 
 def test_tmp_path_factory(tmp_path_factory):
     # tmp_path_factory is session scope
-    logger.info(f"type(tmp_path_factory): {type(tmp_path_factory)}")
-    logger.info(f"str(tmp_path_factory): {str(tmp_path_factory)}")
+    print(f"\ntype(tmp_path_factory): {type(tmp_path_factory)}")
+    print(f"\nstr(tmp_path_factory): {str(tmp_path_factory)}")
     # Call mktemp() to get a directory
     path = tmp_path_factory.mktemp("sub")
     file = path / "file.txt"
@@ -41,22 +40,19 @@ See also:
 """
 
 """
-$ pytest -k test_example-04-1 -c test_examples-04--buildin-fixtures/pytest.ini
+$ pytest -k test_example-04-1 -s
 ===================================================================================================== test session starts ======================================================================================================
-...
-configfile: pyproject.toml
-collected 39 items / 37 deselected / 2 selected                                                                                                                                                                                
+...                                                                                                                                                                              
 
-test_examples-04--buildin-fixtures/test_example-04-1--buildin-fixtures--tmp_path--tmp_path_factory.py::test_tmp_path 
--------------------------------------------------------------------------------------------------------- live log call ---------------------------------------------------------------------------------------------------------
-2024-03-19 18:53:50 [    INFO] type(tmp_path): <class 'pathlib.PosixPath'> (test_example-04-1--buildin-fixtures--tmp_path--tmp_path_factory.py:17)
-2024-03-19 18:53:50 [    INFO] str(tmp_path): /tmp/pytest-of-delorian/pytest-0/test_tmp_path0 (test_example-04-1--buildin-fixtures--tmp_path--tmp_path_factory.py:18)
-PASSED                                                                                                                                                                                                                   [ 50%]
-test_examples-04--buildin-fixtures/test_example-04-1--buildin-fixtures--tmp_path--tmp_path_factory.py::test_tmp_path_factory 
--------------------------------------------------------------------------------------------------------- live log call ---------------------------------------------------------------------------------------------------------
-2024-03-19 18:53:50 [    INFO] type(tmp_path_factory): <class '_pytest.tmpdir.TempPathFactory'> (test_example-04-1--buildin-fixtures--tmp_path--tmp_path_factory.py:26)
-2024-03-19 18:53:50 [    INFO] str(tmp_path_factory): TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x736a86ad88d0>, _basetemp=PosixPath('/tmp/pytest-of-delorian/pytest-0'), _retention_count=3, _retention_policy='all') (test_example-04-1--buildin-fixtures--tmp_path--tmp_path_factory.py:27)
-PASSED                                                                                                                                                                                                                   [100%]
+test_examples-04--buildin-fixtures/test_example-04-1--buildin-fixtures--tmp_path--tmp_path_factory.py 
+type(tmp_path): <class 'pathlib.PosixPath'>
 
-=============================================================================================== 2 passed, 37 deselected in 0.05s ===============================================================================================
+str(tmp_path): /tmp/pytest-of-delorian/pytest-9/test_tmp_path0
+.
+type(tmp_path_factory): <class '_pytest.tmpdir.TempPathFactory'>
+
+str(tmp_path_factory): TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x7013536d9390>, _basetemp=PosixPath('/tmp/pytest-of-delorian/pytest-9'), _retention_count=3, _retention_policy='all')
+.
+
+=============================================================================================== 2 passed, 40 deselected in 0.04s ===============================================================================================
 """
