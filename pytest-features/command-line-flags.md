@@ -2,7 +2,7 @@
 
 - `-c`: use configuration file
 
-- `-k pattern`: match a name pattern of tests
+- `-k <pattern>`: match a name pattern of tests
 
 - `-s`: turn off output capture to show `print`s not only for failed tests
 
@@ -10,7 +10,7 @@
 
 - `-vv`: show all mismatches in a test
 
-- `--basetemp=mydir`: specify your own base directory
+- `--basetemp=<mydir>`: specify your own base directory
 
 - `--capture=no`: turn off output capture to show `print`s not only for failed tests
 
