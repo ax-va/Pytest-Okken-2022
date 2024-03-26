@@ -95,3 +95,20 @@ class Card:
     def to_dict(self):
         return asdict(self)
 ```
+
+## Return the database location
+``` unix
+$ cards config
+/home/delorian/cards_db
+```
+
+## Redirect the CLI to a temporary directory for the database
+``` python
+def get_path():
+    db_path_env = os.getenv("CARDS_DB_DIR", "")
+    if db_path_env:
+        db_path = pathlib.Path(db_path_env)
+    else:
+        db_path = pathlib.Path.home() / "cards_db"
+    return db_path
+```
