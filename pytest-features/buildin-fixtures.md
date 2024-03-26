@@ -1,4 +1,4 @@
-Considered in `test_examples-04--buildin-fixtures`:
+## Considered in `test_examples-04--buildin-fixtures`:
 
 ## `tmp_path`, `tmp_path_factory`
 
@@ -6,7 +6,7 @@ Considered in `test_examples-04--buildin-fixtures`:
 
 ## `monkeypatch`
 
-Not considered in `test_examples-04--buildin-fixtures`:
+## Not considered in `test_examples-04--buildin-fixtures`:
 
 ## `capfd`, `capfdbinary`, `capsysbinary`
 
