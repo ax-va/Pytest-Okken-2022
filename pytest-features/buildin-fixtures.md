@@ -2,9 +2,17 @@
 
 ## `tmp_path`, `tmp_path_factory`
 
+used to for temporary directories. 
+
+`tmp_path` is function scope, and `tmp_path_factory` is session scope.
+
 ## `capsys`
 
+used to capture `stdout` and `stderr`; also used to temporarily turn off output capture (to show `print`)
+
 ## `monkeypatch`
+
+used to change the application code or the environment
 
 ## Not considered in `test_examples-04--buildin-fixtures`:
 
@@ -48,8 +56,14 @@ Most commonly used during fixture parametrization.
 
 ## `pytester`, `testdir`
 
-used to provide a temporary test directory to aid in running and testing pytest plugins. 
+used to provide a temporary test directory to aid in running and testing pytest plugins; `pathlib.Path` for `pytester` and `py.path.local` for `testdir`
 
 ## `tmpdir`, `tmpdir_factory`
 
 similar to `tmp_path` and `tmp_path_factory`; used to return a `py.path.local` object instead of a `pathlib.Path` object
+
+Show all available fixtures including the build-in fixtures
+
+```unix
+$ pytest --fixtures
+```

@@ -25,6 +25,7 @@ import cards
 from typer.testing import CliRunner
 
 
+# Preparation
 def test_version_v3():
     runner = CliRunner()
     result = runner.invoke(cards.app, ["version"])
@@ -48,6 +49,7 @@ def test_run_cards():
     assert run_cards("version") == cards.__version__
 
 
+# Monkey-patching
 def test_patch_get_path(monkeypatch, tmp_path):
     # Replace the get_path function that is an attribute of cards.cli
     monkeypatch.setattr(cards.cli, "get_path", lambda: tmp_path)

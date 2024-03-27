@@ -110,3 +110,6 @@ https://dannorth.net/introducing-bdd/
 ## Pathlib
 
 https://docs.python.org/3/library/pathlib.html#basic-use
+
+## pytest fixtures
+https://docs.pytest.org/en/latest/reference/fixtures.html
