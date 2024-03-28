@@ -88,3 +88,46 @@ test_examples-02/test_example-02-6--structure--given--when--then.py::test_to_dic
 
 =============================================================================================== 4 passed, 16 deselected in 0.03s ===============================================================================================
 ```
+
+Run all the tests with `test_example-05` in their names
+```unix
+$ pytest -v -k test_example-05
+...
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_in_prog PASSED
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_done PASSED
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_todo PASSED
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish PASSED
+test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish[write a book-done] PASSED
+test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish[second edition-in prog] PASSED
+test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish[create a course-todo] PASSED
+test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish_simple[done] PASSED
+test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish_simple[in prog] PASSED
+test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish_simple[todo] PASSED
+test_examples-05--parametrization/test_example-05-3--parametrization--fixture-parametrization.py::test_finish[done] PASSED
+test_examples-05--parametrization/test_example-05-3--parametrization--fixture-parametrization.py::test_finish[in prog] PASSED
+test_examples-05--parametrization/test_example-05-3--parametrization--fixture-parametrization.py::test_finish[todo] PASSED
+test_examples-05--parametrization/test_example-05-4--parametrization--pytest_generate_tests.py::test_finish[done] PASSED
+test_examples-05--parametrization/test_example-05-4--parametrization--pytest_generate_tests.py::test_finish[in prog] PASSED
+test_examples-05--parametrization/test_example-05-4--parametrization--pytest_generate_tests.py::test_finish[todo] PASSED
+```
+
+Run all the tests with `todo` pattern, also automatically with `todo` as the parameter value
+```unix
+$ pytest -v -k todo
+...
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_todo PASSED
+test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish[create a course-todo] PASSED
+test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish_simple[todo] PASSED
+test_examples-05--parametrization/test_example-05-3--parametrization--fixture-parametrization.py::test_finish[todo] PASSED
+test_examples-05--parametrization/test_example-05-4--parametrization--pytest_generate_tests.py::test_finish[todo] PASSED  
+...
+```
+
+Run all the tests with `todo` pattern, but not with `play` and not with `create`
+```unix
+$ pytest -v -k "todo and not (play or create)"
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_todo PASSED
+test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish_simple[todo] PASSED
+test_examples-05--parametrization/test_example-05-3--parametrization--fixture-parametrization.py::test_finish[todo] PASSED
+test_examples-05--parametrization/test_example-05-4--parametrization--pytest_generate_tests.py::test_finish[todo] PASSED
+```

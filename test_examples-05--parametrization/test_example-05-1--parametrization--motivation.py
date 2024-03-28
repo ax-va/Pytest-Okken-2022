@@ -31,9 +31,9 @@ def test_finish_from_todo(cards_db):
 """
 $ pytest -k test_example-05-1 -v
 ...
-test_examples-05--parametrization/test_example-05-1--motivation.py::test_finish_from_in_prog PASSED                                                                                                             [ 33%]
-test_examples-05--parametrization/test_example-05-1--motivation.py::test_finish_from_done PASSED                                                                                                                [ 66%]
-test_examples-05--parametrization/test_example-05-1--motivation.py::test_finish_from_todo PASSED                                                                                                                [100%]
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_in_prog PASSED
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_done PASSED
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_todo PASSED
 ...
 """
 
@@ -54,7 +54,7 @@ def test_finish(cards_db):
 """
 $ pytest -k test_example-05-1 -v
 ...
-test_examples-05--parametrization/test_example-05-1--motivation.py::test_finish PASSED
+test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish PASSED
 ...
 """
 # Problems:

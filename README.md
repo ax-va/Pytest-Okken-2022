@@ -112,4 +112,9 @@ https://dannorth.net/introducing-bdd/
 https://docs.python.org/3/library/pathlib.html#basic-use
 
 ## pytest fixtures
+
 https://docs.pytest.org/en/latest/reference/fixtures.html
+
+## pytest pytest_generate_tests metafunc
+
+https://docs.pytest.org/en/latest/reference/reference.html#metafunc

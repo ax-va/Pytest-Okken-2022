@@ -2,7 +2,7 @@
 
 - `-c`: use configuration file
 
-- `-k <pattern>`: match a name pattern of tests
+- `-k <pattern>`: match a name pattern of tests (k for keyword)
 
 - `-s`: turn off output capture to show `print`s not only for failed tests
 
