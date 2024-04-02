@@ -6,8 +6,8 @@
 
 - `SKIPPED`, `s`: skipped, skip with the `@pytest.mark.skip()` or `@pytest.mark.skipif()` decorators
 
-- `XFAIL` `x`: not supposed to pass, ran, and failed, mark with the `@pytest.mark.xfail()` decorator
+- `XFAIL`, `x`: marked with the `@pytest.mark.xfail()` decorator, not supposed to pass, ran, and failed
 
-- `XPASS`, `X`: marked with `xfail`, but ran and passed
+- `XPASS`, `X`: marked with `@pytest.mark.xfail()`, but ran and passed
 
 - `ERROR`, `E`: an exception was raised either during the execution of a fixture or hook function, and not during the execution of a test function

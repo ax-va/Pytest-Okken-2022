@@ -4,6 +4,10 @@
 
 - `-k <pattern>`: match a name pattern of tests (k for keyword)
 
+- `-ra`: `-r` stands for reporting reasons for test results at the end of the session; `a` for "all except passed"
+
+- `rfE`: `-r` stands for reporting reasons for test results at the end of the session; `f` for failed tests; `E` for errors
+
 - `-s`: turn off output capture to show `print`s not only for failed tests
 
 - `-v`, `--verbose`: reveal more verbose output
