@@ -81,16 +81,16 @@ def test_finish_non_existent(cards_db):
 """
 $ pytest -m smoke1 -v
 ...
-test_example-06-05--markers--files--classes--parameters.py::TestFinish::test_finish_from_todo PASSED
-test_example-06-05--markers--files--classes--parameters.py::TestFinish::test_finish_from_in_prog PASSED
-test_example-06-05--markers--files--classes--parameters.py::TestFinish::test_finish_from_done PASSED
-test_example-06-05--markers--files--classes--parameters.py::test_finish_func[todo] PASSED
-test_example-06-05--markers--files--classes--parameters.py::test_finish_func[in prog] PASSED
-test_example-06-05--markers--files--classes--parameters.py::test_finish_func[done] PASSED
-test_example-06-05--markers--files--classes--parameters.py::test_finish_fix[todo] PASSED
-test_example-06-05--markers--files--classes--parameters.py::test_finish_fix[in prog] PASSED
-test_example-06-05--markers--files--classes--parameters.py::test_finish_fix[done] PASSED
-test_example-06-05--markers--files--classes--parameters.py::test_finish_non_existent PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_todo PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_in_prog PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_done PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_func[todo] PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_func[in prog] PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_func[done] PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_fix[todo] PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_fix[in prog] PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_fix[done] PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_non_existent PASSED
 ...
 """
 
@@ -98,9 +98,9 @@ test_example-06-05--markers--files--classes--parameters.py::test_finish_non_exis
 """
 $ pytest -m smoke4 -v
 ...
-test_example-06-05--markers--files--classes--parameters.py::TestFinish::test_finish_from_todo PASSED
-test_example-06-05--markers--files--classes--parameters.py::TestFinish::test_finish_from_in_prog PASSED
-test_example-06-05--markers--files--classes--parameters.py::TestFinish::test_finish_from_done PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_todo PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_in_prog PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_done PASSED
 ...
 """
 
@@ -108,7 +108,7 @@ test_example-06-05--markers--files--classes--parameters.py::TestFinish::test_fin
 """
 $ pytest -m smoke5 -v
 ...
-test_example-06-05--markers--files--classes--parameters.py::test_finish_func[in prog] PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_func[in prog] PASSED
 ...
 """
 
@@ -116,7 +116,7 @@ test_example-06-05--markers--files--classes--parameters.py::test_finish_func[in 
 """
 $ pytest -m smoke8 -v
 ...
-test_example-06-05--markers--files--classes--parameters.py::test_finish_fix[in prog] PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_fix[in prog] PASSED
 ...
 """
 
@@ -125,7 +125,7 @@ test_example-06-05--markers--files--classes--parameters.py::test_finish_fix[in p
 $ pytest -m smoke -v
 ...
 test_example-06-04--markers--custom-markers.py::test_start PASSED
-test_example-06-05--markers--files--classes--parameters.py::test_finish_non_existent PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_non_existent PASSED
 ...
 """
 
@@ -133,6 +133,6 @@ test_example-06-05--markers--files--classes--parameters.py::test_finish_non_exis
 $ pytest -m exception -v
 ...
 test_example-06-04--markers--custom-markers.py::test_start_non_existent PASSED
-test_example-06-05--markers--files--classes--parameters.py::test_finish_non_existent PASSED
+test_example-06-05--markers--custom-markers--files--classes--parameters.py::test_finish_non_existent PASSED
 ...
 """
