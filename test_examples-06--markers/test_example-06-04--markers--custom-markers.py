@@ -2,7 +2,7 @@ import pytest
 from cards import Card, InvalidCardId
 
 
-# Add a custom marker
+# Add a custom marker with @pytest.mark.<marker_name>
 @pytest.mark.smoke
 def test_start(cards_db):
     """
@@ -14,13 +14,13 @@ def test_start(cards_db):
     assert card.state == "in prog"
 
 
-# Add a custom marker
+# Add a custom marker with @pytest.mark.<marker_name>
 @pytest.mark.exception
 def test_start_non_existent(cards_db):
     """
     Shouldn't be able to start a non-existent card.
     """
-    index = 12345  # index will be invalid, db is empty
+    index = 12345  # index is invalid
     with pytest.raises(InvalidCardId):
         cards_db.start(index)
 
