@@ -8,7 +8,7 @@
 | All tests in a module         | `pytest <path>/test_module.py`                         |
 | All tests in a directory      | `pytest <path>`                                        |
 | Tests matching a name pattern | `pytest -k <pattern>`                                  |
-| Tests by marker               | separating out tests using build-in or custom markers  |
+| Tests by marker               | separating out tests with build-in or custom markers   |
 
 ```unix
 $ pytest -v -k TestEquality
