@@ -19,7 +19,7 @@ Deactivate the venv
 ```unix
 (venv_name) $ deactivate
 ```
-Activate on Windows systems
+Create a virtual environment and activate it on Windows systems
 ```windows
 C:\> python -m venv venv_name
 C:\> venv_name\Scripts\activate.bat
