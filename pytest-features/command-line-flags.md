@@ -24,6 +24,8 @@
 
 - `--setup-show`: show the order of operations of tests and fixtures, including the setup and teardown phases
 
+- `--strict-markers`: change warnings on misspelled markers to errors  
+
 - `--tb=no`: turn off tracebacks
 
 - `--tb=short`: use the shorter traceback format
