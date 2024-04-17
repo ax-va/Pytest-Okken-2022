@@ -3,32 +3,32 @@ https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
 
 ## Install using PyPI
 
-Create a virtual environment and install `pytest` on POSIX systems:
+Create a virtual environment, activate it on POSIX systems, and install `pytest`
 ```unix
 $ python3 -m venv venv_name
 $ source venv_name/bin/activate
 (venv_name) $ pip install pytest
 ```
+or using `virtualenv`
 ```unix
 $ python3 -m pip install virtualenv
 $ python3 -m virtualenv venv_name
 $ source venv_name/bin/activate
 (venv_name) $ pip install pytest
 ```
-on Windows systems
+Deactivate the venv
+```unix
+(venv_name) $ deactivate
+```
+Create a virtual environment, activate it on Windows systems, and install `pytest`
 ```windows
 C:\> python -m venv venv_name
 C:\> venv_name\Scripts\activate.bat
 (venv_name) C:\> pip install pytest
 ```
-for PowerShell
+Activate in PowerShell
 ```windows
 C:>venv_name\Scripts\Activate.ps1
-```
-
-Deactivate the venv
-```unix
-(venv_name) $ deactivate
 ```
 
 ## Run pytest
