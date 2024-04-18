@@ -75,7 +75,7 @@ test_examples-02/test_example-02-1--card.py .......                             
 
 $ pytest test_examples-02/test_example-02-1--card.py --verbose
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 7 items                                                                                                                                                                                                              
 
 test_examples-02/test_example-02-1--card.py::test_field_access PASSED                                                                                                                                                          [ 14%]

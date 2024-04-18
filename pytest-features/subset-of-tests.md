@@ -13,7 +13,7 @@
 ```unix
 $ pytest -v -k TestEquality
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 20 items / 17 deselected / 3 selected                                                                                                                                                                                
 
 test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 33%]
@@ -26,7 +26,7 @@ test_examples-02/test_example-02-7--classes.py::TestEquality::test_inequality PA
 ```unix
 $ pytest -v -k TestEq
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 20 items / 17 deselected / 3 selected                                                                                                                                                                                
 
 test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 33%]
@@ -39,7 +39,7 @@ test_examples-02/test_example-02-7--classes.py::TestEquality::test_inequality PA
 ```unix
 $ pytest -v --tb=no -k equality
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 20 items / 13 deselected / 7 selected                                                                                                                                                                                
 
 test_examples-02/test_example-02-1--card.py::test_equality PASSED                                                                                                                                                              [ 14%]
@@ -59,7 +59,7 @@ Eliminate the failing test
 ```unix
 $ pytest -v --tb=no -k "equality and not equality_fail"
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 20 items / 14 deselected / 6 selected                                                                                                                                                                                
 
 test_examples-02/test_example-02-1--card.py::test_equality PASSED                                                                                                                                                              [ 16%]
@@ -92,7 +92,7 @@ test_examples-02/test_example-02-6--structure--given--when--then.py::test_to_dic
 Run all the tests with `test_example-05` in their names
 ```unix
 $ pytest -v -k test_example-05
-...
+###
 test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_in_prog PASSED
 test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_done PASSED
 test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_todo PASSED
@@ -114,13 +114,13 @@ test_examples-05--parametrization/test_example-05-4--parametrization--pytest_gen
 Run all the tests with `todo` pattern, also automatically with `todo` as the parameter value
 ```unix
 $ pytest -v -k todo
-...
+###
 test_examples-05--parametrization/test_example-05-1--parametrization--motivation.py::test_finish_from_todo PASSED
 test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish[create a course-todo] PASSED
 test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish_simple[todo] PASSED
 test_examples-05--parametrization/test_example-05-3--parametrization--fixture-parametrization.py::test_finish[todo] PASSED
 test_examples-05--parametrization/test_example-05-4--parametrization--pytest_generate_tests.py::test_finish[todo] PASSED  
-...
+###
 ```
 
 Run all the tests with `todo` pattern, but not with `play` and not with `create`

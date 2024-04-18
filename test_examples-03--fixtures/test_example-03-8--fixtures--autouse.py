@@ -37,7 +37,7 @@ def test_2():
 """
 $ pytest -v -s -k test_example-03-7
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                            
+###                                                                                                                                                                            
 
 test_examples-03--fixtures/test_example-03-8--fixtures--autouse.py::test_1 PASSED
 test duration : 1.0 seconds

@@ -28,11 +28,11 @@ def test_finish(cards_db, start_summary, start_state):
 
 """
 $ pytest -k test_example-05-2 -v
-...
+###
 test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish[write a book-done] PASSED 
 test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish[second edition-in prog] PASSED
 test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish[create a course-todo] PASSED
-...
+###
 """
 
 
@@ -48,9 +48,9 @@ def test_finish_simple(cards_db, start_state):
 
 """
 $ pytest -k test_example-05-2 -v
-...
+###
 test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish_simple[done] PASSED
 test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish_simple[in prog] PASSED
 test_examples-05--parametrization/test_example-05-2--parametrization--function-parametrization.py::test_finish_simple[todo] PASSED
-...
+###
 """

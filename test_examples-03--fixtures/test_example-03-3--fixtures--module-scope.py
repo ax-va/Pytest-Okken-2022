@@ -33,7 +33,7 @@ def test_two(cards_db):
 """
 $ pytest --setup-show -k test_example-03-3
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                              
+###                                                                                                                                                                              
 
 test_examples-03--fixtures/test_example-03-3--fixtures--module-scope.py 
     SETUP    M cards_db

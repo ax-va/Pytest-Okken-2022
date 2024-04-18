@@ -15,7 +15,7 @@ def test_two(cards_db):
 """
 $ pytest --setup-show -k test_example-03-7
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                               
+###                                                                                                                                                                               
 
 test_examples-03--fixtures--dynamical-fixture-scope/test_example-03-7--fixtures--dynamical-fixture-scope.py 
 SETUP    S cards_db
@@ -31,7 +31,7 @@ TEARDOWN S cards_db
 """
 $ pytest --func-db --setup-show -k test_example-03-7
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                              
+###                                                                                                                                                                              
 
 test_examples-03--fixtures--dynamical-fixture-scope/test_example-03-7--fixtures--dynamical-fixture-scope.py 
         SETUP    F cards_db

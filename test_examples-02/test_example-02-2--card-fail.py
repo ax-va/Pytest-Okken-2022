@@ -16,7 +16,7 @@ if __name__ == "__main__":
 """
 $ pytest test_examples-02/test_example-02-2--card-fail.py
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                                                          
+###                                                                                                                                                                                                          
 
 test_examples-02/test_example-02-2--card-fail.py F                                                                                                                                                                             [100%]
 
@@ -48,7 +48,7 @@ FAILED test_examples-02/test_example-02-2--card-fail.py::test_equality_fail - As
 """
 $ pytest -vv test_examples-02/test_example-02-2--card-fail.py
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                                                           
+###                                                                                                                                                                                                           
 
 test_examples-02/test_example-02-2--card-fail.py::test_equality_fail FAILED                                                                                                                                                    [100%]
 

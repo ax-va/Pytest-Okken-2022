@@ -3,7 +3,7 @@
 List all the available fixtures
 ```unix
 $ pytest --fixtures -v
-...
+###
 ------------------------------------------------------------------------------------------------ fixtures defined from conftest ------------------------------------------------------------------------------------------------
 cards_db [session scope] -- test_examples-03--fixtures/conftest.py:8
     CardsDB object connected to a temporary database 
@@ -24,7 +24,7 @@ cards_db -- test_examples-03--fixtures/test_example-03-2--fixtures--setup--teard
     no docstring available
 
 
-...
+###
 
 ==================================================================================================== no tests ran in 0.03s =====================================================================================================
 ```
@@ -32,7 +32,7 @@ cards_db -- test_examples-03--fixtures/test_example-03-2--fixtures--setup--teard
 List available fixtures in `test_examples-03--fixtures`
 ```unix
 $ pytest --fixtures -v test_examples-03--fixtures
-...
+###
 ------------------------------------------------------------------------------------------------ fixtures defined from conftest ------------------------------------------------------------------------------------------------
 cards_db [session scope] -- test_examples-03--fixtures/conftest.py:8
     CardsDB object connected to a temporary database 
@@ -53,14 +53,14 @@ cards_db -- test_examples-03--fixtures/test_example-03-2--fixtures--setup--teard
     no docstring available
 
 
-...
+###
 
 ==================================================================================================== no tests ran in 0.03s =====================================================================================================
 ```
 
 ```unix
 $ pytest --fixtures -v test_examples-03--fixtures/test_example-03-1--fixtures.py
-...
+###
 ------------------------------------------------------------------------------------------------ fixtures defined from conftest ------------------------------------------------------------------------------------------------
 cards_db [session scope] -- test_examples-03--fixtures/conftest.py:8
     CardsDB object connected to a temporary database 
@@ -78,7 +78,7 @@ List fixtures used in a module
 ```unix
 $ pytest --fixtures-per-test -k test_example-03-4
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                             
+###                                                                                                                                                                             
 
 ------------------------------------------------------------------------------------------------- fixtures used by test_empty --------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------- (test_examples-03--fixtures/test_example-03-4--fixtures--conftest.py:5) ------------------------------------------------------------------------------
@@ -97,7 +97,7 @@ List fixtures used in a function
 ```unix
 $ pytest --fixtures-per-test test_examples-03--fixtures/test_example-03-4--fixtures--conftest.py::test_empty
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                                                          
+###                                                                                                                                                                                                          
 
 ------------------------------------------------------------------------------------------------- fixtures used by test_empty --------------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------- (test_examples-03--fixtures/test_example-03-4--fixtures--conftest.py:5) ------------------------------------------------------------------------------

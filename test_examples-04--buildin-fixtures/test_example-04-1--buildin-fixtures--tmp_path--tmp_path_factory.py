@@ -42,7 +42,7 @@ See also:
 """
 $ pytest -k test_example-04-1 -s
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                              
+###                                                                                                                                                                              
 
 test_examples-04--buildin-fixtures/test_example-04-1--buildin-fixtures--tmp_path--tmp_path_factory.py 
 type(tmp_path): <class 'pathlib.PosixPath'>

@@ -15,7 +15,7 @@ def test_two(cards_db):
 """
 $ pytest --setup-show -k test_example-03-4
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                           
+###                                                                                                                                                                           
 
 test_examples-03--fixtures/test_example-03-4--fixtures--conftest.py 
 SETUP    S cards_db
@@ -30,7 +30,7 @@ TEARDOWN S cards_db
 # List fixtures used in a module
 """
 $ pytest --fixtures-per-test -k test_example-03-4
-...
+###
 ------------------------------------------------------------------------------------------------- fixtures used by test_empty --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------- (test_examples-03/test_example-03-4--fixtures--conftest.py:5) ---------------------------------------------------------------------------------
 cards_db -- test_examples-03--fixtures/conftest.py:8
@@ -47,7 +47,7 @@ cards_db -- test_examples-03--fixtures/conftest.py:8
 # List fixtures used in a function
 """
 $ pytest --fixtures-per-test test_examples-03--fixtures/test_example-03-4--fixtures--conftest.py::test_empty
-...
+###
 ------------------------------------------------------------------------------------------------- fixtures used by test_empty --------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------- (test_examples-03/test_example-03-4--fixtures--conftest.py:5) ---------------------------------------------------------------------------------
 cards_db -- test_examples-03--fixtures/conftest.py:8

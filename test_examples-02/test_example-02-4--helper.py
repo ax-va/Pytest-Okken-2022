@@ -29,7 +29,7 @@ def test_identical_fail():
 """
 $ pytest test_examples-02/test_example-02-4--helper.py
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 2 items                                                                                                                                                                                                              
 
 test_examples-02/test_example-02-4--helper.py .F                                                                                                                                                                               [100%]

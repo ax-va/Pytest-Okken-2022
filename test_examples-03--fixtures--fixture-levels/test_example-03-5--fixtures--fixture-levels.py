@@ -21,7 +21,7 @@ def test_three(cards_db):
 """
 $ pytest --setup-show test_examples-03--fixtures--fixture-levels
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 3 items                                                                                                                                                                                                              
 
 test_examples-03--fixtures--fixture-levels/test_example-03-5--fixtures--fixture-levels.py 

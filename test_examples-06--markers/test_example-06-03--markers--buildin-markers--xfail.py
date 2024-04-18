@@ -55,14 +55,14 @@ def test_xfail_strict():
 
 """
 $ pytest -k example-06-03 -v -ra
-...
+###
 test_examples-06--markers/test_example-06-03--markers--buildin-markers--xfail.py::test_less_than XFAIL (Card < comparison not supported in 1.x) 
 test_examples-06--markers/test_example-06-03--markers--buildin-markers--xfail.py::test_xpass XPASS (XPASS demo with strict=False)  
 test_examples-06--markers/test_example-06-03--markers--buildin-markers--xfail.py::test_xfail_strict FAILED 
-...
+###
 =================================================================================================== short test summary info ====================================================================================================
 XFAIL test_examples-06--markers/test_example-06-03--markers--buildin-markers--xfail.py::test_less_than - Card < comparison not supported in 1.x
 XPASS test_examples-06--markers/test_example-06-03--markers--buildin-markers--xfail.py::test_xpass - XPASS demo with strict=False
 FAILED test_examples-06--markers/test_example-06-03--markers--buildin-markers--xfail.py::test_xfail_strict
-...
+###
 """

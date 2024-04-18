@@ -71,7 +71,7 @@ def test_patch_env_var(monkeypatch, tmp_path):
 """
 $ pytest -k test_example-04-3
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                               
+###                                                                                                                                                                               
 
 test_examples-04--buildin-fixtures/test_example-04-3--buildin-fixtures--monkeypatch.py .....                                                                                                                             [100%]
 

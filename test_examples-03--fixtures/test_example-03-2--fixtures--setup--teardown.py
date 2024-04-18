@@ -32,7 +32,7 @@ def test_two(cards_db):
 """
 $ pytest -k test_example-03-2
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                             
+###                                                                                                                                                                             
 
 test_examples-03--fixtures/test_example-03-2--fixtures--setup--teardown.py ..                                                                                                                                                          [100%]
 
@@ -43,7 +43,7 @@ test_examples-03--fixtures/test_example-03-2--fixtures--setup--teardown.py ..   
 """
 $ pytest --setup-show -k test_example-03-2
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                            
+###                                                                                                                                                                            
 
 test_examples-03--fixtures/test_example-03-2--fixtures--setup--teardown.py 
         SETUP    F cards_db

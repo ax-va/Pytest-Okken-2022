@@ -26,7 +26,7 @@ def test_raises_with_info_alt():
 """
 $ pytest test_examples-02/test_example-02-5--exceptions.py
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 3 items                                                                                                                                                                                                              
 
 test_examples-02/test_example-02-5--exceptions.py ...                                                                                                                                                                          [100%]

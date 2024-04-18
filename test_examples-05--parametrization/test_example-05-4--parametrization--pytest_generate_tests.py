@@ -27,9 +27,9 @@ def test_finish(cards_db, start_state):
 
 """
 $ pytest -k test_example-05-4 -v
-...
+###
 test_examples-05--parametrization/test_example-05-4--parametrization--pytest_generate_tests.py::test_finish[done] PASSED
 test_examples-05--parametrization/test_example-05-4--parametrization--pytest_generate_tests.py::test_finish[in prog] PASSED
 test_examples-05--parametrization/test_example-05-4--parametrization--pytest_generate_tests.py::test_finish[todo] PASSED
-...
+###
 """

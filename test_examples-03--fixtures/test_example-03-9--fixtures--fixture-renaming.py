@@ -16,7 +16,7 @@ def test_rounded_pi(pi):
 """
 $ pytest -v -s -k test_example-03-9
 ===================================================================================================== test session starts ======================================================================================================
-...                                                                                                                                                                             
+###                                                                                                                                                                             
 
 test_examples-03--fixtures/test_example-03-9--fixtures--fixture-renaming.py::test_rounded_pi 
 The false Pi is 3

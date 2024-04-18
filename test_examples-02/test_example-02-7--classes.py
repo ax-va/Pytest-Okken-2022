@@ -22,7 +22,7 @@ class TestEquality:
 """
 $ pytest -v test_examples-02/test_example-02-7--classes.py::TestEquality
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 3 items                                                                                                                                                                                                              
 
 test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 33%]
@@ -36,7 +36,7 @@ test_examples-02/test_example-02-7--classes.py::TestEquality::test_inequality PA
 """
 $ pytest -v test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality
 ===================================================================================================== test session starts ======================================================================================================
-...
+###
 collected 1 item                                                                                                                                                                                                               
 
 test_examples-02/test_example-02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [100%]
