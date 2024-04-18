@@ -48,7 +48,7 @@ $ pytest --strict-markers -m smok
 # 1) The error is issued at collection time, not at run time.
 # 2) Errors are sometimes easier to catch than warnings, especially in continuous integration systems.
 
-# Add --strict-markers to pytest.ini
+# Add "--strict-markers" to pytest.ini
 """
 [pytest]
 markers =
