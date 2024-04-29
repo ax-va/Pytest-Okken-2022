@@ -113,7 +113,9 @@ def get_path():
     return db_path
 ```
 
-## Implementation of the CLI and database
+## Implementation of the API, CLI and database layers
+
+The API is implemented in `api.py`.
 
 The CLI is implemented in `cli.py` with the dependency on two third-party packages:
 - Typer https://pypi.org/project/typer/
@@ -121,3 +123,5 @@ The CLI is implemented in `cli.py` with the dependency on two third-party packag
 
 The interaction with the database is implemented in `db.py` with the dependency on one third-party package:
 - TinyDB https://pypi.org/project/tinydb/
+
+The CLI and database layers are as thin as possible. 
