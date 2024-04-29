@@ -112,3 +112,7 @@ def get_path():
         db_path = pathlib.Path.home() / "cards_db"
     return db_path
 ```
+
+The CLI is implemented in `cli.py`. It depends on two third-party packages:
+- Typer https://pypi.org/project/typer/
+- Rich https://pypi.org/project/rich/
