@@ -113,7 +113,7 @@ def get_path():
     return db_path
 ```
 
-# Implementation of the CLI and database
+## Implementation of the CLI and database
 
 The CLI is implemented in `cli.py` with the dependency on two third-party packages:
 - Typer https://pypi.org/project/typer/
