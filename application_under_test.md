@@ -113,6 +113,9 @@ def get_path():
     return db_path
 ```
 
-The CLI is implemented in `cli.py`. It depends on two third-party packages:
+The CLI is implemented in `cli.py` with the dependency on two third-party packages:
 - Typer https://pypi.org/project/typer/
 - Rich https://pypi.org/project/rich/
+
+The interaction with the database is implemented in `db.py` with the dependency on one third-party package:
+- TinyDB https://pypi.org/project/tinydb/
