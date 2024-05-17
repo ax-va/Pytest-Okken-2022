@@ -17,6 +17,27 @@ $ python -i
 '1.0.0'
 ```
 
+```unix
+$ cards --help
+Usage: cards [OPTIONS] COMMAND [ARGS]...
+
+  Cards is a small command line task tracking application.
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  add      Add a card to db.
+  config   List the path to the Cards db.
+  count    Return number of cards in db.
+  delete   Remove card in db with given id.
+  finish   Set a card state to 'done'.
+  list     List cards in db.
+  start    Set a card state to 'in prog'.
+  update   Modify a card in db with given id with new info.
+  version  Return version of cards application
+```
+
 CLI: `cards`, `cards add`, `cards update`, `cards start`, `cards finish`, and `cards delete`
 
 ```unix
