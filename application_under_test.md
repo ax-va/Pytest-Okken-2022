@@ -38,7 +38,7 @@ Commands:
   version  Return version of cards application
 ```
 
-CLI: `cards`, `cards add`, `cards update`, `cards start`, `cards finish`, and `cards delete`
+CLI examples:
 
 ```unix
 $ cards add do something --owner ax-va
