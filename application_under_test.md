@@ -97,7 +97,7 @@ $ cards count
 2
 ```                              
 
-## The Cards source code consists of three layers: CLI, API, and DB.
+## The Cards source code consists of three layers: CLI, API, and DB
 
 ## `cards_proj/src/cards/api.py`
 
