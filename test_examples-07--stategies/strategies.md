@@ -80,3 +80,8 @@ Then
 
 Write a test strategy and share it with your team. 
 Include the initial test case list.
+
+## These are common mistakes:
+- Only writing happy-path test cases.
+- Spending too much time thinking about how things can go wrong.
+- Ignoring how behaviors change based on system or component state.
