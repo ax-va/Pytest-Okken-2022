@@ -30,7 +30,7 @@ Investigate the software architecture to use this knowledge for testing
 
 ## Create test cases
 
-1. Start with a **non-trivial**, "happy path" test case.
+1. Start with a **non-trivial**, happy-path test case.
 
 2. Then look at test cases that represent
    - interesting sets of input,
