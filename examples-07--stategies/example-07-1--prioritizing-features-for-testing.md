@@ -5,7 +5,7 @@
 - *Problematic*: Functionality that frequently breaks or often gets defect reports against it.
 - *Expertise*: Features or algorithms understood by a limited subset of people.
 
-## On the example of Cards
+## Examples of testing `Cards`
 - Test core features thoroughly.
 - Test non-core features with at least one test case.
 - Test the CLI in isolation.
