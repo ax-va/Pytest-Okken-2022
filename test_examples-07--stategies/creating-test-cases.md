@@ -1,6 +1,6 @@
-- Start with a non-trivial, "happy path" test case.
+1. Start with a non-trivial, "happy path" test case.
 
-- Then look at test cases that represent
+2. Then look at test cases that represent
   - interesting sets of input,
   - interesting starting states,
   - interesting end states, or
