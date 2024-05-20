@@ -24,7 +24,8 @@ Investigate the software architecture to use this knowledge for testing
 
 # Writing a test strategy
 
-## Write a test strategy and share it with your team
+Write a test strategy and share it with your team. 
+Include the initial test case list.
 
 # Creating test cases
 
