@@ -22,11 +22,6 @@ Investigate the software architecture to use this knowledge for testing
 - Test non-core features with at least one test case.
 - Test the CLI in isolation.
 
-# Writing a test strategy
-
-Write a test strategy and share it with your team. 
-Include the initial test case list.
-
 # Creating test cases
 
 ## Create test cases
@@ -80,3 +75,8 @@ Then
 - `list` from a non-empty database
 - `config` returns the correct database path
 - `version` returns the correct version
+
+# Writing a test strategy
+
+Write a test strategy and share it with your team. 
+Include the initial test case list.
