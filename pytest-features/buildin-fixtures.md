@@ -1,4 +1,4 @@
-## Considered in `test_examples-04--buildin-fixtures`:
+## Considered in `test_04--build-in-fixtures`:
 
 ## `tmp_path`, `tmp_path_factory`
 
@@ -14,7 +14,7 @@ used to capture `stdout` and `stderr`; also used to temporarily turn off output 
 
 used to change the application code or the environment
 
-## Not considered in `test_examples-04--buildin-fixtures`:
+## Not considered in `test_04--build-in-fixtures`:
 
 ## `capfd`, `capfdbinary`, `capsysbinary`
 
