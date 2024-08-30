@@ -39,10 +39,10 @@ $ pytest -v -s -k test_03-7
 ===================================================================================================== test session starts ======================================================================================================
 ###                                                                                                                                                                            
 
-test_03a--fixtures/test_03-8--autouse.py::test_1 PASSED
+test_03--fixtures/e/test_03-8--autouse.py::test_1 PASSED
 test duration : 1.0 seconds
 
-test_03a--fixtures/test_03-8--autouse.py::test_2 PASSED
+test_03--fixtures/e/test_03-8--autouse.py::test_2 PASSED
 test duration : 1.23 seconds
 
 --

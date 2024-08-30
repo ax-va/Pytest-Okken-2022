@@ -33,12 +33,12 @@ $ pytest --func-db --setup-show -k test_03-7
 ===================================================================================================== test session starts ======================================================================================================
 ###                                                                                                                                                                              
 
-test_03d--fixtures/test_03-7--dynamical-fixture-scope.py 
+test_03--fixtures/d/test_03-7--dynamical-fixture-scope.py 
         SETUP    F cards_db
-        test_03d--fixtures/test_03-7--dynamical-fixture-scope.py::test_empty (fixtures used: cards_db).
+        test_03--fixtures/d/test_03-7--dynamical-fixture-scope.py::test_empty (fixtures used: cards_db).
         TEARDOWN F cards_db
         SETUP    F cards_db
-        test_03d--fixtures/test_03-7--dynamical-fixture-scope.py::test_two (fixtures used: cards_db).
+        test_03--fixtures/d/test_03-7--dynamical-fixture-scope.py::test_two (fixtures used: cards_db).
         TEARDOWN F cards_db
 
 =============================================================================================== 2 passed, 32 deselected in 0.04s ===============================================================================================
