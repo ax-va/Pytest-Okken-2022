@@ -35,7 +35,7 @@ C:>venv_name\Scripts\Activate.ps1
 
 Run `pytest` in the terminal:
 ```unix
-$ pytest test_01-1--passing.py
+$ pytest 01/test_01-1--passing.py
 ===================================================================================================== test session starts ======================================================================================================
  ###
 collected 1 item
@@ -45,7 +45,7 @@ test_01-1--passing.py .                                                         
 ====================================================================================================== 1 passed in 0.00s =======================================================================================================
 ```
 ```unix
-$ pytest -v test_01-1--passing.py
+$ pytest -v 01/test_01-1--passing.py
 ===================================================================================================== test session starts ======================================================================================================
 ###
 collected 1 item
@@ -62,15 +62,13 @@ $ pytest --tb=no
 
 Run tests given by their names or (sub)directories in which they are located
 ```unix
-$ pytest --tb=no test_01-1--passing.py test_01-2--failing.py
-$ cd ..
-$ pytest --tb=no test_01
+$ pytest --tb=no 01/test_01-1--passing.py 01/test_01-2--failing.py
+$ pytest --tb=no 01
 ```
 
 Run only specified functions
 ```unix
-$ cd test_01
-$ pytest -v test_01-1--passing.py::test_passing
+$ pytest -v 01/test_01-1--passing.py::test_passing
 ```
 
 ## Conventions to keep your test code discoverable by `pytest`
