@@ -1,4 +1,4 @@
-## Considered in `test_04--build-in-fixtures`:
+## Considered in the `04--build-in-fixtures` directory:
 
 ## `tmp_path`, `tmp_path_factory`
 
@@ -14,7 +14,7 @@ used to capture `stdout` and `stderr`; also used to temporarily turn off output 
 
 used to change the application code or the environment
 
-## Not considered in `test_04--build-in-fixtures`:
+## Not considered in the `04--build-in-fixtures` directory:
 
 ## `capfd`, `capfdbinary`, `capsysbinary`
 
@@ -22,13 +22,13 @@ variants of capsys that work with file descriptors and/or binary output
 
 ## `caplog`
 
-similar to capsys and the like; used for messages created with Python’s logging system
+similar to capsys and the like; used for messages created with Python's logging system
 
 ## `cache`
 
 used to store and retrieve values across pytest runs.
 
-The most useful part of this fixture is that it allows for --last-failed, --failed-first, and similar flags.
+The most useful part of this fixture is that it allows for `--last-failed`, `--failed-first`, and similar flags.
 
 ## `doctest_namespace`
 
@@ -56,11 +56,11 @@ Most commonly used during fixture parametrization.
 
 ## `pytester`, `testdir`
 
-used to provide a temporary test directory to aid in running and testing pytest plugins; `pathlib.Path` for `pytester` and `py.path.local` for `testdir`
+used to provide a temporary test directory to aid in running and testing pytest plugins; `pathlib.Path` for `pytester` and `py.path.local` for `testdir`.
 
 ## `tmpdir`, `tmpdir_factory`
 
-similar to `tmp_path` and `tmp_path_factory`; used to return a `py.path.local` object instead of a `pathlib.Path` object
+similar to `tmp_path` and `tmp_path_factory`; used to return a `py.path.local` object instead of a `pathlib.Path` object.
 
 Show all available fixtures including the build-in fixtures
 
