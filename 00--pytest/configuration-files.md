@@ -27,7 +27,7 @@ It can exist at the `rootdir` or in any subdirectory.
 
 - `__init__.py`
 
-only to have duplicated names of test files.
+only to duplicate names of test files in different directories.
 
 - `tox.ini`, `pyproject.toml`, and `setup.cfg`
 
