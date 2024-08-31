@@ -22,9 +22,8 @@ Its location also defines the pytest root directory, or `rootdir`.
 
 - `conftest.py`
 
-contains fixtures and hook functions.
+contains *fixtures* and *hook functions* shared by all tests in the same directory or all subdirectories.
 It can exist at the `rootdir` or in any subdirectory.
-Anything defined in `conftest.py` applies to tests in that directory and all subdirectories.
 
 - `__init__.py`
 
