@@ -20,26 +20,26 @@ class TestEquality:
 
 # Run all the tests in the class
 """
-$ pytest -v 02/test_02-7--classes.py::TestEquality
+$ pytest -v 02--tests/test_02-7--classes.py::TestEquality
 ===================================================================================================== test session starts ======================================================================================================
 ###
 collected 3 items                                                                                                                                                                                                              
 
-02/test_02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [ 33%]
-02/test_02-7--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                               [ 66%]
-02/test_02-7--classes.py::TestEquality::test_inequality PASSED                                                                                                                                           [100%]
+02--tests/test_02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                                       [ 33%]
+02--tests/test_02-7--classes.py::TestEquality::test_equality_with_diff_ids PASSED                                                                                                                                         [ 66%]
+02--tests/test_02-7--classes.py::TestEquality::test_inequality PASSED                                                                                                                                                     [100%]
 
 ====================================================================================================== 3 passed in 0.03s =======================================================================================================
 """
 
 # Run a single test in the class
 """
-$ pytest -v 02/test_02-7--classes.py::TestEquality::test_equality
+$ pytest -v 02--tests/test_02-7--classes.py::TestEquality::test_equality
 ===================================================================================================== test session starts ======================================================================================================
 ###
 collected 1 item                                                                                                                                                                                                               
 
-02/test_02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                             [100%]
+02--tests/test_02-7--classes.py::TestEquality::test_equality PASSED                                                                                                                                                       [100%]
 
 ====================================================================================================== 1 passed in 0.03s =======================================================================================================
 """

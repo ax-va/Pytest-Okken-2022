@@ -1,4 +1,6 @@
 ## Original source code
+The link to the original source code is given on the official book's side
+
 https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
 
 ## Install using PyPI
@@ -33,26 +35,14 @@ C:>my_venv\Scripts\Activate.ps1
 
 ## Run pytest
 
-Run `pytest` in the terminal:
+Run a test modul:
 ```unix
-$ pytest 01/test_01-1--passing.py
-===================================================================================================== test session starts ======================================================================================================
- ###
-collected 1 item
-
-test_01-1--passing.py .                                                                                                                                                                                                      [100%]
-
-====================================================================================================== 1 passed in 0.00s =======================================================================================================
+$ pytest 01-introduction/test_01-1--passing.py
 ```
+
+Run a test modul with the `--verbose` or `-v` flag:
 ```unix
-$ pytest -v 01/test_01-1--passing.py
-===================================================================================================== test session starts ======================================================================================================
-###
-collected 1 item
-
-test_01-1--passing.py::test_passing PASSED                                                                                                                                                                                   [100%]
-
-====================================================================================================== 1 passed in 0.00s =======================================================================================================
+$ pytest -v 01-introduction/test_01-1--passing.py
 ```
 
 Run all tests starting with `test_` or ending with `_test` in the current working directory without traceback
@@ -62,13 +52,13 @@ $ pytest --tb=no
 
 Run tests given by their names or (sub)directories in which they are located
 ```unix
-$ pytest --tb=no 01/test_01-1--passing.py 01/test_01-2--failing.py
-$ pytest --tb=no 01
+$ pytest --tb=no 01-introduction/test_01-1--passing.py 01-introduction/test_01-2--failing.py
+$ pytest --tb=no 01-introduction
 ```
 
 Run only specified functions
 ```unix
-$ pytest -v 01/test_01-1--passing.py::test_passing
+$ pytest -v 01-introduction/test_01-1--passing.py::test_passing
 ```
 
 ## Conventions to keep your test code discoverable by `pytest`
