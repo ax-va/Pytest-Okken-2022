@@ -116,3 +116,21 @@ https://docs.pytest.org/en/latest/reference/fixtures.html
 ## pytest pytest_generate_tests metafunc
 
 https://docs.pytest.org/en/latest/reference/reference.html#metafunc
+
+## Coverage.py
+The preferred Python coverage tool that measures code coverage
+
+https://coverage.readthedocs.io/en/
+
+```unix
+$ pip install coverage
+```
+
+## pytest-cov
+A popular pytest plugin often used in conjunction with coverage.py
+
+https://pytest-cov.readthedocs.io/en/latest/
+
+```unix
+$ pip install pytest-cov
+```

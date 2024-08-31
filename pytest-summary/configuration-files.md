@@ -5,9 +5,9 @@ Therefore, the best practice is to place an empty configuration file at the top 
 Otherwise, pytest will search to the root of the file system and can find one that has nothing to do with the project.
 
 ```unix
-.../07--configuration-files$ pytest
+.../08--configuration-files$ pytest
 platform linux -- Python 3.11.9, pytest-8.0.1, pluggy-1.4.0
-rootdir: .../test_07--configuration-files
+rootdir: .../test_08--configuration-files
 configfile: pytest.ini
 plugins: Faker-24.11.0
 collected 0 items
