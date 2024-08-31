@@ -1,7 +1,7 @@
 ## Root directory
 
 Once pytest finds a configuration file in a directory, it marks the directory as the root directory, or `rootdir`.
-Therefore, the best practice is to place an empty `pytest.ini` at the top of a project, even if there aren't any configuration settings.
+Therefore, the best practice is to place an empty configuration file at the top of a project, even if there aren't any configuration settings.
 Otherwise, pytest will search to the root of the file system and can find one that has nothing to do with the project.
 
 ```unix
