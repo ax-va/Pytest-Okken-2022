@@ -1,3 +1,5 @@
+# Configuration files
+
 ## Root directory
 
 Once pytest finds a configuration file in a directory, it marks the directory as the root directory, or `rootdir`.
