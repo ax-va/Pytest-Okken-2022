@@ -8,4 +8,4 @@ if __name__ == '__main__':  # pragma: no cover
     foo()
 ```
 
-Notice: beware of coverage-driven development / testing - we don't have to cover 100% of code.
+Notice: Beware of coverage-driven development / testing - we don't have to cover 100% of code.
