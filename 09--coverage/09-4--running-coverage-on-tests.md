@@ -12,7 +12,7 @@ In order to check, whether this problem occurs, we can add the test directory to
 
 This reports also make sure that all tests got run at least on some hardware and were not skipped.
 This is possible because Coverage.py has the ability to combine reports from several test sessions.
-Moreover, it also helps with finding unused fixtures, or dead code inside fixtures.
+Moreover, it also helps us with finding unused fixtures, or dead code inside fixtures.
 
 ## Adding the test directory to the coverage
 ```unix
