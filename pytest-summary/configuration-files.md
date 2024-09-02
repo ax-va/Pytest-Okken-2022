@@ -45,11 +45,11 @@ cards_proj
      |---- api
           |---- __init__.py
           |---- conftest.py
-          |---- test_add.py  # Using duplicated names is only possible with `__init__.py`
+          |---- test_add.py  # Using duplicate test module names is only possible with `__init__.py`
           |---- <test files for API>
      |---- cli
           |---- __init__.py
           |---- conftest.py
-          |---- test_add.py  # Using duplicated names is only possible with `__init__.py`
+          |---- test_add.py  # Using duplicate test module names is only possible with `__init__.py`
           |---- <test files for CLI>
 ```
