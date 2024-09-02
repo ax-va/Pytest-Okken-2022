@@ -1,27 +1,95 @@
 # Using Coverage.py with pytest-cov
 
 ## Coverage.py
-A preferred Python coverage tool that measures code coverage
+Coverage.py is a preferred Python coverage tool that measures code coverage
 
 https://coverage.readthedocs.io/en/
+
+Install
+
+https://pypi.org/project/coverage/
 
 ```unix
 $ pip install coverage
 ```
 
-## pytest-cov
-A popular pytest plugin often used in conjunction with coverage.py
+Run tests with coverage
+```unix
+$ coverage run --source=<path_to_package_or_installed_package> -m pytest <path_to_tests>
+```
+
+Show a simple terminal report
+```unix
+$ coverage report
+```
+
+Show which lines weren't run
+```unix
+$ coverage report --show-missing
+```
+
+Generate an HTML report
+```unix
+$ coverage html
+```
+
+Example:
+```unix
+$ coverage run --source=cards -m pytest 07--test-strategies
+###
+07--test-strategies/tests/test_add.py .....                                                                       [ 18%]
+07--test-strategies/tests/test_config.py .                                                                        [ 22%]
+07--test-strategies/tests/test_count.py ...                                                                       [ 33%]
+07--test-strategies/tests/test_delete.py ...                                                                      [ 44%]
+07--test-strategies/tests/test_finish.py ....                                                                     [ 59%]
+07--test-strategies/tests/test_list.py ..                                                                         [ 66%]
+07--test-strategies/tests/test_start.py ....                                                                      [ 81%]
+07--test-strategies/tests/test_update.py ....                                                                     [ 96%]
+07--test-strategies/tests/test_version.py .                                                                       [100%]
+###
+```
+```unix
+$ coverage report
+Name                                                  Stmts   Miss  Cover
+-------------------------------------------------------------------------
+venv/lib/python3.11/site-packages/cards/__init__.py       3      0   100%
+venv/lib/python3.11/site-packages/cards/api.py           70      3    96%
+venv/lib/python3.11/site-packages/cards/cli.py           86     53    38%
+venv/lib/python3.11/site-packages/cards/db.py            23      0   100%
+-------------------------------------------------------------------------
+TOTAL                                                   182     56    69%
+```
+
+## Coverage.py with pytest-cov
+
+pytest-cov is a popular pytest plugin for Coverage.py
 
 https://pytest-cov.readthedocs.io/en/latest/
+
+Install
+
+https://pypi.org/project/pytest-cov/
 
 ```unix
 $ pip install pytest-cov
 ```
 
-## The `--cov` flag
+Run tests with a simple report
+```unix
+$ pytest --cov=<path_to_package_or_installed_package> <path_to_tests>
+```
 
-Run tests with the `--cov` flag, specifying either a path to code to test or an installed package to test
+Run tests and show which lines weren't run
+```unix
+$ pytest --cov=<path_to_package_or_installed_package> --cov-report=term-missing <path_to_tests>
+```
 
+Run tests and generate an HTML report
+```unix
+$ pytest --cov=<path_to_package_or_installed_package> --cov-report=html <path_to_tests>
+```
+
+Example:
 ```unix
 $ pytest --cov=cards 07--test-strategies
 ###
@@ -48,35 +116,9 @@ TOTAL                                                   182     56    69%
 ###
 ```
 100% coverage means that the test suite is hitting every line in those files.
-The `cli.py` file is at 38% coverage because it was imported by `__init__.py` 
-but the content of the functions were not run.
 
-## Coverage.py without pytest-cov
-```unix
-$ coverage run --source=cards -m pytest 07--test-strategies
-###
-07--test-strategies/tests/test_add.py .....                                                                       [ 18%]
-07--test-strategies/tests/test_config.py .                                                                        [ 22%]
-07--test-strategies/tests/test_count.py ...                                                                       [ 33%]
-07--test-strategies/tests/test_delete.py ...                                                                      [ 44%]
-07--test-strategies/tests/test_finish.py ....                                                                     [ 59%]
-07--test-strategies/tests/test_list.py ..                                                                         [ 66%]
-07--test-strategies/tests/test_start.py ....                                                                      [ 81%]
-07--test-strategies/tests/test_update.py ....                                                                     [ 96%]
-07--test-strategies/tests/test_version.py .                                                                       [100%]
-###
-```
-```unix
-$ coverage report
-Name                                                  Stmts   Miss  Cover
--------------------------------------------------------------------------
-venv/lib/python3.11/site-packages/cards/__init__.py       3      0   100%
-venv/lib/python3.11/site-packages/cards/api.py           70      3    96%
-venv/lib/python3.11/site-packages/cards/cli.py           86     53    38%
-venv/lib/python3.11/site-packages/cards/db.py            23      0   100%
--------------------------------------------------------------------------
-TOTAL                                                   182     56    69%
-```
+Notice: 
+The `cli.py` file is at 38% coverage because it was imported in `__init__.py` but the content of its functions were not run.
 
 ## Coverage.py configuration
 
