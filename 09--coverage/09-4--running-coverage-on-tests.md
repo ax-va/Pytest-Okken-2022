@@ -2,13 +2,13 @@
 
 ## Motivation
 
-- Checking Duplicate test files
+- Checking for duplicate test function names
 
 If we write new test functions with "copy/paste/modify", 
 we can forget to change a function name, then only the last one in the file will be run.
 In order to check, whether this problem occurs, we can add the test directory to the coverage.
 
-- Having not skipped tests and avoiding dead test code
+- Checking for non-skipped tests and dead test code
 
 This reports also make sure that all tests got run at least on some hardware and were not skipped.
 This is possible because Coverage.py has the ability to combine reports from several test sessions.
