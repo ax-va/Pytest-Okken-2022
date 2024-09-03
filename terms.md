@@ -2,7 +2,12 @@
 
 **Line coverage = calculated by dividing the total number of lines run divided by the total lines of code**
 
-**Mock objects are sometimes called test doubles, spies, fakes, or stubs.**
+**Mock = replacing a part of a system with mock objects**
+
+Mock objects are typically intended to be objects that are used in place of the real implementation.
+Mock objects are sometimes called test doubles, spies, fakes, or stubs.
+
+**Mock drift = the interface to be mocked changes, while the mock in the test code doesn't.**
 
 **Monkey patch = a technique used to dynamically update the behavior of a piece of code at run-time**
 

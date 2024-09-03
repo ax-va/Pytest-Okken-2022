@@ -1,15 +1,15 @@
 """
-Mock = replacing a part of a system with something else, namely mock objects.
+Mock attributes.
+
+*Mock* = replacing a part of a system with mock objects.
+Mock objects are typically intended to be objects that are used in place of the real implementation.
 Mocking attributes = replacing attributes with non-original values.
 Next, we mock the `__version__` attribute of `cards`.
 """
 from unittest import mock
-from typer.testing import CliRunner
 from cards.cli import app
-
+from helpers import cli_runner
 import cards
-
-cli_runner = CliRunner()
 
 
 def test_mock_version():

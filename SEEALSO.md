@@ -61,3 +61,9 @@ https://docs.python.org/3/library/unittest.mock.html
 Typer is a library for building CLI applications.
 
 https://pypi.org/project/typer
+
+## Python: Autospeccing
+https://docs.python.org/3/library/unittest.mock.html#autospeccing
+
+## Python: variants of assert_called 
+https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock.assert_called

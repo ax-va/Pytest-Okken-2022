@@ -1,11 +1,12 @@
 """
-Mocking classes and methods.
+Mock classes and methods.
 
-Mock = replacing a part of a system with something else, namely mock objects.
+*Mock* = replacing a part of a system with mock objects.
+*Mock drift* = the interface being mocked changes, while the mock in the test code doesn't.
 
 Next, we mock `cards.CardsDB()` and its `path()`, then `config()` as example.
 
-The code of the CLI `config` function is as follows
+Source code to test:
 ```python
 import cards
 import typer
@@ -29,12 +30,9 @@ def config():
 ```
 """
 from unittest import mock
-from typer.testing import CliRunner
 from cards.cli import app
+from helpers import cli_runner
 import cards
-import pytest
-
-cli_runner = CliRunner()
 
 
 def test_mock_CardsDB():
@@ -78,17 +76,9 @@ PASSED
 """
 
 
-# Create fixture with mock object
-@pytest.fixture()
-def mock_cards_db():
-    with mock.patch.object(cards, "CardsDB", autospec=True) as CardsDB:
-        cards_db = CardsDB.return_value
-        cards_db.path.return_value = "/foo/"
-        yield cards_db
-
-
 # Final test with mock and Typer
 def test_config(mock_cards_db):
+    # to run `$ cards config`
     result = cli_runner.invoke(app, ["config"])
     assert result.stdout.rstrip() == "/foo/"
 

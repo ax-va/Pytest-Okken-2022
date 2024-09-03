@@ -6,6 +6,7 @@ from cards import Card
 
 
 def assert_identical(c1: Card, c2: Card):
+    """ Helper function """
     __tracebackhide__ = True  # Failing tests will not include this function in the traceback
     assert c1 == c2
     if c1.id != c2.id:

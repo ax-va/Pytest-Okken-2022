@@ -1,7 +1,7 @@
 """
-Testing CLI with Typer.
+Test CLI with Typer.
 
-The code of the CLI `version` function is as follows
+Source code to test:
 ```python
 import cards
 import typer
@@ -13,17 +13,16 @@ app = typer.Typer(add_completion=False)
 def version():
     print(cards.__version__)
 ```
+
+Notice:
+`cli_runner = CliRunner()` was moved to `helpers.py`.
 """
-from typer.testing import CliRunner
 from cards.cli import app
-
-import shlex
-
-cli_runner = CliRunner()
+from helpers import cards_cli, cli_runner
 
 
 def test_typer_cli_runner():
-    # to run `cards version`
+    # to run `$ cards version`
     result = cli_runner.invoke(app, ["version"])
     print(f"\nversion: {result.stdout}")
     # to run `cards list -o brian`
@@ -46,14 +45,7 @@ PASSED
 """
 
 
-def cards_cli(command_string):
-    """ Helper function """
-    command_list = shlex.split(command_string)
-    result = cli_runner.invoke(app, command_list)
-    output = result.stdout.rstrip()
-    return output
-
-
+# Use the `cards_cli` helper function
 def test_cards_cli():
     result = cards_cli("version")
     print(f"\nversion: {result}")
