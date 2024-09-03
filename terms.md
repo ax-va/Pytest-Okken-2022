@@ -2,6 +2,8 @@
 
 **Line coverage = calculated by dividing the total number of lines run divided by the total lines of code**
 
+**Mock objects are sometimes called test doubles, spies, fakes, or stubs.**
+
 **Monkey patch = a technique used to dynamically update the behavior of a piece of code at run-time**
 
 **Testing Enough to Sleep at Night**

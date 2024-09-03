@@ -51,3 +51,13 @@ https://pytest-cov.readthedocs.io/en/latest/
 ```unix
 $ pip install pytest-cov
 ```
+
+## unittest.mock
+
+https://docs.python.org/3/library/unittest.mock.html
+
+## Typer
+
+Typer is a library for building CLI applications.
+
+https://pypi.org/project/typer
