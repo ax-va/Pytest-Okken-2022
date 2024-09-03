@@ -1,7 +1,7 @@
 """
 Testing CLI with Typer.
 
-For example, the code of the CLI `version` function is
+The code of the CLI `version` function is as follows
 ```python
 import cards
 import typer
