@@ -1,7 +1,7 @@
 """
 Testing CLI with Typer.
 
-Test the CLI `version` function is defined as
+For example, the code of the CLI `version` function is
 ```python
 import cards
 import typer
@@ -41,9 +41,6 @@ list:
   ID   state     owner    summary       
  ────────────────────────────────────── 
   2    in prog   NoName   do something  
-                                        
-
-
 PASSED
 ###
 """
