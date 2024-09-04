@@ -1,3 +1,9 @@
+## The Cards application
+
+https://github.com/okken/cards
+
+External dependencies for Cards are defined in its `pyproject.toml` file.
+
 ## Install the application code stored locally
 ```unix
 (venv) $ pip install ./cards_proj/
