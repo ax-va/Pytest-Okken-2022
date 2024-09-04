@@ -1,8 +1,8 @@
 import hello
 
 
-def test_hello(capsys):
-    hello.hello()
+def test_say_hello(capsys):
+    hello.say_hello()
     output = capsys.readouterr().out
     assert output == "Hello, World!\n"
 
