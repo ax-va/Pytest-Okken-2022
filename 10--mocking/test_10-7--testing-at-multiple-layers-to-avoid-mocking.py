@@ -1,9 +1,9 @@
 """
 - v1:
-The multiple-layer approach tests the behavior, making sure the outcome is as desired.
+The multiple-layer approach tests the *behavior*, making sure the outcome is as desired.
 
 - v2:
-Mocking tests the CLI implementation, making sure a specific API call was called with specific parameters.
+Mocking tests the CLI *implementation*, making sure a specific API call was called with specific parameters.
 """
 from contextlib import contextmanager
 from pathlib import Path
