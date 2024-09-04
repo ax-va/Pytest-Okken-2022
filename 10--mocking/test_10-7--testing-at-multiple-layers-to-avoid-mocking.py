@@ -16,7 +16,7 @@ import cards
 def cards_db_cm(db_dir: str):
     """
     The `cards_db` context manager similar to one in `cli.py`
-    with the only essential difference that `db_dir` has to set.
+    with the only essential difference that `db_dir` must be set.
     """
     @contextmanager
     def cm():
