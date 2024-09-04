@@ -5,17 +5,21 @@ import cards
 
 
 @pytest.fixture(scope="session")
-def db():
+def cards_db():
     """ CardsDB object connected to a temporary database """
     with TemporaryDirectory() as db_dir:
+        # SETUP
         db_path = Path(db_dir)
-        db_ = cards.CardsDB(db_path)
-        yield db_
-        db_.close()
+        db = cards.CardsDB(db_path)
+        # Pass to tests
+        yield db
+        # TEARDOWN
+        db.close()
+    # Clean up the temporary directory
 
 
 @pytest.fixture(scope="function")
-def cards_db(db):
+def cards_db_empty(cards_db):
     """ CardsDB object that's empty """
-    db.delete_all()
-    return db
+    cards_db.delete_all()
+    return cards_db
