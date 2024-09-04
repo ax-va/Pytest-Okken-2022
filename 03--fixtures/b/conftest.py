@@ -4,22 +4,26 @@ import pytest
 import cards
 
 
-@pytest.fixture(scope="session")
+def cards_db_scope(fixture_name, config):
+    if config.getoption("--func-db", None):
+        return "function"
+    return "session"
+
+
+@pytest.fixture(scope=cards_db_scope)
 def cards_db():
     """ CardsDB object connected to a temporary database """
     with TemporaryDirectory() as db_dir:
-        # SETUP
         db_path = Path(db_dir)
         db = cards.CardsDB(db_path)
-        # Pass to tests
         yield db
-        # TEARDOWN
         db.close()
-    # Clean up the temporary directory
 
 
-@pytest.fixture(scope="function")
-def cards_db_empty(cards_db):
-    """ CardsDB object that's empty """
-    cards_db.delete_all()
-    return cards_db
+def pytest_addoption(parser):
+    parser.addoption(
+        "--func-db",
+        action="store_true",
+        default=False,
+        help="new db for each test",
+    )

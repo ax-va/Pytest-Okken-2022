@@ -25,7 +25,7 @@ def test_typer_cli_runner():
     # to run `$ cards version`
     result = cli_runner.invoke(app, ["version"])
     print(f"\nversion: {result.stdout}")
-    # to run `cards list -o brian`
+    # to run `$ cards list -o brian`
     result = cli_runner.invoke(app, ["list", "-o", "NoName"])
     print(f"list:\n{result.stdout}")
 

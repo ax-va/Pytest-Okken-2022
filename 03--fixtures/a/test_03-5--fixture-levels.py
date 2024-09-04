@@ -21,12 +21,9 @@ def test_three(cards_db_empty):
 
 
 """
-$ pytest --setup-show 03--fixtures/b
-===================================================================================================== test session starts ======================================================================================================
+$ pytest --setup-show 03--fixtures/a/test_03-5--fixture-levels.py
 ###
-collected 3 items                                                                                                                                                                                                              
-
-03--fixtures/b/test_03-5--fixture-levels.py
+03--fixtures/a/test_03-5--fixture-levels.py
 ###
 SETUP    S cards_db
         SETUP    F cards_db_empty (fixtures used: cards_db)
@@ -40,5 +37,4 @@ SETUP    S cards_db
         TEARDOWN F cards_db_empty
 TEARDOWN S cards_db
 ###
-====================================================================================================== 3 passed in 0.04s =======================================================================================================
 """
