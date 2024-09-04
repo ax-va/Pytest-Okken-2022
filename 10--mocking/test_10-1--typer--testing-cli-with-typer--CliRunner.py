@@ -1,7 +1,7 @@
 """
 Test CLI with Typer.
 
-Source code to test:
+Source code to test from "cards_proj/src/cards/cli.py"::
 ```python
 import cards
 import typer

@@ -6,7 +6,7 @@ Mock classes and methods.
 
 Next, we mock `cards.CardsDB()` and its `path()`, then `config()` as example.
 
-Source code to test:
+Source code to test from "cards_proj/src/cards/cli.py"::
 ```python
 import cards
 import typer

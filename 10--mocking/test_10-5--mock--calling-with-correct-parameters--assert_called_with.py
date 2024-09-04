@@ -1,9 +1,9 @@
 """
-Make sure functions are called correctly.
+Make sure methods are called correctly.
 ->
 Use assert_called_with.
 
-Source code to test:
+Source code to test from "cards_proj/src/cards/api.py"::
 ```python
 class CardsDB:
     ...
@@ -27,9 +27,9 @@ def test_add_with_owner(mock_cards_db):
 
 
 """
-$ pytest -v -s 10--mocking/test_10-5--mock--making-sure-functions-are-called-correctly--assert_called_with.py::test_add_with_owner
+$ pytest -v -s 10--mocking/test_10-5--mock--calling-with-correct-parameters--assert_called_with.py::test_add_with_owner
 ###
-10--mocking/test_10-5--mock--making-sure-functions-are-called-correctly--assert_called_with.py::test_add_with_owner PASSED
+10--mocking/test_10-5--mock--calling-with-correct-parameters--assert_called_with.py::test_add_with_owner PASSED
 ###
 """
 
@@ -42,12 +42,12 @@ def test_add_with_owner_failing(mock_cards_db):
 
 
 """
-$ pytest -v -s 10--mocking/test_10-5--mock--making-sure-functions-are-called-correctly--assert_called_with.py::test_add_with_owner_failing
+$ pytest -v -s 10--mocking/test_10-5--mock--calling-with-correct-parameters--assert_called_with.py::test_add_with_owner_failing
 ###
 E           AssertionError: expected call not found.
 E           Expected: add_card(Card(summary='some task', owner='Brian', state='todo', id=None))
 E             Actual: add_card(Card(summary='some task', owner='brian', state='todo', id=None))
 ###
-FAILED 10--mocking/test_10-5--mock--making-sure-functions-are-called-correctly--assert_called_with.py::test_add_with_owner_failing - AssertionError: expected call not found.
+FAILED 10--mocking/test_10-5--mock--calling-with-correct-parameters--assert_called_with.py::test_add_with_owner_failing - AssertionError: expected call not found.
 ###
 """

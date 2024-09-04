@@ -1,3 +1,8 @@
+**Change detector tests = tests that break during valid refactoring**
+
+When tests fail whenever the code changes, they are change detector tests.
+This problem occurs because mocking tests implementation, but not behavior.
+
 **Happy-path testing = a type of software testing that uses known input and produces an expected output**
 
 **Line coverage = calculated by dividing the total number of lines run divided by the total lines of code**
