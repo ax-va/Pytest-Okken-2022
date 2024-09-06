@@ -122,7 +122,7 @@ The `cli.py` file is at 38% coverage because it was imported in `__init__.py` bu
 
 ## Coverage.py configuration
 
-Create a `.coverarge` configuration file
+Create a `.coverargerc` configuration file
 ```
 [paths]
 source =
