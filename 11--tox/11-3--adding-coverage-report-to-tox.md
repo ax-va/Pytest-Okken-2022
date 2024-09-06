@@ -15,7 +15,7 @@ source =
 **tox** locates **cards** in its environments, for example, in `11-tox/cards_proj/.tox/py311/lib/python3.11/site-packages/cards`.
 Then **Coverage.py** will check `.tox/py311/lib/python3.11/site-packages/cards`, but report it as `scr/cards`.
 
-## Run tox choosing a specific environment
+## Run tox with choosing a specific environment
 ```unix
 $ cd 11--tox/cards_proj
 $ tox -c tox_coverage.ini -e py311
