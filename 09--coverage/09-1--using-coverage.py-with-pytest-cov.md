@@ -134,6 +134,7 @@ Then Coverage.py will treat the `cards_proj/src/cards` directory as if it's the 
 as the installed cards within `*/site-packages/cards`.
 
 ```unix
+$ pytest --cov=cards 07--test-strategies
 ###
 07--test-strategies/tests/test_add.py .....                                                                       [ 18%]
 07--test-strategies/tests/test_config.py .                                                                        [ 22%]
