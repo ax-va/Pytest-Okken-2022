@@ -1,4 +1,4 @@
 [paths]
-source = 
-   src
-   .tox/*/site-packages
+source =
+    src
+    .tox/*/lib/python*/site-packages

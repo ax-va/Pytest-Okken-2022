@@ -132,6 +132,7 @@ source =
 
 Then Coverage.py will treat the `cards_proj/src/cards` directory as if it's the same 
 as the installed cards within `*/site-packages/cards`.
+This means that Coverage.py will check `*/site-packages/cards`, but report it as `cards_proj/src/cards`.
 
 ```unix
 $ pytest --cov=cards 07--test-strategies
