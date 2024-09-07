@@ -52,6 +52,12 @@ https://pytest-cov.readthedocs.io/en/latest/
 $ pip install pytest-cov
 ```
 
+## tox
+
+https://pypi.org/project/tox/
+
+https://tox.wiki/en/4.18.1/
+
 ## unittest.mock
 
 https://docs.python.org/3/library/unittest.mock.html
