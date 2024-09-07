@@ -58,6 +58,14 @@ https://pypi.org/project/tox/
 
 https://tox.wiki/en/4.18.1/
 
+## GitHub Actions
+
+GitHub Actions is a cloud-based CI system provided by GitHub.
+
+https://github.com/features/actions
+
+https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing/building-and-testing-python
+
 ## unittest.mock
 
 https://docs.python.org/3/library/unittest.mock.html
