@@ -28,4 +28,4 @@ jobs:
         run: pip install tox
       - name: Run Tox
         # Run tox selecting the correct version of Python specified in `tox.ini`
-        run: tox -e py
+        run: tox -e py -c tox_github_actions.ini
