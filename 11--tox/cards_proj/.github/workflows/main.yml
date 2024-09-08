@@ -14,12 +14,14 @@ jobs:
         python: ["3.10", "3.11", "3.12"]
 
     steps:
-      # Check out the repository by using the `actions/checkout@v2` GitHub tool
-      # so the rest of the workflow can access it
-      - uses: actions/checkout@v2
+      # Check out the repository by using the latest `actions/checkout@main` GitHub tool
+      # (without specifying versions like `...@v2`, `...@v3` and so on)
+      # so the rest of the workflow can access it.
+      - uses: actions/checkout@main
       - name: Setup Python
-        # Get Python configured and installed in a build environment by using the `setup-python@v2` GitHub tool
-        uses: actions/setup-python@v2
+        # Get Python configured and installed in a build environment
+        # by using the latest `setup-python@main` GitHub tool.
+        uses: actions/setup-python@main
         with:
           # Create an environment for each of the Python versions listed in matrix: python
           python-version: ${{ matrix.python }}
