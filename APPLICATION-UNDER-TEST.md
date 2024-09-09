@@ -9,6 +9,30 @@ External dependencies for Cards are defined in its `pyproject.toml` file.
 (venv) $ pip install ./cards_proj/
 ```
 
+## Install the application with new features in editable mode and its dependencies
+
+```unix
+(venv_cards_editable) $ pip install -e "./cards_proj_ext/[test]"
+```
+
+where `[tests]` refers to optional dependencies for testing specified in `pyproject.toml` as
+
+```tolm
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "faker",
+    "tox",
+    "coverage",
+    "pytest-cov",
+]
+```
+
+**Editable mode** refers to a way of installing a Python package such that any changes 
+you make to the source code are immediately reflected without needing to reinstall the package.
+We need editable mode with extended in the chapter 13.
+The `cards_proj_ext` source code also contains new `list_done_cards` for API and CLI.
+
 ## Play with the application (under test)
 
 ```unix

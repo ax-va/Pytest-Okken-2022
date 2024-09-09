@@ -3,6 +3,12 @@ The link to the original source code is given on the official book's side
 
 https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
 
+## Upgrade pip
+
+```unix
+$ python3 -m pip install -U pip
+```
+
 ## Install using PyPI
 
 Create a virtual environment, activate it on POSIX systems, and install `pytest`
