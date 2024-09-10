@@ -9,13 +9,17 @@ External dependencies for Cards are defined in its `pyproject.toml` file.
 (venv) $ pip install ./cards_proj/
 ```
 
-## Install the application with new features in editable mode and its dependencies
+## Install the application with new features in editable mode and with its dependencies
+
+Editable mode is needed in `13--debugging-test-failures`.
+Editable mode refers to a way of installing a Python package such that any changes 
+you make to the source code are immediately reflected without needing to reinstall the package.
 
 ```unix
-(venv_cards_editable) $ pip install -e "./cards_proj_tox_ext/[test]"
+(venv_editable) $ pip install -e "./cards_proj_failed/[test]"
 ```
 
-where `[tests]` refers to optional dependencies for testing specified in `pyproject.toml` as
+`[tests]` in the `-e` parameters refers to optional dependencies for testing given in `pyproject.toml` as
 
 ```tolm
 [project.optional-dependencies]
@@ -28,10 +32,8 @@ test = [
 ]
 ```
 
-**Editable mode** refers to a way of installing a Python package such that any changes 
-you make to the source code are immediately reflected without needing to reinstall the package.
-We need editable mode with extended in the chapter 13.
-The `cards_proj_ext` source code also contains new `list_done_cards` for API and CLI.
+The `cards_proj_failed` source code contains new features, 
+namely `list_done_cards` for API and CLI that causes testing failures.
 
 ## Play with the application (under test)
 
