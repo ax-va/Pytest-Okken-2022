@@ -35,7 +35,7 @@ only to duplicate names of test files in different directories.
 
 take the place of `pytest.ini` for settings in one of these alternate configuration files.
 
-## Example project directory structure
+## Example of a project directory structure
 ```
 cards_proj
 |---- <top level project files, src dir, docs, etc>
