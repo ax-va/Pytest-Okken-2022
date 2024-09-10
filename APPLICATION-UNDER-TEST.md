@@ -131,43 +131,6 @@ $ cards count
 
 ## The Cards source code consists of three layers: CLI, API, and DB
 
-## `cards_proj/src/cards/api.py`
-
-``` python
-@dataclass
-class Card:
-    summary: str = None
-    owner: str = None
-    state: str = "todo"
-    id: int = field(default=None, compare=False)
-
-    @classmethod
-    def from_dict(cls, d):
-        return Card(**d)
-        
-    def to_dict(self):
-        return asdict(self)
-```
-
-## Return the database location
-``` unix
-$ cards config
-/home/delorian/cards_db
-```
-
-## Redirect the CLI to a temporary directory for the database
-``` python
-def get_path():
-    db_path_env = os.getenv("CARDS_DB_DIR", "")
-    if db_path_env:
-        db_path = pathlib.Path(db_path_env)
-    else:
-        db_path = pathlib.Path.home() / "cards_db"
-    return db_path
-```
-
-## Implementation of the API, CLI and database layers
-
 The API is implemented in `api.py`.
 
 The CLI is implemented in `cli.py` with the dependency on two third-party packages:
