@@ -1,7 +1,7 @@
 ## Run pytest with turning off tracebacks
 ```unix
-$ cd cards_proj_failed
-$ pytest --tb=no
+(venv_editable)  ...$ cd cards_proj_failed
+(venv_editable)  ...$ pytest --tb=no
 ## 
 tests/api/test_add.py .....                                                                                       [  9%]
 tests/api/test_config.py .                                                                                        [ 11%]
