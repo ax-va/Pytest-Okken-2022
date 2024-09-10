@@ -6,7 +6,7 @@ Then to pass arguments to pytest, add `--` between the tox arguments and the pyt
 
 ## Run tox with pytest arguments
 ```unix
-$ cd 11--tox/cards_proj
+$ cd cards_proj_tox
 $ tox -c tox_posargs.ini -e py310 -- -k test_version --no-cov
 ###
 tests/api/test_version.py .                                                                                       [ 50%]

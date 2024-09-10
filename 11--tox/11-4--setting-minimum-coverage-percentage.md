@@ -5,7 +5,7 @@ Take into account this line `commands = pytest --cov=cards --cov=tests --cov-fai
 
 ## Run tox
 ```unix
-$ cd 11--tox/cards_proj
+$ cd cards_proj_tox
 $ tox -c tox_coverage_min.ini -e py310
 ###
 ---------- coverage: platform linux, python 3.10.12-final-0 ----------

@@ -5,7 +5,7 @@ $ pip install tox
 
 ## Run tox
 ```unix
-$ cd 11--tox/cards_proj
+$ cd cards_proj_tox
 $ tox
 py311: install_deps> python -I -m pip install faker pytest
 ###
@@ -13,7 +13,7 @@ py311: commands[0]> pytest
 ===================================================================================================== test session starts ======================================================================================================
 platform linux -- Python 3.11.9, pytest-8.3.2, pluggy-1.5.0
 cachedir: .tox/py311/.pytest_cache
-rootdir: ###/11--tox/cards_proj
+rootdir: ###/cards_proj_tox
 configfile: pytest.ini
 testpaths: tests
 plugins: Faker-28.4.1

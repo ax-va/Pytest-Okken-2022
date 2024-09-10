@@ -17,7 +17,7 @@ Then **Coverage.py** will check `.tox/py311/lib/python3.11/site-packages/cards`,
 
 ## Run tox with choosing a specific environment
 ```unix
-$ cd 11--tox/cards_proj
+$ cd cards_proj_tox
 $ tox -c tox_coverage.ini -e py311
 ###
 ---------- coverage: platform linux, python 3.11.9-final-0 -----------

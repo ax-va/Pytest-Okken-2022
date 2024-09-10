@@ -1,6 +1,6 @@
 ## Run tox in a series
 ```unix
-$ cd 11--tox/cards_proj
+$ cd cards_proj_tox
 $ tox -c tox_multiple_pythons.ini
 ###
   py310: OK (9.23=setup[7.75]+cmd[1.49] seconds)
@@ -11,7 +11,7 @@ $ tox -c tox_multiple_pythons.ini
 
 ## Run tox in parallel
 ```unix
-$ cd 11--tox/cards_proj
+$ cd cards_proj_tox
 $ tox -c tox_multiple_pythons.ini -p
 ###
   py310: OK (3.21=setup[2.01]+cmd[1.21] seconds)

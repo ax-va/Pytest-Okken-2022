@@ -12,7 +12,7 @@ External dependencies for Cards are defined in its `pyproject.toml` file.
 ## Install the application with new features in editable mode and its dependencies
 
 ```unix
-(venv_cards_editable) $ pip install -e "./cards_proj_ext/[test]"
+(venv_cards_editable) $ pip install -e "./cards_proj_tox_ext/[test]"
 ```
 
 where `[tests]` refers to optional dependencies for testing specified in `pyproject.toml` as
