@@ -16,6 +16,14 @@ Mock objects are sometimes called test doubles, spies, fakes, or stubs.
 
 **Monkey patch = a technique used to dynamically update the behavior of a piece of code at run-time**
 
+**pdb = Python debugger**
+
+It is part of the Python standard library.
+
+https://docs.python.org/3/library/pdb.html
+
+https://docs.python.org/3/library/pdb.html#debugger-commands
+
 **Testing Enough to Sleep at Night**
 
 **YAGNI, YagNi = "You Aren't Gonna Need It"**

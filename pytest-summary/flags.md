@@ -37,7 +37,7 @@
 
 ## Flags to select which tests to run, in which order, and when to stop
 
-- `lf`, `--last-failed`: to run just the tests that failed last.
+- `lf`, `--last-failed`: to run the tests that failed last.
 
 - `-ff`, `--failed-first`: to run all the tests, starting with the last failed.
 

@@ -97,3 +97,9 @@ https://pypi.org/project/pytest-mock/
 - `responses` and `betamax` for mocking requests
 
 - `pytest-rabbitmq`, `pytest-solr`, `pytest-elasticsearch`, `pytest-redis`, and others
+
+## pdb = Python debugger
+
+https://docs.python.org/3/library/pdb.html
+
+https://docs.python.org/3/library/pdb.html#debugger-commands
