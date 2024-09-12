@@ -8,7 +8,8 @@
 
 ## Debug with pdb
 
-1. Combine the `--lf` and `--trace` flags to start the last failed test and stop at the beginning of `test_list_done()`.
+1. Combine the `--lf` and `--trace` flags to run the last failed tests 
+and stop at the beginning of the first failed one.
 
 ```unix
 $ pytest --lf --trace
