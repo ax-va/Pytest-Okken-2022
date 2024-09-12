@@ -8,7 +8,7 @@
 
 ## Debug with pdb
 
-1. Combine the `--lf` and `--trace` flags to start the last failed test and stop at the beginning of `test_list_done()`:
+1. Combine the `--lf` and `--trace` flags to start the last failed test and stop at the beginning of `test_list_done()`.
 
 ```unix
 $ pytest --lf --trace
@@ -22,7 +22,7 @@ tests/api/test_list_done.py
 (Pdb) 
 ```
 
-2. List the source code of the current function:
+2. List the source code of the current function.
 
 ```unix
 (Pdb) ll
@@ -42,7 +42,7 @@ tests/api/test_list_done.py
 
 The `->` shows the current line, before it's been run.
 
-3. Continue running until line 8:
+3. Continue running until line 8.
 
 ```unix
 (Pdb) until 8
@@ -51,7 +51,7 @@ The `->` shows the current line, before it's been run.
 (Pdb) 
 ```
 
-4. Go into the function:
+4. Go into the function.
 
 ```unix
 (Pdb) step
@@ -61,7 +61,7 @@ The `->` shows the current line, before it's been run.
 (Pdb) 
 ```
 
-5. See the whole function:
+5. See the whole function.
 
 ```unix
 (Pdb) ll
@@ -71,7 +71,7 @@ The `->` shows the current line, before it's been run.
 (Pdb) 
 ```
 
-6. Continue and go the last line of the function:
+6. Continue and go the last line of the function.
 
 ```unix
 (Pdb) r
@@ -81,7 +81,7 @@ The `->` shows the current line, before it's been run.
 (Pdb) 
 ```
 
-7. List the source code of the function again:
+7. List the source code of the function again.
 
 ```unix
 (Pdb) ll
@@ -91,7 +91,7 @@ The `->` shows the current line, before it's been run.
 (Pdb) 
 ```
 
-8. Look at the value of `done_cards` with either `p` or `pp`:
+8. Look at the value of `done_cards` with either `p` or `pp`.
 
 ```unix
 (Pdb) pp done_cards
@@ -108,7 +108,7 @@ The `->` shows the current line, before it's been run.
 
 (The problem: `done_cards` is not returned.)
 
-9. Continue out to the calling test and check the return value:
+9. Continue out to the calling test and check the return value.
 
 ```unix
 (Pdb) step
@@ -131,12 +131,12 @@ None
 (Pdb) 
 ```
 
-10. Stop the debugger
+10. Stop the debugger.
 ```unix
 (Pdb) exit
 ```
 
-Add `return done_cards` in `api.CardsDB.list_done_cards` and re-run tests
+Add `return done_cards` in `api.CardsDB.list_done_cards` and re-run tests.
 
 ```unix
 $ pytest --lf -x -v --tb=no
