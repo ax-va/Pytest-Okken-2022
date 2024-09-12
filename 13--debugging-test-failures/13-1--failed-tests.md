@@ -1,4 +1,10 @@
-## Run pytest with turning off tracebacks
+## Prepare failures
+
+1. Comment out `return done_cards` in `api.CardsDB.list_done_cards`.
+
+2. ...
+
+## Run pytest with turned-off tracebacks
 ```unix
 (venv_editable)  ...$ cd cards_proj_failed
 (venv_editable)  ...$ pytest --tb=no
