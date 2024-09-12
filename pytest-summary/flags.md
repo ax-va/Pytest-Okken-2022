@@ -14,7 +14,7 @@
 
 - `-s`, `--capture=no`: to turn off output capture -> to show `print`s not only for failed tests.
 
-- `-v`, `--verbose`: to dDisplays all the test names, passing or failing.
+- `-v`, `--verbose`: to display all the test names, passing or failing.
 
 - `-vv`: to show all mismatches in a test.
 
@@ -37,15 +37,15 @@
 
 ## Flags to select which tests to run, in which order, and when to stop
 
-- `lf`, `--last-failed`: to run the tests that failed last.
+- `--lf`, `--last-failed`: to run the tests that failed last.
 
-- `-ff`, `--failed-first`: to run all the tests, starting with the last failed.
+- `--ff`, `--failed-first`: to run all the tests, starting with the last failed.
 
 - `-x`, `--exitfirst`: to stop the tests session after the first failure.
 
 - `--maxfail=num`: to stop the tests after `num` failures.
 
-- `-nf`, `--new-first`: to runs all the tests, ordered by file modification time.
+- `--nf`, `--new-first`: to runs all the tests, ordered by file modification time.
 
 - `--sw`, `--stepwise`: to stop the tests at the first failure and to start the tests at the last failure next time.
 
