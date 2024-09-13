@@ -28,9 +28,9 @@ def test_finish(cards_db, start_state):
 
 """
 $ pytest -k test_05-3 -v
-###
+***
 05--parametrization/test_05-3--fixture-parametrization.py::test_finish[done] PASSED
 05--parametrization/test_05-3--fixture-parametrization.py::test_finish[in prog] PASSED
 05--parametrization/test_05-3--fixture-parametrization.py::test_finish[todo] PASSED
-###
+***
 """

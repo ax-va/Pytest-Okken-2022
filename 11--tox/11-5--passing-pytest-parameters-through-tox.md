@@ -8,9 +8,9 @@ Then to pass arguments to pytest, add `--` between the tox arguments and the pyt
 ```unix
 $ cd cards_proj_tox
 $ tox -c tox_posargs.ini -e py310 -- -k test_version --no-cov
-###
+***
 tests/api/test_version.py .                                                                                       [ 50%]
 tests/cli/test_version.py .                                                                                       [100%]
-###
+***
 ```
 `--no-cov` is to turn off coverage.

@@ -10,7 +10,7 @@ def test_say_hello(capsys):
 """
 $ cd 12--testing-scripts-and-applications/12-2--testing-importable-python-script
 $ pytest test_hello.py
-###
+***
 test_hello.py .
-###
+***
 """

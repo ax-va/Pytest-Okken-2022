@@ -27,9 +27,9 @@ def test_bad_mock():
 
 """
 $ pytest -v -s 10--mocking/test_10-4--mock--correctly-calling-by-mock-objects--autospec.py::test_bad_mock
-###
+***
 10--mocking/test_10-4--mock--correctly-calling-by-mock-objects--autospec.py::test_bad_mock PASSED
-###
+***
 """
 
 
@@ -43,9 +43,9 @@ def test_good_mock():
 
 """
 $ pytest -v -s 10--mocking/test_10-4--mock--correctly-calling-by-mock-objects--autospec.py::test_good_mock
-###
+***
 FAILED 10--mocking/test_10-4--mock--correctly-calling-by-mock-objects--autospec.py::test_good_mock - TypeError: too many positional arguments
-###
+***
 """
 
 
@@ -58,7 +58,7 @@ def test_good_mock_v2():
 
 """
 $ pytest -v -s 10--mocking/test_10-4--mock--correctly-calling-by-mock-objects--autospec.py::test_good_mock_v2
-###
+***
 FAILED 10--mocking/test_10-4--mock--correctly-calling-by-mock-objects--autospec.py::test_good_mock_v2 - AttributeError: Mock object has no attribute 'not_valid'
-###
+***
 """

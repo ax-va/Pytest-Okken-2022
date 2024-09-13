@@ -39,7 +39,7 @@ def test_delete_invalid(mock_cards_db):
 
 """
 $ pytest -v -s 10--mocking/test_10-6--mock--mocking-exceptions--side_effect.py::test_delete_invalid
-###
+***
 10--mocking/test_10-6--mock--mocking-exceptions--side_effect.py::test_delete_invalid PASSED
-###
+***
 """

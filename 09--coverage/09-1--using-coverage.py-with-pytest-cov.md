@@ -36,7 +36,7 @@ $ coverage html
 Example:
 ```unix
 $ coverage run --source=cards -m pytest 07--test-strategies
-###
+***
 07--test-strategies/tests/test_add.py .....                                                                       [ 18%]
 07--test-strategies/tests/test_config.py .                                                                        [ 22%]
 07--test-strategies/tests/test_count.py ...                                                                       [ 33%]
@@ -46,7 +46,7 @@ $ coverage run --source=cards -m pytest 07--test-strategies
 07--test-strategies/tests/test_start.py ....                                                                      [ 81%]
 07--test-strategies/tests/test_update.py ....                                                                     [ 96%]
 07--test-strategies/tests/test_version.py .                                                                       [100%]
-###
+***
 ```
 ```unix
 $ coverage report
@@ -92,7 +92,7 @@ $ pytest --cov=<path_to_package_or_installed_package> --cov-report=html <path_to
 Example:
 ```unix
 $ pytest --cov=cards 07--test-strategies
-###
+***
 07--test-strategies/tests/test_add.py .....                                                                       [ 18%]
 07--test-strategies/tests/test_config.py .                                                                        [ 22%]
 07--test-strategies/tests/test_count.py ...                                                                       [ 33%]
@@ -113,7 +113,7 @@ venv/lib/python3.11/site-packages/cards/db.py            23      0   100%
 -------------------------------------------------------------------------
 TOTAL                                                   182     56    69%
 
-###
+***
 ```
 100% coverage means that the test suite is hitting every line in those files.
 
@@ -136,7 +136,7 @@ This means that Coverage.py will check `*/site-packages/cards`, but report it as
 
 ```unix
 $ pytest --cov=cards 07--test-strategies
-###
+***
 07--test-strategies/tests/test_add.py .....                                                                       [ 18%]
 07--test-strategies/tests/test_config.py .                                                                        [ 22%]
 07--test-strategies/tests/test_count.py ...                                                                       [ 33%]
@@ -156,7 +156,7 @@ cards_proj/src/cards/cli.py           86     53    38%
 cards_proj/src/cards/db.py            23      0   100%
 ------------------------------------------------------
 TOTAL                                182     56    69%
-###
+***
 ```
 The report lists the local files with shorter paths instead of the installed package location.
 
@@ -165,7 +165,7 @@ The report lists the local files with shorter paths instead of the installed pac
 Add missing lines to the terminal report
 ```unix
 $ pytest --cov=cards --cov-report=term-missing 07--test-strategies
-###
+***
 Name                               Stmts   Miss  Cover   Missing
 ----------------------------------------------------------------
 cards_proj/src/cards/__init__.py       3      0   100%
@@ -174,7 +174,7 @@ cards_proj/src/cards/cli.py           86     53    38%   20, 28-30, 36-40, 51-63
 cards_proj/src/cards/db.py            23      0   100%
 ----------------------------------------------------------------
 TOTAL                                182     56    69%
-####
+***
 ```
 
 Alternatively

@@ -7,7 +7,7 @@ Take into account this line `commands = pytest --cov=cards --cov=tests --cov-fai
 ```unix
 $ cd cards_proj_tox
 $ tox -c tox_coverage_min.ini -e py310
-###
+***
 ---------- coverage: platform linux, python 3.10.12-final-0 ----------
 Name                        Stmts   Miss  Cover
 -----------------------------------------------
@@ -42,5 +42,5 @@ tests/conftest.py              22      0   100%
 TOTAL                         439      0   100%
 
 Required test coverage of 100% reached. Total coverage: 100.00%
-###
+***
 ```

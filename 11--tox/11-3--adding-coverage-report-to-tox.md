@@ -19,7 +19,7 @@ Then **Coverage.py** will check `.tox/py311/lib/python3.11/site-packages/cards`,
 ```unix
 $ cd cards_proj_tox
 $ tox -c tox_coverage.ini -e py311
-###
+***
 ---------- coverage: platform linux, python 3.11.9-final-0 -----------
 Name                    Stmts   Miss  Cover
 -------------------------------------------

@@ -6,7 +6,7 @@ def test_failing():
 """
 $ pytest 01--introduction/test_01-2--failing.py
 ===================================================================================================== test session starts ======================================================================================================
-###
+***
 collected 1 item                                                                                                                                                                                                               
 
 01--introduction/test_01-2--failing.py F                                                                                                                                                                                  [100%]
@@ -30,7 +30,7 @@ FAILED 01--introduction/test_01-2--failing.py::test_failing - assert (1, 2, 3) =
 """
 $ pytest -v 01--introduction/test_01-2--failing.py
 ===================================================================================================== test session starts ======================================================================================================
-###
+***
 collected 1 item                                                                                                                                                                                                               
 
 01--introduction/test_01-2--failing.py::test_failing FAILED                                                                                                                                                               [100%]

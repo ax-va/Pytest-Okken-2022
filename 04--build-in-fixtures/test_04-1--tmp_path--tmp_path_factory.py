@@ -39,7 +39,7 @@ def test_tmp_path_factory(tmp_path_factory):
 """
 $ pytest -k test_04-1 -s
 ===================================================================================================== test session starts ======================================================================================================
-###                                                                                                                                                                              
+***                                                                                                                                                                              
 
 04--build-in-fixtures/test_04-1--tmp_path--tmp_path_factory.py 
 type(tmp_path): <class 'pathlib.PosixPath'>

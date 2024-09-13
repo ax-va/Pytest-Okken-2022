@@ -40,20 +40,22 @@ $ pytest -v -k test_05
 Run all the tests with `todo` pattern, also automatically with `todo` as the parameter value
 ```unix
 $ pytest -v -k todo
-###
+***
 05--parametrization/test_05-1--motivation.py::test_finish_from_todo PASSED
 05--parametrization/test_05-2--function-parametrization.py::test_finish[create a course-todo] PASSED
 05--parametrization/test_05-2--function-parametrization.py::test_finish_simple[todo] PASSED
 05--parametrization/test_05-3--fixture-parametrization.py::test_finish[todo] PASSED
 05--parametrization/test_05-4--pytest_generate_tests.py::test_finish[todo] PASSED  
-###
+***
 ```
 
 Run all the tests with `todo` pattern, but not with `play` and not with `create`
 ```unix
 $ pytest -v -k "todo and not (play or create)"
+***
 05--parametrization/test_05-1--motivation.py::test_finish_from_todo PASSED
 05--parametrization/test_05-2--function-parametrization.py::test_finish_simple[todo] PASSED
 05--parametrization/test_05-3--fixture-parametrization.py::test_finish[todo] PASSED
 05--parametrization/test_05-4--pytest_generate_tests.py::test_finish[todo] PASSED
+***
 ```

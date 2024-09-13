@@ -17,7 +17,7 @@ Moreover, it also helps us with finding unused fixtures, or dead code inside fix
 ## Adding the test directory to the coverage
 ```unix
 $ pytest --cov=cards --cov=07--test-strategies/tests 07--test-strategies
-###
+***
 ---------- coverage: platform linux, python 3.11.9-final-0 -----------
 Name                                        Stmts   Miss  Cover
 ---------------------------------------------------------------
@@ -37,7 +37,7 @@ cards_proj/src/cards/cli.py                    86     53    38%
 cards_proj/src/cards/db.py                     23      0   100%
 ---------------------------------------------------------------
 TOTAL                                         337     56    83%
-###
+***
 ```
 
 ## Threshold
@@ -46,7 +46,7 @@ Make sure that the test suite only passes if the test coverage meets or exceeds 
 Set the code coverage to 90%.
 ```unix
 $ pytest --cov=cards --cov=07--test-strategies/tests --cov-fail-under=90 07--test-strategies
-###
+***
 ---------- coverage: platform linux, python 3.11.9-final-0 -----------
 Name                                        Stmts   Miss  Cover
 ---------------------------------------------------------------
@@ -68,13 +68,13 @@ cards_proj/src/cards/db.py                     23      0   100%
 TOTAL                                         337     56    83%
 
 FAIL Required test coverage of 90% not reached. Total coverage: 83.38%
-###
+***
 ```
 
 Set the code coverage to 80%.
 ```unix
 $ pytest --cov=cards --cov=07--test-strategies/tests --cov-fail-under=80 07--test-strategies
-###
+***
 ---------- coverage: platform linux, python 3.11.9-final-0 -----------
 Name                                        Stmts   Miss  Cover
 ---------------------------------------------------------------
@@ -96,5 +96,5 @@ cards_proj/src/cards/db.py                     23      0   100%
 TOTAL                                         337     56    83%
 
 Required test coverage of 80% reached. Total coverage: 83.38%
-###
+***
 ```

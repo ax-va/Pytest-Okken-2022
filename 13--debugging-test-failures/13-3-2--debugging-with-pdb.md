@@ -1,4 +1,4 @@
-## Different ways to launch pdb from pytest
+## Different ways to launch pdb from pytest in commandline
 
 - Add a `breakpoint()` call to either test code or application code.
 
@@ -6,19 +6,27 @@
 
 - Use the `--trace` flag. Then, pytest will stop at the beginning of each test function.
 
-## Debug with pdb
+## Debugging in IPython
+
+- `pytest --lf --trace --pdbcls=IPython.terminal.debugger:TerminalPdb`
+
+- `pytest --pdb --pdbcls=IPython.terminal.debugger:TerminalPdb`
+
+- Put `breakpoint()` in the sourcecode and run `pytest --pdbcls=IPython.terminal.debugger:TerminalPdb`
+
+## Debug with pdb in commandline
 
 1. Combine the `--lf` and `--trace` flags to run the last failed tests 
 and stop at the beginning of the first failed one.
 
 ```unix
-$ pytest --lf --trace
-###
+(venv_editable)  .../cards_proj_failed$ pytest --lf --trace
+***
 run-last-failure: rerun previous 2 failures (skipped 19 files)
 
 tests/api/test_list_done.py 
-###
-> ###/cards_proj_failed/tests/api/test_list_done.py(6)test_list_done()
+***
+> ***/cards_proj_failed/tests/api/test_list_done.py(6)test_list_done()
 -> cards_db.finish(3)
 (Pdb) 
 ```
@@ -47,7 +55,7 @@ The `->` shows the current line, before it's been run.
 
 ```unix
 (Pdb) until 8
-> ###/cards_proj_failed/tests/api/test_list_done.py(9)test_list_done()
+> ***/cards_proj_failed/tests/api/test_list_done.py(9)test_list_done()
 -> the_list = cards_db.list_done_cards()
 (Pdb) 
 ```
@@ -57,7 +65,7 @@ The `->` shows the current line, before it's been run.
 ```unix
 (Pdb) step
 --Call--
-> ###/cards_proj_failed/src/cards/api.py(91)list_done_cards()
+> ***/cards_proj_failed/src/cards/api.py(91)list_done_cards()
 -> def list_done_cards(self):
 (Pdb) 
 ```
@@ -77,7 +85,7 @@ The `->` shows the current line, before it's been run.
 ```unix
 (Pdb) r
 --Return--
-> ###/cards_proj_failed/src/cards/api.py(93)list_done_cards()->None
+> ***/cards_proj_failed/src/cards/api.py(93)list_done_cards()->None
 -> done_cards = self.list_cards(state="done")
 (Pdb) 
 ```
@@ -113,7 +121,7 @@ The `->` shows the current line, before it's been run.
 
 ```unix
 (Pdb) step
-> ###/cards_proj_failed/tests/api/test_list_done.py(11)test_list_done()
+> ***/cards_proj_failed/tests/api/test_list_done.py(11)test_list_done()
 -> assert len(the_list) == 2
 (Pdb) ll
   4     @pytest.mark.num_cards(10)
@@ -141,10 +149,10 @@ Add `return done_cards` in `api.CardsDB.list_done_cards` and re-run tests.
 
 ```unix
 $ pytest --lf -x -v --tb=no
-###
+***
 run-last-failure: rerun previous 2 failures (skipped 19 files)
 
 tests/api/test_list_done.py::test_list_done PASSED                                                                [ 50%]
 tests/cli/test_done.py::test_done FAILED                                                                          [100%]
-###
+***
 ```

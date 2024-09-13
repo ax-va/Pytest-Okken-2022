@@ -30,11 +30,11 @@ def test_finish_from_todo(cards_db):
 # - redundant code
 """
 $ pytest -k test_05-1 -v
-###
+***
 05--parametrization/test_05-1--motivation.py::test_finish_from_in_prog PASSED
 05--parametrization/test_05-1--motivation.py::test_finish_from_done PASSED
 05--parametrization/test_05-1--motivation.py::test_finish_from_todo PASSED
-###
+***
 """
 
 
@@ -53,9 +53,9 @@ def test_finish(cards_db):
 
 """
 $ pytest -k test_05-1 -v
-###
+***
 05--parametrization/test_05-1--motivation.py::test_finish PASSED
-###
+***
 """
 # Problems:
 # - one report for three tests

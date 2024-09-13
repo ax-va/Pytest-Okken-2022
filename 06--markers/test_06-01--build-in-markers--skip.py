@@ -19,19 +19,19 @@ def test_equality():
 
 """
 $ pytest -k test_06-01 --tb=short
-###
+***
 06--markers/test_06-01--build-in-markers--skip.py s.
-###
+***
 """
 
 # Display a reason
 """
 $ pytest -k test_06-01 -v -ra
-###
+***
 06--markers/test_06-01--build-in-markers--skip.py::test_less_than SKIPPED (Card doesn't support < comparison yet)
 06--markers/test_06-01--build-in-markers--skip.py::test_equality PASSED
 
 =================================================================================================== short test summary info ====================================================================================================
 SKIPPED [1] 06--markers/test_06-01--build-in-markers--skip.py:5: Card doesn't support < comparison yet
-###
+***
 """

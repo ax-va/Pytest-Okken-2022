@@ -32,7 +32,7 @@ def test_typer_cli_runner():
 
 """
 $ pytest -v -s 10--mocking/test_10-1--typer--testing-cli-with-typer--CliRunner.py::test_typer_cli_runner
-###
+***
 version: 1.0.0
 
 list:
@@ -41,7 +41,7 @@ list:
  ────────────────────────────────────── 
   2    in prog   NoName   do something  
 PASSED
-###
+***
 """
 
 
@@ -55,7 +55,7 @@ def test_cards_cli():
 
 """
 $ pytest -v -s 10--mocking/test_10-1--typer--testing-cli-with-typer--CliRunner.py::test_cards_cli
-###
+***
 version: 1.0.0
 list:
                                         
@@ -63,5 +63,5 @@ list:
  ────────────────────────────────────── 
   2    in prog   NoName   do something
 PASSED
-###
+***
 """

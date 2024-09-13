@@ -12,10 +12,10 @@ $ cd 12--testing-scripts-and-applications/12-3--separating-code-into-src-and-tes
 $ pytest -s tests/test_sys_path.py
 tests/test_sys_path.py 
 sys.path: 
-###/12--testing-scripts-and-applications/12-3--separating-code-into-src-and-test-directories/tests
-###/12--testing-scripts-and-applications/12-3--separating-code-into-src-and-test-directories/src
-###
-###/venv/lib/python3.11/site-packages
+***/12--testing-scripts-and-applications/12-3--separating-code-into-src-and-test-directories/tests
+***/12--testing-scripts-and-applications/12-3--separating-code-into-src-and-test-directories/src
+***
+***/venv/lib/python3.11/site-packages
 .
-###
+***
 """

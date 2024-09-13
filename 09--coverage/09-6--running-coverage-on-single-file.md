@@ -44,14 +44,14 @@ Otherwise, Coverage.py cannot find imports of the module.
 ```unix
 $ cd 09--coverage
 $ pytest --cov=single_file single_file.py
-###
+***
 ---------- coverage: platform linux, python 3.11.9-final-0 -----------
 Name             Stmts   Miss  Cover
 ------------------------------------
 single_file.py      16      1    94%
 ------------------------------------
 TOTAL               16      1    94%
-###
+***
 $ cd ..
 ```
 

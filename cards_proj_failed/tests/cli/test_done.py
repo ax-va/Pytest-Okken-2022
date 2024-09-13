@@ -1,11 +1,21 @@
 import cards
 
+# `\` in `"""\<newline>` escapes the newline character after the opening triple quotes `"""`.
+# incorrect value
 expected = """\
 
-  ID   state   owner   summary    
- ──────────────────────────────── 
-  1    done            some task  
+  ID   state   owner   summary
+ ────────────────────────────────
+  1    done            some task
   3    done            a third"""
+
+# # correct value
+# expected = """\
+#
+#   ID   state   owner   summary
+#  ────────────────────────────────
+#   1    done            some task
+#   3    done            a third"""
 
 
 def test_done(cards_db, cards_cli):

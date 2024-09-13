@@ -22,11 +22,11 @@ def test_equality():
 
 """
 $ pytest -k 06-02 -v -ra
-###
+***
 06--markers/test_06-02--build-in-markers--skipif.py::test_less_than SKIPPED (Card < comparison not supported in 1.x)
 06--markers/test_06-02--build-in-markers--skipif.py::test_equality PASSED
 
 =================================================================================================== short test summary info ====================================================================================================
 SKIPPED [1] 06--markers/test_06-02--build-in-markers--skipif.py:7: Card < comparison not supported in 1.x
-###
+***
 """

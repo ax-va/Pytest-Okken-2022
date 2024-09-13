@@ -48,9 +48,9 @@ def test_add_with_owner_v1(cards_db):
 
 """
 $ pytest -v -s 10--mocking/test_10-7--testing-at-multiple-layers-to-avoid-mocking.py::test_add_with_owner_v1
-###
+***
 10--mocking/test_10-7--testing-at-multiple-layers-to-avoid-mocking.py::test_add_with_owner_v1 PASSED
-###
+***
 """
 
 
@@ -63,7 +63,7 @@ def test_add_with_owner_v2(mock_cards_db):
 
 """
 $ pytest -v -s 10--mocking/test_10-7--testing-at-multiple-layers-to-avoid-mocking.py::test_add_with_owner_v2
-###
+***
 10--mocking/test_10-7--testing-at-multiple-layers-to-avoid-mocking.py::test_add_with_owner_v2 PASSED
-###
+***
 """

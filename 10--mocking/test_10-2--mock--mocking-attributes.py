@@ -21,7 +21,7 @@ def test_mock_version():
 
 """
 $ pytest -v -s 10--mocking/test_10-2--mock--mocking-attributes.py
-###
+***
 10--mocking/test_10-2--mock--mocking-attributes.py::test_mock_version PASSED
-###
+***
 """

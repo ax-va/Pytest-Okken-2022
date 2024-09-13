@@ -45,12 +45,12 @@ def test_mock_CardsDB():
 
 """
 $ pytest -v -s 10--mocking/test_10-3--mock--typer--mocking-classes-and-methods.py::test_mock_CardsDB
-###
+***
 class:           MockCardsDB=<MagicMock name='CardsDB' id='136007464120144'>
 class instance:  MockCardsDB.return_value=<MagicMock name='CardsDB()' id='136007468716176'>
 mock object:     db=<MagicMock name='CardsDB()' id='136007468716176'>
 PASSED
-###
+***
 """
 
 
@@ -68,11 +68,11 @@ def test_mock_path():
 
 """
 $ pytest -v -s 10--mocking/test_10-3--mock--typer--mocking-classes-and-methods.py::test_mock_path
-###
+***
 db.path=<MagicMock name='CardsDB().path' id='128360958775568'>
 db.path()='/foo/'
 PASSED
-###
+***
 """
 
 
@@ -85,7 +85,7 @@ def test_config(mock_cards_db):
 
 """
 $ pytest -v -s 10--mocking/test_10-3--mock--typer--mocking-classes-and-methods.py::test_config
-###
+***
 10--mocking/test_10-3--mock--typer--mocking-classes-and-methods.py::test_config PASSED
-###
+***
 """
