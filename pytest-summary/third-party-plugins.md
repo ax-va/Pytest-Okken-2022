@@ -1,3 +1,7 @@
+# Third-party plugins
+
+See also `14--third-party-plugins` for information.
+
 ## Full list of pytest plugins
 
 https://docs.pytest.org/en/latest/reference/plugin_list.html
