@@ -40,6 +40,7 @@ list:
   ID   state     owner    summary       
  ────────────────────────────────────── 
   2    in prog   NoName   do something  
+***
 PASSED
 ***
 """

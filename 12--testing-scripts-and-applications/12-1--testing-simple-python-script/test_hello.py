@@ -29,6 +29,7 @@ $ pytest -s -v test_hello.py
 ***
 test_hello.py::test_hello PASSED
 ***
+$ cd ..
 """
 
 # Test by using tox
@@ -40,4 +41,6 @@ $ tox
   py311: OK (0.27=setup[0.01]+cmd[0.27] seconds)
   congratulations :) (0.66 seconds)
 ***
+$ cd ..
+$ cd ..
 """

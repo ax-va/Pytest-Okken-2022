@@ -11,8 +11,8 @@ def test_non_empty(cards_db_non_empty):
 
 
 """
-$ pytest -k test_03-6
+$ pytest 03--fixtures/a/test_03-6--multiple-fixtures-per-test-or-fixtures.py
 ***
-03--fixtures/a/test_03-6--multiple-fixtures-per-test-or-fixture.py ..                                                                                   [100%]
+03--fixtures/a/test_03-6--multiple-fixtures-per-test-or-fixture.py ..                                             [100%]
 ***
 """

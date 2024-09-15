@@ -27,13 +27,13 @@ $ pytest --setup-show 03--fixtures/a/test_03-5--fixture-levels.py
 ***
 SETUP    S cards_db
         SETUP    F cards_db_empty (fixtures used: cards_db)
-        03--fixtures/b/test_03-5--fixture-levels.py::test_empty (fixtures used: cards_db_empty, cards_db, ***).
+        03--fixtures/a/test_03-5--fixture-levels.py::test_empty (fixtures used: cards_db_empty, cards_db, ***).
         TEARDOWN F cards_db_empty
         SETUP    F cards_db_empty (fixtures used: cards_db)
-        03--fixtures/b/test_03-5--fixture-levels.py::test_two (fixtures used: cards_db_empty, cards_db, ***).
+        03--fixtures/a/test_03-5--fixture-levels.py::test_two (fixtures used: cards_db_empty, cards_db, ***).
         TEARDOWN F cards_db_empty
         SETUP    F cards_db_empty (fixtures used: cards_db)
-        03--fixtures/b/test_03-5--fixture-levels.py::test_three (fixtures used: cards_db_empty, cards_db, ***).
+        03--fixtures/a/test_03-5--fixture-levels.py::test_three (fixtures used: cards_db_empty, cards_db, ***).
         TEARDOWN F cards_db_empty
 TEARDOWN S cards_db
 ***

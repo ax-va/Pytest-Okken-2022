@@ -12,5 +12,6 @@ $ tox -c tox_posargs.ini -e py310 -- -k test_version --no-cov
 tests/api/test_version.py .                                                                                       [ 50%]
 tests/cli/test_version.py .                                                                                       [100%]
 ***
+$ cd ..
 ```
 `--no-cov` is to turn off coverage.

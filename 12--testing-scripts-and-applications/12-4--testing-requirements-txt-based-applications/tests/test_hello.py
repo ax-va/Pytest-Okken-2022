@@ -28,9 +28,12 @@ tests/test_hello.py::test_full_output PASSED                                    
 tests/test_hello.py::test_hello_app_no_name PASSED                                                                [ 66%]
 tests/test_hello.py::test_hello_app_with_name PASSED                                                              [100%]
 ***
+$ cd ..
+$ cd ..
 """
 
 # Test by using tox with installing side packages given in `requirements.txt`
+# that is set in `tox.ini` as `-rrequirements.txt`.
 """
 $ cd 12--testing-scripts-and-applications
 $ cd 12-4--testing-requirements-txt-based-applications

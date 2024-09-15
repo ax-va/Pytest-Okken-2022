@@ -6,8 +6,8 @@ run=False       don't run
 raises          sets an exception type or a tuple of exception types that you want to result in an xfail
 strict          should be marked as XPASS (strict=False) or FAIL (strict=True) when passing
 
-Global setting:
-xfail_strict=true in pytest.ini
+Global setting in `pytest.ini`:
+xfail_strict=true
 
 Reasons to mark with xfail:
 - Test-driven development for non-implemented behaviors yet but planed to be implemented shortly.
@@ -18,7 +18,7 @@ XFAIL           "You were right, it did fail"
 
 Result meaning when passing
 XPASS           "Good news, the test you thought would fail just passed"
-FAILED          "You thought it would fail, but it didn’t. You were wrong."
+FAILED          "You thought it would fail, but it didn't. You were wrong."
 """
 import pytest
 import cards
@@ -54,15 +54,17 @@ def test_xfail_strict():
 
 
 """
-$ pytest -k 06-03 -v -ra
+$ cd 06--markers
+$ pytest test_06-03--build-in-markers--xfail.py -v -ra
 ***
-06--markers/test_06-03--build-in-markers--xfail.py::test_less_than XFAIL (Card < comparison not supported in 1.x) 
-06--markers/test_06-03--build-in-markers--xfail.py::test_xpass XPASS (XPASS demo with strict=False)  
-06--markers/test_06-03--build-in-markers--xfail.py::test_xfail_strict FAILED 
+test_06-03--build-in-markers--xfail.py::test_less_than XFAIL (Card < comparison not supported in 1.x) 
+test_06-03--build-in-markers--xfail.py::test_xpass XPASS (XPASS demo with strict=False)  
+test_06-03--build-in-markers--xfail.py::test_xfail_strict FAILED 
 ***
-=================================================================================================== short test summary info ====================================================================================================
-XFAIL 06--markers/test_06-03--build-in-markers--xfail.py::test_less_than - Card < comparison not supported in 1.x
-XPASS 06--markers/test_06-03--build-in-markers--xfail.py::test_xpass - XPASS demo with strict=False
-FAILED 06--markers/test_06-03--build-in-markers--xfail.py::test_xfail_strict
+*** short test summary info ***
+XFAIL test_06-03--build-in-markers--xfail.py::test_less_than - Card < comparison not supported in 1.x
+XPASS test_06-03--build-in-markers--xfail.py::test_xpass - XPASS demo with strict=False
+FAILED test_06-03--build-in-markers--xfail.py::test_xfail_strict
 ***
+$ cd ..
 """

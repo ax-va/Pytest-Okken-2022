@@ -27,7 +27,7 @@ def test_finish(cards_db, start_summary, start_state):
 
 
 """
-$ pytest -k test_05-2 -v
+$ pytest -v 05--parametrization/test_05-2--function-parametrization.py
 ***
 05--parametrization/test_05-2--function-parametrization.py::test_finish[write a book-done] PASSED 
 05--parametrization/test_05-2--function-parametrization.py::test_finish[second edition-in prog] PASSED
@@ -47,7 +47,7 @@ def test_finish_simple(cards_db, start_state):
 
 
 """
-$ pytest -k test_05-2 -v
+$ pytest -v 05--parametrization/test_05-2--function-parametrization.py
 ***
 05--parametrization/test_05-2--function-parametrization.py::test_finish_simple[done] PASSED
 05--parametrization/test_05-2--function-parametrization.py::test_finish_simple[in prog] PASSED

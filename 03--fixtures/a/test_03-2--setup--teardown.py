@@ -30,19 +30,18 @@ def test_two(cards_db):
 
 
 """
-$ pytest -k test_03-2
-===================================================================================================== test session starts ======================================================================================================
+$ pytest 03--fixtures/a/test_03-2--setup--teardown.py
+*** test session starts ***
 ***                                                                                                                                                                             
 
-03--fixtures/a/test_03-2--setup--teardown.py ..                                                                                                                                                          [100%]
-
-=============================================================================================== 2 passed, 21 deselected in 0.04s ===============================================================================================
+03--fixtures/a/test_03-2--setup--teardown.py ..                                                                   [100%]
+***
 """
 
 # Show the order of operations of tests and fixtures, including the setup and teardown phases of the fixtures
 """
-$ pytest --setup-show -k test_03-2
-===================================================================================================== test session starts ======================================================================================================
+$ pytest --setup-show  03--fixtures/a/test_03-2--setup--teardown.py
+*** test session starts ***
 ***                                                                                                                                                                            
 
 03--fixtures/a/test_03-2--setup--teardown.py 
@@ -52,7 +51,6 @@ $ pytest --setup-show -k test_03-2
         SETUP    F cards_db
         03--fixtures/a/test_03-2--setup--teardown.py::test_two (fixtures used: cards_db).
         TEARDOWN F cards_db
-
-=============================================================================================== 2 passed, 21 deselected in 0.07s ===============================================================================================
+***
 """
 # F in front of the fixture name indicates that the fixture is using function scope

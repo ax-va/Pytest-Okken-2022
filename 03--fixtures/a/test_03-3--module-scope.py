@@ -31,8 +31,8 @@ def test_two(cards_db):
 
 
 """
-$ pytest --setup-show -k test_03-3
-===================================================================================================== test session starts ======================================================================================================
+$ pytest --setup-show 03--fixtures/a/test_03-3--module-scope.py
+*** test session starts *** 
 ***                                                                                                                                                                              
 
 03--fixtures/a/test_03-3--module-scope.py 
@@ -40,7 +40,6 @@ $ pytest --setup-show -k test_03-3
         03--fixtures/a/test_03-3--module-scope.py::test_empty (fixtures used: cards_db).
         03--fixtures/a/test_03-3--module-scope.py::test_two (fixtures used: cards_db).
     TEARDOWN M cards_db
-
-=============================================================================================== 2 passed, 23 deselected in 0.07s ===============================================================================================
+***
 """
 # M in front of the fixture name indicates that the fixture is using module scope

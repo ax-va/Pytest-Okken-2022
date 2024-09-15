@@ -34,4 +34,5 @@ tests/cli/test_version.py .                                                     
 FAILED tests/api/test_list_done.py::test_list_done - TypeError: object of type 'NoneType' has no len()
 FAILED tests/cli/test_done.py::test_done - AssertionError: assert '' == '\n  ID   sta...      a third'
 ***
+$ cd ..
 ```

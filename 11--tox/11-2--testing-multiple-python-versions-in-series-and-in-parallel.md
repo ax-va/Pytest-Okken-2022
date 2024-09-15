@@ -18,4 +18,5 @@ $ tox -c tox_multiple_pythons.ini -p
   py311: OK (3.18=setup[2.02]+cmd[1.16] seconds)
   py312: OK (3.30=setup[2.07]+cmd[1.23] seconds)
   congratulations :) (3.37 seconds)
+$ cd ..
 ```

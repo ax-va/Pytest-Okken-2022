@@ -24,4 +24,6 @@ $ python src/hello.py
 Hello, World!
 $ python src/hello.py Alex
 Hello, Alex!
+$ cd ..
+$ cd ..
 """

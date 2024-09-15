@@ -79,6 +79,7 @@ def test_finish_non_existent(cards_db):
 
 # Run all the tests in the file
 """
+$ cd 06--markers
 $ pytest -m smoke1 -v
 ***
 test_06-05--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_todo PASSED
@@ -92,24 +93,29 @@ test_06-05--custom-markers--files--classes--parameters.py::test_finish_fix[in pr
 test_06-05--custom-markers--files--classes--parameters.py::test_finish_fix[done] PASSED
 test_06-05--custom-markers--files--classes--parameters.py::test_finish_non_existent PASSED
 ***
+$ cd ..
 """
 
 # Run all the tests in TestFinish
 """
+$ cd 06--markers
 $ pytest -m smoke4 -v
 ***
 test_06-05--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_todo PASSED
 test_06-05--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_in_prog PASSED
 test_06-05--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_done PASSED
 ***
+$ cd ..
 """
 
 # Run all the tests with specific function parametrization
 """
+$ cd 06--markers
 $ pytest -m smoke5 -v
 ***
 test_06-05--custom-markers--files--classes--parameters.py::test_finish_func[in prog] PASSED
 ***
+$ cd ..
 """
 
 # Run all the tests with specific fixture parametrization

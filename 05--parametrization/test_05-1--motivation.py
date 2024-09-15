@@ -29,7 +29,7 @@ def test_finish_from_todo(cards_db):
 # Problem:
 # - redundant code
 """
-$ pytest -k test_05-1 -v
+$ pytest -v 05--parametrization/test_05-1--motivation.py
 ***
 05--parametrization/test_05-1--motivation.py::test_finish_from_in_prog PASSED
 05--parametrization/test_05-1--motivation.py::test_finish_from_done PASSED
@@ -52,7 +52,7 @@ def test_finish(cards_db):
 
 
 """
-$ pytest -k test_05-1 -v
+$ pytest -v 05--parametrization/test_05-1--motivation.py
 ***
 05--parametrization/test_05-1--motivation.py::test_finish PASSED
 ***

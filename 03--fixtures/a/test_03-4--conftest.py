@@ -17,8 +17,8 @@ def test_two(
 
 # Show the order of tests and fixtures
 """
-$ pytest --setup-show -k test_03-4
-===================================================================================================== test session starts ======================================================================================================
+$ pytest --setup-show 03--fixtures/a/test_03-4--conftest.py
+*** test session starts ***
 ***                                                                                                                                                                           
 
 03--fixtures/a/test_03-4--conftest.py 
@@ -26,36 +26,33 @@ SETUP    S cards_db
         03--fixtures/a/test_03-4--conftest.py::test_empty (fixtures used: cards_db).
         03--fixtures/a/test_03-4--conftest.py::test_two (fixtures used: cards_db).
 TEARDOWN S cards_db
-
-=============================================================================================== 2 passed, 25 deselected in 0.04s ===============================================================================================
+***
 """
 # S in front of the fixture name indicates that the fixture is using session scope
 
 # List fixtures used in a module
 """
-$ pytest --fixtures-per-test -k test_03-4
+$ pytest --fixtures-per-test 03--fixtures/a/test_03-4--contest.py
 ***
-------------------------------------------------------------------------------------------------- fixtures used by test_empty --------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------- (03--fixtures/a/test_03-4--conftest.py:5) ---------------------------------------------------------------------------------
+*** fixtures used by test_empty ***
+*** (03--fixtures/a/test_03-4--conftest.py:5) ***
 cards_db -- 03--fixtures/a/conftest.py:8
     CardsDB object connected to a temporary database 
 
--------------------------------------------------------------------------------------------------- fixtures used by test_two ---------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------- (03--fixtures/a/test_03-4--conftest.py:9) ---------------------------------------------------------------------------------
+*** fixtures used by test_two ***
+*** (03--fixtures/a/test_03-4--conftest.py:9) ***
 cards_db -- 03--fixtures/a/conftest.py:8
     CardsDB object connected to a temporary database 
-
-==================================================================================================== 25 deselected in 0.03s ====================================================================================================
+***
 """
 
 # List fixtures used in a function
 """
 $ pytest --fixtures-per-test 03--fixtures/a/test_03-4--conftest.py::test_empty
 ***
-------------------------------------------------------------------------------------------------- fixtures used by test_empty --------------------------------------------------------------------------------------------------
------------------------------------------------------------------------------------------- (03--fixtures/a/test_03-4--conftest.py:5) ---------------------------------------------------------------------------------
+*** fixtures used by test_empty ***
+*** (03--fixtures/a/test_03-4--conftest.py:5) ***
 cards_db -- 03--fixtures/a/conftest.py:8
-    CardsDB object connected to a temporary database 
-
-==================================================================================================== no tests ran in 0.01s =====================================================================================================
+    CardsDB object connected to a temporary database
+***
 """

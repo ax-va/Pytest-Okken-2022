@@ -43,4 +43,5 @@ TOTAL                         439      0   100%
 
 Required test coverage of 100% reached. Total coverage: 100.00%
 ***
+$ cd ..
 ```

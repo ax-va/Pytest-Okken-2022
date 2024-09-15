@@ -42,11 +42,13 @@ def test_three_card(cards_db_three_cards):
 
 
 """
+$ cd 06--markers
 $ pytest -k test_06-08 -v --disable-warnings
 ***
 test_06-08--marker-parametrization-changing-fixtures.py::test_zero_card PASSED
 test_06-08--marker-parametrization-changing-fixtures.py::test_three_card PASSED
 ***
+$ cd ..
 """
 
 # Task: How to give the number of cards as parameter
@@ -101,6 +103,7 @@ def test_ten_cards(cards_db_num_cards):
 
 
 """
+$ cd 06--markers
 $ pytest -k test_06-08 -v -s --disable-warnings
 ***
 test_06-08--marker-parametrization-changing-fixtures.py::test_zero_card PASSED
@@ -114,4 +117,5 @@ Card(summary='Institution as life deep present person.', owner='Mark Trevino', s
 PASSED
 test_06-08--marker-parametrization-changing-fixtures.py::test_ten_cards PASSED
 ***
+$ cd ..
 """

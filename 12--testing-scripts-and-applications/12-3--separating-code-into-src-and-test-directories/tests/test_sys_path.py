@@ -18,4 +18,6 @@ sys.path:
 ***/venv/lib/python3.11/site-packages
 .
 ***
+$ cd ..
+$ cd ..
 """

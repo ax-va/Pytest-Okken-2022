@@ -37,8 +37,8 @@ def test_tmp_path_factory(tmp_path_factory):
     assert file.read_text() == "Hello"
 
 """
-$ pytest -k test_04-1 -s
-===================================================================================================== test session starts ======================================================================================================
+$ pytest -s 04--build-in-fixtures/test_04-1--tmp_path--tmp_path_factory.py
+*** test session starts ***
 ***                                                                                                                                                                              
 
 04--build-in-fixtures/test_04-1--tmp_path--tmp_path_factory.py 
@@ -50,6 +50,5 @@ type(tmp_path_factory): <class '_pytest.tmpdir.TempPathFactory'>
 
 str(tmp_path_factory): TempPathFactory(_given_basetemp=None, _trace=<pluggy._tracing.TagTracerSub object at 0x7013536d9390>, _basetemp=PosixPath('/tmp/pytest-of-delorian/pytest-9'), _retention_count=3, _retention_policy='all')
 .
-
-=============================================================================================== 2 passed, 40 deselected in 0.04s ===============================================================================================
+***
 """

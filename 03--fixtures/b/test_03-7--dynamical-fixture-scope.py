@@ -29,13 +29,13 @@ TEARDOWN S cards_db
 """
 $ pytest --func-db --setup-show 03--fixtures/b/test_03-7--dynamical-fixture-scope.py
 ***
-03--fixtures/d/test_03-7--dynamical-fixture-scope.py 
+03--fixtures/b/test_03-7--dynamical-fixture-scope.py 
 ***
         SETUP    F cards_db
-        03--fixtures/d/test_03-7--dynamical-fixture-scope.py::test_empty (fixtures used: cards_db, ***).
+        03--fixtures/b/test_03-7--dynamical-fixture-scope.py::test_empty (fixtures used: cards_db, ***).
         TEARDOWN F cards_db
         SETUP    F cards_db
-        03--fixtures/d/test_03-7--dynamical-fixture-scope.py::test_two (fixtures used: cards_db, ***).
+        03--fixtures/b/test_03-7--dynamical-fixture-scope.py::test_two (fixtures used: cards_db, ***).
         TEARDOWN F cards_db
 ***
 """

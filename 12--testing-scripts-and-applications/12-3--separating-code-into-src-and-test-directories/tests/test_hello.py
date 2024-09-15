@@ -13,4 +13,6 @@ $ pytest tests/test_hello.py
 ***
 tests/test_hello.py .
 ***
+$ cd ..
+$ cd ..
 """
