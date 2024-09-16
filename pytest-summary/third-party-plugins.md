@@ -24,9 +24,9 @@ https://docs.pytest.org/en/latest/how-to/plugins.html
 Pytest will run each file in alphabetical order in a single directory. 
 Each test is run in the order it appears in a file.
 
-- **pytest-order** to specify the order using a marker.
+- **pytest-order** to specify the run order using a marker.
 
-- **pytest-randomly** to randomize the order, first by file, then by class, then by test.
+- **pytest-randomly** to randomize the run order, first by file, then by class, then by test.
 
 - **pytest-repeat** to repeat a single test or multiple tests a specific number of times.
 
