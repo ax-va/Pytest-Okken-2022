@@ -5,6 +5,8 @@ This problem occurs because mocking tests implementation, but not behavior.
 
 **Happy-path testing = a type of software testing that uses known input and produces an expected output**
 
+**Hook functions = entry points to intercept pytest behavior at certain points and make changes**
+
 **Line coverage = calculated by dividing the total number of lines run divided by the total lines of code**
 
 **Mock = replacing a part of a system with mock objects**
@@ -12,7 +14,7 @@ This problem occurs because mocking tests implementation, but not behavior.
 Mock objects are typically intended to be objects that are used in place of the real implementation.
 Mock objects are sometimes called test doubles, spies, fakes, or stubs.
 
-**Mock drift = the interface to be mocked changes, while the mock in the test code doesn't.**
+**Mock drift = the interface to be mocked changes, while the mock in the test code doesn't**
 
 **Monkey patch = a technique used to dynamically update the behavior of a piece of code at run-time**
 

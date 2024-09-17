@@ -14,11 +14,13 @@ metafunc.parametrize("planet, moon", [('Earth', 'Moon'), ('Mars', 'Deimos'), ('M
 from cards import Card
 
 
+# hook function
 def pytest_generate_tests(metafunc):
     if "start_state" in metafunc.fixturenames:
         metafunc.parametrize("start_state", ["done", "in prog", "todo"])
 
 
+# `start_state` is in `metafunc.fixturenames`
 def test_finish(cards_db, start_state):
     c = Card("write a book", state=start_state)
     index = cards_db.add_card(c)
@@ -28,10 +30,10 @@ def test_finish(cards_db, start_state):
 
 
 """
-$ pytest -v 05--parametrization/test_05-4--pytest_generate_tests.py
+$ pytest -v 05--parametrization/test_05-4--hook-function-example--pytest_generate_tests.py
 ***
-05--parametrization/test_05-4--pytest_generate_tests.py::test_finish[done] PASSED
-05--parametrization/test_05-4--pytest_generate_tests.py::test_finish[in prog] PASSED
-05--parametrization/test_05-4--pytest_generate_tests.py::test_finish[todo] PASSED
+05--parametrization/test_05-4--hook-function-example--pytest_generate_tests.py::test_finish[done] PASSED
+05--parametrization/test_05-4--hook-function-example--pytest_generate_tests.py::test_finish[in prog] PASSED
+05--parametrization/test_05-4--hook-function-example--pytest_generate_tests.py::test_finish[todo] PASSED
 ***
 """

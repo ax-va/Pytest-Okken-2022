@@ -120,3 +120,9 @@ https://docs.pytest.org/en/latest/contributing.html#submitting-plugins-to-pytest
 ## Some popular pytest plugins
 
 https://docs.pytest.org/en/latest/how-to/plugins.html
+
+## Pytest: hook functions
+
+https://docs.pytest.org/en/latest/reference/reference.html#hook-reference
+
+https://docs.pytest.org/en/6.2.x/writing_plugins.html#writinghooks
