@@ -13,6 +13,8 @@
 
 ## Example without new plugin
 
+See the `without-new-plugin` subdirectory.
+
 ```unix
 $ cd 15--building-plugins/without-new-plugin
 $ pytest -v -m "not slow"

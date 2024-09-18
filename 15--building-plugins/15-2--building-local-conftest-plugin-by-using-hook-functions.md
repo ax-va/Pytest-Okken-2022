@@ -1,6 +1,31 @@
 ## Local conftest plugin
 
-See the `local-conftest-plugin` directory.
+See the `with-local-conftest-plugin` subdirectory.
+
+```unix
+$ cd 15--building-plugins/with-local-conftest-plugin
+$ pytest -v
+***                                                                                                                                                                                             
+test_slow.py::test_normal PASSED                                                                                  [ 50%]
+test_slow.py::test_slow SKIPPED (need --slow option to run)                                                       [100%]
+***
+*** 1 passed, 1 skipped in 0.06s ***
+***
+$ pytest -v --slow 
+***
+test_slow.py::test_normal PASSED                                                                                  [ 50%]
+test_slow.py::test_slow PASSED                                                                                    [100%]
+***
+*** 2 passed in 0.05s ***
+***
+$ pytest -v -m slow --slow
+test_slow.py::test_slow PASSED                                                                                    [100%]
+***
+*** 1 passed, 1 deselected in 0.06s ***
+***
+$ cd ..
+$ cd ..
+```
 
 ## Used pytest hook functions 
 
@@ -18,7 +43,7 @@ Hook functions are entry points to intercept pytest behavior at certain points a
 
 -> It is used to find the slow tests and mark them for skipping.
 
-See also:
+## See also:
 
 - Pytest: hook functions
 
