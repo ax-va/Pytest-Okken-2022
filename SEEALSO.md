@@ -126,3 +126,11 @@ https://docs.pytest.org/en/latest/how-to/plugins.html
 https://docs.pytest.org/en/latest/reference/reference.html#hook-reference
 
 https://docs.pytest.org/en/6.2.x/writing_plugins.html#writinghooks
+
+## Pytest: Making your plugin installable by others
+
+https://docs.pytest.org/en/latest/how-to/writing_plugins.html#making-your-plugin-installable-by-others
+
+## Flit: `pyproject.toml`
+
+https://flit.pypa.io/en/latest/pyproject_toml.html
