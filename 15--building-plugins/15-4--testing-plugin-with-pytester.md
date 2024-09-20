@@ -24,7 +24,7 @@ Helpful functions to populate this directory:
 
 - `mkdir()` and `mkpydir()` to create test subdirectories with or without `__init__.py`, respectively.
 
-- `copy_example()` to copy files from the project's directory to the temporary directory (used in this example).
+- `copy_example()` (demonstrated in the example) to copy files from the project's directory to the temporary directory.
 
 See also: 
 
