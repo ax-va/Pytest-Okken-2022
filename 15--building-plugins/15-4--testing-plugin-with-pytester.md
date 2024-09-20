@@ -28,7 +28,7 @@ Helpful functions to populate this directory:
 
 See also: 
 
-- pytester
+- Pytest: pytester
 
 https://docs.pytest.org/en/latest/reference/reference.html#std-fixture-pytester
 
@@ -38,7 +38,7 @@ See `15--building-plugins/installable-plugin-with-pytester/tests/test_plugin.py`
 
 See also:
 
-- RunResult
+- Pytest: RunResult
 
 https://docs.pytest.org/en/latest/reference/reference.html#pytest.RunResult
 
