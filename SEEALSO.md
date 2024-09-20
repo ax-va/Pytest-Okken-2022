@@ -134,3 +134,11 @@ https://docs.pytest.org/en/latest/how-to/writing_plugins.html#making-your-plugin
 ## Flit: `pyproject.toml`
 
 https://flit.pypa.io/en/latest/pyproject_toml.html
+
+## Pytest: pytester
+
+https://docs.pytest.org/en/latest/reference/reference.html#std-fixture-pytester
+
+## Pytest: RunResult
+
+https://docs.pytest.org/en/latest/reference/reference.html#pytest.RunResult
