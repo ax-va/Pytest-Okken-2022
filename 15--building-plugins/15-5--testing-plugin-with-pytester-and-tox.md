@@ -15,8 +15,8 @@ $ pip install tox
 $ pip uninstall pytest_skip_slow_by_ax_va
 $ cd 15--building-plugins/installable-plugin-with-pytester-and-tox
 ```
-Replace `<my_email>` in `pyproject.toml` with a correct email.
 
+Replace `<my_email>` in `pyproject.toml` with a correct email.
 Run tox in parallel with `--parallel` and reduce the tox output with `-q`.
 ```unix
 $ tox -q --parallel

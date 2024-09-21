@@ -42,6 +42,7 @@ See also:
 
 https://docs.pytest.org/en/latest/reference/reference.html#pytest.RunResult
 
+Replace `<my_email>` in `pyproject.toml` with a correct email.
 Install the plugin in editable mode.
 ```unix
 (venv_plugin) ***$ cd 15--building-plugins/installable-plugin-with-pytester
