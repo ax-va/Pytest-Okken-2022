@@ -45,7 +45,7 @@ tests/cli/test_version.py .                                                     
 $ cd ..
 ```
 
-## Stop running tox
+## Stop running tox if it runs too long
 ```unix
 $ ps aux | grep tox
 $ kill <id>
