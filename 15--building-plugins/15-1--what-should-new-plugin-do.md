@@ -26,3 +26,7 @@ test_slow.py::test_normal PASSED                                                
 $ cd ..
 $ cd ..
 ```
+
+## Original final plugin
+
+https://github.com/okken/pytest-skip-slow
