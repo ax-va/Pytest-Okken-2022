@@ -19,7 +19,7 @@ you make to the source code are immediately reflected without needing to reinsta
 (venv_editable) $ pip install -e "./cards_proj_failed/[test]"
 ```
 
-`[tests]` in the `-e` parameters refers to optional dependencies for testing given in `pyproject.toml` as
+`[test]` in the `-e` parameters refers to optional dependencies for testing given in `pyproject.toml`.
 
 ```tolm
 [project.optional-dependencies]
