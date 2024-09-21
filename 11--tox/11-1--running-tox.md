@@ -44,3 +44,9 @@ tests/cli/test_version.py .                                                     
   congratulations :) (11.69 seconds)
 $ cd ..
 ```
+
+## Stop running tox
+```unix
+$ ps aux | grep tox
+$ kill <id>
+```

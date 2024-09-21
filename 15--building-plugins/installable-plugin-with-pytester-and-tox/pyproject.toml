@@ -1,0 +1,33 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "pytest-skip-slow-by-ax-va"
+# Replace <my_email> with a correct email
+authors = [{name = "ax-va", email = "<my_email>"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Framework :: Pytest"
+]
+dynamic = ["version", "description"]
+dependencies = ["pytest>=8.0.1"]
+requires-python = ">=3.11"
+
+[project.urls]
+Home = "https://github.com/ax-va/Pytest-Okken-2022"
+
+[project.entry-points.pytest11]
+# Must be of the form:
+# name_of_plugin = "plugin_module"
+skip_slow_by_ax_va = "pytest_skip_slow_by_ax_va"
+
+[project.optional-dependencies]
+# Install tox when installing the package in editable mode
+test = ["tox"]
+
+[tool.flit.module]
+# actual name of module
+name = "pytest_skip_slow_by_ax_va"
