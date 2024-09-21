@@ -9,7 +9,7 @@ https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
 $ python3 -m pip install -U pip
 ```
 
-## Install using PyPI
+## Install using `pip`
 
 Create a virtual environment, activate it on POSIX systems, and install `pytest`
 ```unix
@@ -38,6 +38,18 @@ Activate in PowerShell
 ```windows
 C:>my_venv\Scripts\Activate.ps1
 ```
+
+Install from the current directory
+```unix
+(venv_editable) $ pip install -e .
+```
+
+Install with optional dependencies for testing
+```unix
+(venv_editable) $ pip install -e "./cards_proj_failed/[test]"
+```
+
+`[test]` in the `-e` parameters refers to optional dependencies for testing given in `pyproject.toml`.
 
 ## Run pytest
 
