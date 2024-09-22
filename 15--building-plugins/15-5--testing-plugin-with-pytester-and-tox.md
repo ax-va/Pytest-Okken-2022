@@ -9,7 +9,7 @@ See also:
 https://tox.wiki/en/4.20.0/user_guide.html#generative-environment-list
 
 There is no need to install the pytest plugin in the virtual environment.
-Tox will install the plugin for each test environment.
+Tox will install the plugin in each test environment.
 ```unix
 $ source venv_plugin/bin/activate
 $ pip install tox
