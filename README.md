@@ -3,6 +3,10 @@ The link to the original source code is given on the official book's side
 
 https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
 
+Original installable plugin
+
+https://github.com/okken/pytest-skip-slow
+
 ## Upgrade pip
 
 ```unix
