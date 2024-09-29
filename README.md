@@ -91,3 +91,6 @@ $ pytest -v 01-introduction/test_01-1--passing.py::test_passing
 
 ## Python's `subprocess.run` 
 https://docs.python.org/3/library/subprocess.html#subprocess.run
+
+## Dictionary view objects
+https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects

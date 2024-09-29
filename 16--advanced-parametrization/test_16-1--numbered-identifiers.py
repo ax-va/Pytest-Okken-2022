@@ -31,8 +31,8 @@ $ cd ..
 		Card("foo", state="todo"),
 		Card("foo", state="in prog"),
 		Card("foo", state="done"),
-		],
-	)
+	],
+)
 def test_finish_v2(cards_db, starting_card):
 	index = cards_db.add_card(starting_card)
 	cards_db.finish(index)
