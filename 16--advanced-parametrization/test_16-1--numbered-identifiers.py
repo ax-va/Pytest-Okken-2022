@@ -50,4 +50,4 @@ test_16-1--complex-values.py::test_finish_v2[starting_card2] PASSED             
 ***
 $ cd ..
 """
-# Numbered identifiers: `starting_card0`, `starting_card1`, `starting_card2`
+# -> Numbered identifiers `starting_card0`, `starting_card1`, `starting_card2` are not informative.
