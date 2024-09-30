@@ -1,6 +1,6 @@
 """
-The `ids` argument to the `@pytest.mark.parametrize` decorator can be a function or a list.
-The best practice is to use `.values()` as parameter list and `.keys()` as ids list.
+The `ids` argument to the `@pytest.mark.parametrize` decorator can be a function or an iterable instance.
+The best practice is to use `.values()` as parameters and `.keys()` as ids.
 """
 import pytest
 from cards import Card
