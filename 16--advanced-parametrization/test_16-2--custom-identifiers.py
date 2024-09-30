@@ -1,5 +1,5 @@
 """
-The `ids` argument to the `@pytest.mark.parametrize` decorator can be a function or an iterable instance.
+The `ids` argument to the `@pytest.mark.parametrize` decorator can be a function or an iterable object.
 The best practice is to use `.values()` as parameters and `.keys()` as ids.
 """
 import pytest
