@@ -1,6 +1,6 @@
 """
 1. The `ids` argument to the `@pytest.mark.parametrize` decorator can be a function or an iterable object to set IDs.
-2. In `pytest.param`, an identifier can be set to `id`.
+2. In `pytest.param`, an identifier can be set to the `id` argument.
 """
 import pytest
 from cards import Card
