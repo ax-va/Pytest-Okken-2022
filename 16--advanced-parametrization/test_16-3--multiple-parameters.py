@@ -32,7 +32,8 @@ test_16-3--multiple-parameters.py::test_add_lots[short-First-in prog] PASSED    
 $ cd ..
 """
 
-# Test against all combinations of summary, owner, state
+# Test against all combinations of `summary`, `owner`, `state`.
+# Stacking parametrize decorators results in the test matrix.
 @pytest.mark.parametrize("state", states)
 @pytest.mark.parametrize("owner", owners)
 @pytest.mark.parametrize("summary", summaries)

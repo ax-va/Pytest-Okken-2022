@@ -135,7 +135,7 @@ def generate_text_variants():
 		yield pytest.param(value, id=key)
 
 
-# Use the generator
+# Use the generator to dynamically create parameter values at test collection time
 @pytest.mark.parametrize("variant", generate_text_variants())
 def test_summary_v2(cards_db, variant):
 	i = cards_db.add_card(Card(summary=variant))
