@@ -15,45 +15,66 @@ $ python3 -m pip install -U pip
 
 ## Install using `pip`
 
+As of Python 3.3, the build-in `venv` package created a virtual environment
+`python -m venv env_dir_name [--prompt my_proj]`.
+The `--prompt` parameter is optional. If it is not supplied, the prompt will match the directory name.
+As of Python 3.9, providing `--prompt .` will tell `venv` to use the parent directory as the prompt.
+
+See also: https://docs.python.org/3/library/venv.html
+
 Create a virtual environment, activate it on POSIX systems, and install `pytest`
 ```unix
 $ python3 -m venv my_venv
 $ source my_venv/bin/activate
-(my_venv) $ pip install pytest
+(my_venv) ...$ pip install pytest
 ```
 or using `virtualenv`
 ```unix
 $ python3 -m pip install virtualenv
 $ python3 -m virtualenv my_venv
 $ source my_venv/bin/activate
-(my_venv) $ pip install pytest
+(my_venv) ...$ pip install pytest
 ```
 Deactivate the venv
 ```unix
-(my_venv) $ deactivate
+(my_venv) ...$ deactivate
 ```
 Create a virtual environment, activate it on Windows systems, and install `pytest`
 ```windows
-C:\> python -m venv my_venv
-C:\> my_venv\Scripts\activate.bat
-(my_venv) C:\> pip install pytest
+>python -m venv my_venv
+>my_venv\Scripts\activate.bat
+(my_venv) ...>pip install pytest
 ```
 Activate in PowerShell
 ```windows
-C:>my_venv\Scripts\Activate.ps1
+>my_venv\Scripts\Activate.ps1
 ```
 
-Install from the current directory
+Install in editable mode from the current directory
 ```unix
-(venv_editable) $ pip install -e .
+(venv_editable) ...$ pip install -e .
 ```
 
-Install from a directory with optional dependencies for testing
+Install in editable mode from a directory with optional dependencies for testing
 ```unix
-(venv_editable) $ pip install -e "./cards_proj_failed/[test]"
+(venv_editable) ...$ pip install -e "./cards_proj_failed/[test]"
 ```
-
 `[test]` in the `-e` parameters refers to optional dependencies for testing given in `pyproject.toml`.
+
+Other useful commands
+```unix
+(venv) ...$ pip --version
+pip 24.2 from path/to/venv/lib/python3.11/site-packages/pip (python 3.11)
+(venv) ...$ pip list
+Package            Version
+------------------ -----------
+cachetools         5.5.0
+cards              1.0.0
+certifi            2024.8.30
+...
+```
+
+See also: https://pip.pypa.io/en/stable/
 
 ## Run pytest
 

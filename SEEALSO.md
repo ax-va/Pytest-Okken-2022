@@ -1,3 +1,11 @@
+## venv
+
+https://docs.python.org/3/library/venv.html
+
+## pip
+
+https://pip.pypa.io/en/stable/
+
 ## pytest site
 
 https://pytest.org
