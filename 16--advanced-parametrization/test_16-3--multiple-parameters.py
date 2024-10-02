@@ -62,4 +62,5 @@ test_16-3--multiple-parameters.py::test_stacking[a bit longer-First M. Last-todo
 test_16-3--multiple-parameters.py::test_stacking[a bit longer-First M. Last-in prog] PASSED                       [ 91%]
 test_16-3--multiple-parameters.py::test_stacking[a bit longer-First M. Last-done] PASSED                          [100%]
 ***
+$ cd ..
 """
