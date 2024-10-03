@@ -1,8 +1,8 @@
 # Pytest-Okken-2022
 
-These **pytest** examples are based on the book *"Python Testing with pytest: Simple, Rapid, Effective, 
+The **pytest** examples are based on the book *"Python Testing with pytest: Simple, Rapid, Effective, 
 and Scalable"*, Second Edition, written by Brian Okken and published by The Pragmatic Programmers in 2022.
-It also covers how to use **Coverage.py** and **tox** with **pytest**.
+These also cover how to use **Coverage.py** and **tox** with **pytest** and pytest plugins.
 
 Also see the `pytest-summary` directory for quick and easy information about **pytest** features.
 The Python versions used in the examples are 3.10, 3.11, and 3.12. 
