@@ -1,9 +1,18 @@
+# Pytest-Okken-2022
+
+These **pytest** examples are based on the book *"Python Testing with pytest: Simple, Rapid, Effective, 
+and Scalable"*, Second Edition, written by Brian Okken and published by The Pragmatic Programmers in 2022.
+It also covers how to use **Coverage.py** and **tox** with **pytest**.
+
+The Python versions used in the examples are 3.10, 3.11, and 3.12. 
+The third-party packages are listed in `requirements.txt`.
+
 ## Original source code
 The link to the original source code is given on the official book's side
 
 https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
 
-Original installable plugin
+Original installable plugin for `15--building-plugins`
 
 https://github.com/okken/pytest-skip-slow
 
