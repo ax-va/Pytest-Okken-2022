@@ -1,7 +1,7 @@
 # Pytest-Okken-2022
 
 These **pytest** examples are based on the book *"Python Testing with pytest: Simple, Rapid, Effective, 
-and Scalable"*, Second Edition, written by Brian Okken and published by The Pragmatic Programmers in 2022.
+and Scalable"*, Second Edition, written by Brian Okken and published by *The Pragmatic Programmers* in 2022.
 They also cover **pytest plugins**, especially using **Coverage.py** and **tox** with **pytest**.
 
 Also see the `pytest-summary` directory for quick and easy information about **pytest** features.
