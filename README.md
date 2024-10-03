@@ -119,9 +119,3 @@ $ pytest -v 01-introduction/test_01-1--passing.py::test_passing
 - `test_<something>.py` or `<something>_test.py` for files
 - `test_<something>` for methods and functions
 - `Test<Something>` for classes
-
-## Python's `subprocess.run` 
-https://docs.python.org/3/library/subprocess.html#subprocess.run
-
-## Dictionary view objects
-https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects

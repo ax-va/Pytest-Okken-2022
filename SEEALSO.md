@@ -10,6 +10,12 @@ https://pip.pypa.io/en/stable/
 
 https://pytest.org
 
+## Python's `subprocess.run` 
+https://docs.python.org/3/library/subprocess.html#subprocess.run
+
+## Dictionary view objects
+https://docs.python.org/3/library/stdtypes.html#dictionary-view-objects
+
 ## Demo of Python failure reports with pytest
 
 https://doc.pytest.org/en/latest/example/reportingdemo.html
