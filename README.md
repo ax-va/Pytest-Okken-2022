@@ -32,7 +32,7 @@ As of Python 3.9, providing `--prompt .` will tell `venv` to use the parent dire
 
 See also: https://docs.python.org/3/library/venv.html
 
-Create a virtual environment, activate it on POSIX systems, and install `pytest`
+Create a virtual environment, activate it on POSIX systems, and install **pytest**
 ```unix
 $ python3 -m venv my_venv
 $ source my_venv/bin/activate
@@ -49,7 +49,7 @@ Deactivate the venv
 ```unix
 (my_venv) ...$ deactivate
 ```
-Create a virtual environment, activate it on Windows systems, and install `pytest`
+Create a virtual environment, activate it on Windows systems, and install **pytest**
 ```windows
 >python -m venv my_venv
 >my_venv\Scripts\activate.bat
@@ -114,7 +114,7 @@ Run only specified functions
 $ pytest -v 01-introduction/test_01-1--passing.py::test_passing
 ```
 
-## Conventions to keep your test code discoverable by `pytest`
+## Conventions to keep your test code discoverable by pytest
 
 - `test_<something>.py` or `<something>_test.py` for files
 - `test_<something>` for methods and functions
