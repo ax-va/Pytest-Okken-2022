@@ -1,5 +1,5 @@
 cachetools==5.5.0
-cards @ file:///home/delorian/PycharmProjects/pytest-Okken-2022/cards_proj
+cards @ file:///<path/to>/cards_proj
 certifi==2024.8.30
 chardet==5.2.0
 charset-normalizer==3.3.2
