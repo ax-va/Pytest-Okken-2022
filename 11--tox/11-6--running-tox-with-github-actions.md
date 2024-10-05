@@ -2,7 +2,7 @@
 
 See a workflow `.yml` file in `.github/workflows/` at the top level of the project.
 
-The GitHub Actions example has been moved to a separate [repository](https://github.com/ax-va/GitHub-Actions-Tox-Pytest).
+The GitHub Actions example has been moved to a separate [repository](https://github.com/ax-va/GitHub-Actions-Tox-Pytest-2024).
 The GitHub Actions tab should look like this — tests are run on every push or pull request.
 
 ## GitHub Actions tab
