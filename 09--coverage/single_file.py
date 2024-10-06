@@ -17,7 +17,7 @@ def main():
 if __name__ == "__main__":  # pragma: no cover
     main()
 
-# test code, this requires pytest
+# Further test code, this requires pytest
 
 def test_foo():
     assert foo() == "foo"
