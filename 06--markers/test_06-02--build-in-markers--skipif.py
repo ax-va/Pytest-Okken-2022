@@ -21,7 +21,7 @@ def test_equality():
 
 
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest test_06-02--build-in-markers--skipif.py -v -ra
 ***
 test_06-02--build-in-markers--skipif.py::test_less_than SKIPPED (Card < comparison not supported in 1.x)

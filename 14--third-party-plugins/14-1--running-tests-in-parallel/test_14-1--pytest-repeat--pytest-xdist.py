@@ -26,7 +26,7 @@ $ cd ..
 
 # Run it 10 times with the `--count=10` parameter (pytest-repeat installed)
 """
-$ cd 14--third-party-plugins/14-1--running-tests-in-parallel
+$ cd 14*/14-1*
 $ pytest --count=10 -k test_14-1
 ***
 collected 10 items
@@ -40,7 +40,7 @@ $ cd ..
 
 # Run 10 tests in parallel on 4 CPUs with `-n=4` (pytest-xdist installed)
 """
-$ cd 14--third-party-plugins/14-1--running-tests-in-parallel
+$ cd 14*/14-1*
 $ pytest --count=10 -n=4 -k test_14-1
 ***
 4 workers [10 items]
@@ -52,7 +52,7 @@ $ cd ..
 
 # Use `-n=auto` (the best practice) to run on as many CPU cores as possible
 """
-$ cd 14--third-party-plugins/14-1--running-tests-in-parallel
+$ cd 14*/14-1*
 $ pytest --count=10 -n=auto -k test_14-1
 ***
 8 workers [10 items]
@@ -64,7 +64,7 @@ $ cd ..
 
 # Run 8 tests in parallel on 8 CPUs
 """
-$ cd 14--third-party-plugins/14-1--running-tests-in-parallel
+$ cd 14*/14-1*
 $ pytest --count=8 -n=8 -k test_14-1
 ***
 8 workers [8 items]
@@ -76,7 +76,7 @@ $ cd ..
 
 # Run 80 tests in parallel on 8 CPUs
 """
-$ cd 14--third-party-plugins/14-1--running-tests-in-parallel
+$ cd 14*/14-1*
 $ pytest --count=80 -n=8 -k test_14-1
 ***
 8 workers [80 items]

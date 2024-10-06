@@ -27,7 +27,7 @@ def test_start_non_existent(cards_db):
 
 # If the "smoke" mark is not registered in pytest.ini, we receive a warning
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -m smoke -v
 ***
 test_06-04--custom-markers.py::test_start PASSED
@@ -44,7 +44,7 @@ $ cd ..
 
 # If the "smoke" mark is registered in pytest.ini, we don't receive a warning
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -m smoke -v
 ***
 test_06-04--custom-markers.py::test_start PASSED
@@ -53,7 +53,7 @@ $ cd ..
 """
 
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -m exception -v
 ***
 test_06-04--custom-markers.py::test_start_non_existent PASSED

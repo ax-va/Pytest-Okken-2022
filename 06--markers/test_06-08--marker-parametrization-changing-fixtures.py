@@ -42,7 +42,7 @@ def test_three_card(cards_db_three_cards):
 
 
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -k test_06-08 -v --disable-warnings
 ***
 test_06-08--marker-parametrization-changing-fixtures.py::test_zero_card PASSED
@@ -103,7 +103,7 @@ def test_ten_cards(cards_db_num_cards):
 
 
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -k test_06-08 -v -s --disable-warnings
 ***
 test_06-08--marker-parametrization-changing-fixtures.py::test_zero_card PASSED

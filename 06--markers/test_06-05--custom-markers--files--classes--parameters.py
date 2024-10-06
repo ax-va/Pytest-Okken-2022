@@ -79,7 +79,7 @@ def test_finish_non_existent(cards_db):
 
 # Run all the tests in the file
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -m smoke1 -v
 ***
 test_06-05--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_todo PASSED
@@ -98,7 +98,7 @@ $ cd ..
 
 # Run all the tests in TestFinish
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -m smoke4 -v
 ***
 test_06-05--custom-markers--files--classes--parameters.py::TestFinish::test_finish_from_todo PASSED
@@ -110,7 +110,7 @@ $ cd ..
 
 # Run all the tests with specific function parametrization
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -m smoke5 -v
 ***
 test_06-05--custom-markers--files--classes--parameters.py::test_finish_func[in prog] PASSED
@@ -120,25 +120,31 @@ $ cd ..
 
 # Run all the tests with specific fixture parametrization
 """
+$ cd 06*
 $ pytest -m smoke8 -v
 ***
 test_06-05--custom-markers--files--classes--parameters.py::test_finish_fix[in prog] PASSED
 ***
+$ cd ..
 """
 
 # Run the tests with many markers
 """
+$ cd 06*
 $ pytest -m smoke -v
 ***
 test_06-04--custom-markers.py::test_start PASSED
 test_06-05--custom-markers--files--classes--parameters.py::test_finish_non_existent PASSED
 ***
+$ cd ..
 """
 
 """
+$ cd 06*
 $ pytest -m exception -v
 ***
 test_06-04--custom-markers.py::test_start_non_existent PASSED
 test_06-05--custom-markers--files--classes--parameters.py::test_finish_non_existent PASSED
 ***
+$ cd ..
 """

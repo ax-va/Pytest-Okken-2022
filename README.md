@@ -119,3 +119,9 @@ $ pytest -v 01-introduction/test_01-1--passing.py::test_passing
 - `test_<something>.py` or `<something>_test.py` for files
 - `test_<something>` for methods and functions
 - `Test<Something>` for classes
+
+## Stop running tox if it runs too long
+```unix
+$ ps aux | grep tox
+$ kill <id>
+```

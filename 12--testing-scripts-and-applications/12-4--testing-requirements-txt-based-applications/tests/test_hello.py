@@ -35,12 +35,13 @@ $ cd ..
 # Test by using tox with installing side packages given in `requirements.txt`
 # that is set in `tox.ini` as `-rrequirements.txt`.
 """
-$ cd 12--testing-scripts-and-applications
-$ cd 12-4--testing-requirements-txt-based-applications
+$ cd 12*/12-4*
 $ tox
 ***
   py310: OK (3.61=setup[3.37]+cmd[0.24] seconds)
   py311: OK (2.78=setup[2.55]+cmd[0.24] seconds)
   congratulations :) (6.44 seconds)
 ***
+$ cd ..
+$ cd ..
 """

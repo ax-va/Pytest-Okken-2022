@@ -18,7 +18,7 @@ def test_equality():
 
 
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest test_06-01--build-in-markers--skip.py --tb=short
 ***
 test_06-01--build-in-markers--skip.py s.
@@ -28,7 +28,7 @@ $ cd ..
 
 # Display a reason
 """
-$ cd 06--markers
+$ cd 06*
 $ test_06-01--build-in-markers--skip.py -v -ra
 ***
 test_06-01--build-in-markers--skip.py::test_less_than SKIPPED (Card doesn't support < comparison yet)

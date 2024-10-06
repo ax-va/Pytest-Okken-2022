@@ -16,7 +16,7 @@
 See the `without-new-plugin` subdirectory.
 
 ```unix
-$ cd 15--building-plugins/without-new-plugin
+$ cd 15*/without-new-plugin
 $ pytest -v -m "not slow"
 ***
 collected 2 items / 1 deselected / 1 selected                                                                                                                                                                                  

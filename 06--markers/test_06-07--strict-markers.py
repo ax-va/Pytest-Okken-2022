@@ -16,7 +16,7 @@ def test_start_non_existent(cards_db):
 
 # Run without --strict-markers
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -m smoke
 ***
 *** PytestUnknownMarkWarning: Unknown pytest.mark.smok - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
@@ -29,7 +29,7 @@ $ cd ..
 
 # Run without --strict-markers
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest -k test_06-07
 ***
 *** PytestUnknownMarkWarning: Unknown pytest.mark.smok - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
@@ -42,7 +42,7 @@ $ cd ..
 
 # Run with --strict-markers to change warnings to errors
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest --strict-markers -m smok
 ***
 *** ERROR collecting test_06-07--strict-markers.py

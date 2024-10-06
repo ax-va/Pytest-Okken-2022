@@ -5,7 +5,7 @@ It also randomizes the seed value for other random tools like Faker and Factory 
 
 Run tests normally
 ```unix
-$ cd 14--third-party-plugins/14-2--randomizing-test-order
+$ cd 14*/14-2*
 $ pytest -v
 ***
 test_a.py::test_one PASSED                                                                                        [ 25%]
@@ -24,7 +24,7 @@ $ pip install pytest-randomly
 
 The tests are run randomly
 ```unix
-$ cd 14--third-party-plugins/14-2--randomizing-test-order
+$ cd 14*/14-2*
 $ pytest -v
 ***
 test_b.py::test_four PASSED                                                                                       [ 25%]
@@ -38,7 +38,7 @@ $ cd ..
 
 The tests are run randomly
 ```unix
-$ cd 14--third-party-plugins/14-2--randomizing-test-order
+$ cd 14*/14-2*
 $ pytest -v
 ***
 test_b.py::test_four PASSED                                                                                       [ 25%]

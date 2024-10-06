@@ -52,6 +52,7 @@ Test access rights for visitor
 PASSED
 Log out visitor
 ***
+$ cd ..
 """
 
 
@@ -92,6 +93,7 @@ EXTRA INFO: status='online'
 Test status `online` for visitor
 PASSED
 ***
+$ cd ..
 """
 
 
@@ -121,6 +123,7 @@ test_16-4--indirect-parametrization.py::test_everyone[member] PASSED            
 test_16-4--indirect-parametrization.py::test_everyone[visitor] PASSED                                             [ 75%]
 test_16-4--indirect-parametrization.py::test_just_admin[admin] PASSED                                             [100%]
 ***
+$ cd ..
 """
 
 
@@ -159,4 +162,5 @@ test_16-4--indirect-parametrization.py::test_admin_and_member[member]
 Log in as member
 PASSED
 ***
+$ cd ..
 """

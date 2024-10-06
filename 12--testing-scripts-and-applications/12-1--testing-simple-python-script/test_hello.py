@@ -24,17 +24,18 @@ def test_hello():
 
 # Test
 """
-$ cd 12--testing-scripts-and-applications/12-1--testing-simple-python-script
+$ cd 12*/12-1*
 $ pytest -s -v test_hello.py
 ***
 test_hello.py::test_hello PASSED
 ***
 $ cd ..
+$ cd ..
 """
 
 # Test by using tox
 """
-$ cd 12--testing-scripts-and-applications/12-1--testing-simple-python-script
+$ cd 12*/12-1*
 $ tox
 ***
   py310: OK (0.32=setup[0.04]+cmd[0.28] seconds)

@@ -3,7 +3,7 @@
 See the `with-local-conftest-plugin` subdirectory.
 
 ```unix
-$ cd 15--building-plugins/with-local-conftest-plugin
+$ cd 15*/with-local-conftest-plugin
 $ pytest -v
 ***                                                                                                                                                                                             
 test_slow.py::test_normal PASSED                                                                                  [ 50%]

@@ -7,6 +7,7 @@ $ tox -c tox_multiple_pythons.ini
   py311: OK (2.67=setup[1.66]+cmd[1.01] seconds)
   py312: OK (9.43=setup[7.93]+cmd[1.50] seconds)
   congratulations :) (21.41 seconds)
+ $ cd ..
 ```
 
 ## Run tox in parallel

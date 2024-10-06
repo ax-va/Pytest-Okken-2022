@@ -8,7 +8,7 @@ def test_say_hello(capsys):
 
 
 """
-$ cd 12--testing-scripts-and-applications/12-3--separating-code-into-src-and-test-directories
+$ cd 12*/12-3*
 $ pytest tests/test_hello.py
 ***
 tests/test_hello.py .

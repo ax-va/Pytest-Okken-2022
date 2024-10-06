@@ -54,7 +54,7 @@ def test_xfail_strict():
 
 
 """
-$ cd 06--markers
+$ cd 06*
 $ pytest test_06-03--build-in-markers--xfail.py -v -ra
 ***
 test_06-03--build-in-markers--xfail.py::test_less_than XFAIL (Card < comparison not supported in 1.x) 
