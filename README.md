@@ -4,6 +4,8 @@ These **pytest** examples are based on the book *"Python Testing with pytest: Si
 and Scalable"*, Second Edition, written by Brian Okken and published by *The Pragmatic Programmers* in 2022.
 They also cover **pytest plugins**. Special attention is paid to using **Coverage.py**, **unittest.mock**, and **tox** with **pytest**.
 
+<img src="/book.jpg" width="400" />
+
 Also see the `pytest-summary` directory for quick and easy information about **pytest** features.
 The Python versions used in the examples are 3.10, 3.11, and 3.12. 
 The third-party packages are listed in `requirements.txt`.
