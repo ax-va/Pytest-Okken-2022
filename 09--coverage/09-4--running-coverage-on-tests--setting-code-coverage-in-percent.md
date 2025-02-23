@@ -1,6 +1,8 @@
-# Running coverage on tests
+# Coverage
 
-## Motivation
+## Running coverage on tests
+
+### Motivation
 
 - Checking for duplicate test function names
 
@@ -14,7 +16,7 @@ This reports also make sure that all tests got run at least on some hardware and
 This is possible because Coverage.py has the ability to combine reports from several test sessions.
 Moreover, it also helps us with finding unused fixtures, or dead code inside fixtures.
 
-## Adding the test directory to the coverage
+### Adding the test directory to the coverage
 ```unix
 $ pytest --cov=cards --cov=07--test-strategies/tests 07--test-strategies
 ***
@@ -40,10 +42,11 @@ TOTAL                                         337     56    83%
 ***
 ```
 
-## Threshold
+### Threshold
 
 Make sure that the test suite only passes if the test coverage meets or exceeds a specified threshold.
 Set the code coverage to 90%.
+
 ```unix
 $ pytest --cov=cards --cov=07--test-strategies/tests --cov-fail-under=90 07--test-strategies
 ***

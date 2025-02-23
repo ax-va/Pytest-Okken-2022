@@ -1,4 +1,6 @@
-# Running coverage on a single file
+# Coverage
+
+## Running coverage on a single file
 
 Test functions are usually already included in a single file
 

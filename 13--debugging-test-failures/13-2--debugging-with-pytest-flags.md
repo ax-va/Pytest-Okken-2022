@@ -1,3 +1,5 @@
+# Debugging test failures
+
 ## Use `--lf` to re-run the failures only, and `--tb=no` to hide the traceback
 
 ```unix
@@ -40,7 +42,7 @@ FAILED tests/api/test_list_done.py::test_list_done - TypeError: object of type '
 ***
 ```
 
--> `the_list` is `None` instead of a (possibly empty) list of Card objects.
+- `the_list` is `None` instead of a (possibly empty) list of Card objects.
 
 ## Run the same test over again with `-l/--showlocals` and displaying local variables
 
@@ -61,4 +63,4 @@ FAILED tests/api/test_list_done.py::test_list_done - TypeError: object of type '
 ***
 ```
 
--> Use lots of intermediate variables in tests. They come in handy when a test fails.
+- Use lots of intermediate variables in tests. They come in handy when a test fails.

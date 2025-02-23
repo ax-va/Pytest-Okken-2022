@@ -1,6 +1,8 @@
-# Excluding code from coverage
+# Coverage
 
-## Pragma statement
+## Excluding code from coverage
+
+### Pragma statement
 
 Exclude either a single line or a code block from testing coverage with a pragma statement
 ```python

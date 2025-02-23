@@ -1,61 +1,113 @@
-# Commandline flags 
+# Commandline Flags 
 
-## Useful flags
+## Useful Flags
 
-- `-c`: to use configuration file.
+### `-c`: 
 
-- `-l`, `--showlocals`: to display local variables alongside the stacktrace.
+- to use configuration file.
 
-- `-k <pattern>`: to match a name pattern of tests (`k` for keyword).
+### `-l`, `--showlocals`
 
-- `-ra`: `-r` for reporting reasons for test results at the end of the session; `a` for "all except passed".
+- to display local variables alongside the stacktrace.
 
-- `-rfE`: `-r` for reporting reasons for test results at the end of the session; `f` for failed tests; `E` for errors.
+### `-k <pattern>`
 
-- `-s`, `--capture=no`: to turn off output capture -> to show `print`s not only for failed tests.
+- to match a name pattern of tests (`k` for keyword).
 
-- `-v`, `--verbose`: to display all the test names, passing or failing.
+### `-ra`: `-r` 
 
-- `-vv`: to show all mismatches in a test.
+- for reporting reasons for test results at the end of the session; `a` for "all except passed".
 
-- `--basetemp=<mydir>`: to specify your own base directory.
+### `-rfE`: `-r` 
 
-- `--fixtures -v`: to show a list of all available fixtures; `-v` for the entire docstring.
+- for reporting reasons for test results at the end of the session; `f` for failed tests; `E` for errors.
 
-- `--help`: to show help.
+### `-s`, `--capture=no`
 
-- `--setup-show`: to show the order of operations of tests and fixtures, including the setup and teardown phases.
+- to turn off output capture -> to show `print`s not only for failed tests.
 
-- `--strict-markers`: to change warnings on misspelled markers to errors.
+### `-v`, `--verbose`
 
-- `--tb=[auto/long/short/line/native/no]`: to control displaying tracebacks.
+- to display all the test names, passing or failing.
 
-- `--tb=no`: to turn off tracebacks.
+### `-vv`
 
-- `--tb=short`: to use the shorter traceback format.
+- to show all mismatches in a test.
+
+### `--basetemp=<mydir>`
+
+- to specify your own base directory.
+
+### `--fixtures -v`
+
+- to show a list of all available fixtures; `-v` for the entire docstring.
+
+### `--help`
+
+- to show help.
+
+### `--setup-show`
+
+- to show the order of operations of tests and fixtures, including the setup and teardown phases.
+
+### `--strict-markers`
+
+- to change warnings on misspelled markers to errors.
+
+### `--tb=[auto/long/short/line/native/no]`
+
+- to control displaying tracebacks.
+
+### `--tb=no`
+
+- to turn off tracebacks.
+
+### `--tb=short`
+
+- to use the shorter traceback format.
 
 
 ## Flags to select which tests to run, in which order, and when to stop
 
-- `--lf`, `--last-failed`: to run the tests that failed last.
+### `--lf`, `--last-failed`
 
-- `--ff`, `--failed-first`: to run all the tests, starting with the last failed.
+- to run the tests that failed last.
 
-- `-x`, `--exitfirst`: to stop the tests session after the first failure.
+### `--ff`, `--failed-first`
 
-- `--maxfail=num`: to stop the tests after `num` failures.
+- to run all the tests, starting with the last failed.
 
-- `--nf`, `--new-first`: to runs all the tests, ordered by file modification time.
+### `-x`, `--exitfirst`
 
-- `--sw`, `--stepwise`: to stop the tests at the first failure and to start the tests at the last failure next time.
+- to stop the tests session after the first failure.
 
-- `--sw-skip`, `--stepwise-skip`: same as `--sw`, but with skipping the first failure.
+### `--maxfail=num`
+
+- to stop the tests after `num` failures.
+
+### `--nf`, `--new-first`
+
+- to runs all the tests, ordered by file modification time.
+
+### `--sw`, `--stepwise`
+
+- to stop the tests at the first failure and to start the tests at the last failure next time.
+
+### `--sw-skip`, `--stepwise-skip`
+
+- same as `--sw`, but with skipping the first failure.
 
 
 ## Flags to start a commandline debugger
 
-- `--pdb`: to start an interactive debugging session at the point of failure.
+### `--pdb`
 
-- `--trace`: to start the pdb source-code debugger immediately when running each test.
+- to start an interactive debugging session at the point of failure.
 
-- `--pdbcls`: to use alternatives to pdb, such as IPython's debugger with `--pdbcls=IPython.terminal.debugger:TerminalPdb`
+### `--trace`
+
+- to start the pdb source-code debugger immediately when running each test.
+
+### `--pdbcls`
+
+- to use alternatives to pdb, such as IPython's debugger with `--pdbcls=IPython.terminal.debugger:TerminalPdb`

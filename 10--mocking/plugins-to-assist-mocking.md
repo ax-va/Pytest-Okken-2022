@@ -1,3 +1,5 @@
+# Mocking
+
 ## Plugins to assist mocking
 
 - `pytest-mock` for general-purpose mocking
@@ -6,10 +8,18 @@ The `mocker` fixture cleans up after itself, so a `with` block must not be used.
 
 https://pypi.org/project/pytest-mock/
 
-- `pytest-postgresql`, `pytest-mongo`, `pytest-mysql`, and `pytest-dynamodb` for mocking database access
+### `pytest-postgresql`, `pytest-mongo`, `pytest-mysql`, `pytest-dynamodb` 
 
-- `pytest-httpserver` for mocking HTTP servers
+- for mocking database access
 
-- `responses` and `betamax` for mocking requests
+### `pytest-httpserver` 
 
-- `pytest-rabbitmq`, `pytest-solr`, `pytest-elasticsearch`, `pytest-redis`, and others
+- for mocking HTTP servers
+
+### `responses`, `betamax` 
+
+- for mocking requests
+
+### `pytest-rabbitmq`, `pytest-solr`, `pytest-elasticsearch`, `pytest-redis`
+
+and others

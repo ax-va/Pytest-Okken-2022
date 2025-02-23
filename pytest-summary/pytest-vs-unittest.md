@@ -1,4 +1,4 @@
-## pytest vs. unittest
+# pytest vs. unittest
 
 | pytest               | unittest               |
 |----------------------|------------------------|

@@ -1,6 +1,8 @@
-# Creating the installable plugin
+# Building plugins
 
-## Plugin source code
+## Creating the installable plugin
+
+### Plugin source code
 
 Plugin source code is placed in the `installable-plugin` directory.
 ```
@@ -13,7 +15,7 @@ installable-plugin
 The content of `conftest.py` is moved into `pytest_skip_slow.py`.
 The tests in the `examples` subdirectory will be used to test the plugin itself.
 
-## Creating a package with Flit
+### Creating a package with Flit
 
 Flit creates `pyproject.toml` and optionally the `LICENSE` file.
 

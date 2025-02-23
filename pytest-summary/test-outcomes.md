@@ -1,13 +1,25 @@
-## Test Outcomes
+# Test Outcomes
 
-- `PASSED`, `.`: ran and successful
+### `PASSED`, `.`
 
-- `FAILED`, `F`: ran and not successful
+- ran and successful
 
-- `SKIPPED`, `s`: skipped, skip with the `@pytest.mark.skip()` or `@pytest.mark.skipif()` decorators
+### `FAILED`, `F`
 
-- `XFAIL`, `x`: marked with the `@pytest.mark.xfail()` decorator, not supposed to pass, ran, and failed
+- ran and not successful
 
-- `XPASS`, `X`: marked with `@pytest.mark.xfail()`, but ran and passed
+### `SKIPPED`, `s`
 
-- `ERROR`, `E`: an exception was raised either during the execution of a fixture or hook function, and not during the execution of a test function
+- skipped, skip with the `@pytest.mark.skip()` or `@pytest.mark.skipif()` decorators
+
+### `XFAIL`, `x`
+
+- marked with the `@pytest.mark.xfail()` decorator, not supposed to pass, ran, and failed
+
+### `XPASS`, `X`
+
+- marked with `@pytest.mark.xfail()`, but ran and passed
+
+### `ERROR`, `E`
+
+- an exception was raised either during the execution of a fixture or hook function, and not during the execution of a test function

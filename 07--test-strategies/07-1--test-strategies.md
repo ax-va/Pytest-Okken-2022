@@ -1,14 +1,16 @@
-# Determining the test Scope
+# Test Strategies
+
+## Determining the test Scope
 
 Security? Performance? Loading? Input validation?
 
-# Considering the software architecture
+## Considering the software architecture
 
 Investigate the software architecture to use this knowledge for testing
 
-# Prioritizing features for testing
+## Prioritizing features for testing
 
-## Prioritize features for testing
+### Prioritize features for testing
 
 - *Recent*: New functionality that has been recently repaired, refactored, or modified.
 - *Core*: The essential functions that must continue to work in order for the product to be useful.
@@ -16,15 +18,15 @@ Investigate the software architecture to use this knowledge for testing
 - *Problematic*: Functionality that frequently breaks or often gets defect reports against it.
 - *Expertise*: Features or algorithms understood by a limited subset of people.
 
-## Examples of testing `Cards`
+### Examples of testing `Cards`
 
 - Test core features thoroughly.
 - Test non-core features with at least one test case.
 - Test the CLI in isolation.
 
-# Creating test cases
+## Creating test cases
 
-## Create test cases
+### Create test cases
 
 1. Start with a **non-trivial**, happy-path test case.
 
@@ -34,7 +36,7 @@ Investigate the software architecture to use this knowledge for testing
    - interesting end states, or
    - all possible error states.
 
-## Examples of testing `count` of `Cards`
+### Examples of testing `count` of `Cards`
 
 - For a database with three elements, `count` returns 3.
 
@@ -44,7 +46,7 @@ Then
 - `count` with one item
 - `count` with more than one item (can be duplicated with 1 and omitted)
 
-## Examples of test cases for `add` of `Cards`
+### Examples of test cases for `add` of `Cards`
 
 - `add` to an empty database, with summary
 - `add` to a non-empty database, with summary
@@ -52,20 +54,20 @@ Then
 - `add` a card with a missing summary
 - `add` a duplicate card
 
-## Examples of test cases for `delete` of `Cards`
+### Examples of test cases for `delete` of `Cards`
 
 - `delete` one from a database with more than one
 - `delete` the last card
 - `delete` a non-existent card
 
-## Examples of test cases for `start` and `finish` of `Cards` that are considered together
+### Examples of test cases for `start` and `finish` of `Cards` that are considered together
 
 - `start` from "todo", "in prog", and "done" states
 - `start` an invalid ID
 - `finish` from "todo", "in prog", and "done" states
 - `finish` an invalid ID
 
-## Remaining test case examples
+### Remaining test case examples
 
 - `update` the owner of a card
 - `update` the summary of a card
@@ -76,12 +78,12 @@ Then
 - `config` returns the correct database path
 - `version` returns the correct version
 
-# Writing a test strategy
+## Writing a test strategy
 
 Write a test strategy and share it with your team. 
 Include the initial test case list.
 
-# Common mistakes:
+## Common mistakes:
 - Only writing happy-path test cases.
 - Spending too much time thinking about how things can go wrong.
 - Ignoring how behaviors change based on system or component state.

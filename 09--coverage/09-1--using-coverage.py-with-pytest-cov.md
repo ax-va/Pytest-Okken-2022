@@ -1,6 +1,8 @@
-# Using Coverage.py with pytest-cov
+# Coverage
 
-## Coverage.py
+## Using Coverage.py with pytest-cov
+
+### Coverage.py
 Coverage.py is a preferred Python coverage tool that measures code coverage
 
 https://coverage.readthedocs.io/en/
@@ -60,7 +62,7 @@ venv/lib/python3.11/site-packages/cards/db.py            23      0   100%
 TOTAL                                                   182     56    69%
 ```
 
-## Coverage.py with pytest-cov
+### Coverage.py with pytest-cov
 
 pytest-cov is a popular pytest plugin for Coverage.py
 
@@ -120,7 +122,7 @@ TOTAL                                                   182     56    69%
 Notice: 
 The `cli.py` file is at 38% coverage because it was imported in `__init__.py` but the content of its functions were not run.
 
-## Coverage.py configuration
+### Coverage.py configuration
 
 Create a `.coverargerc` configuration file
 ```
@@ -160,7 +162,7 @@ TOTAL                                182     56    69%
 ```
 The report lists the local files with shorter paths instead of the installed package location.
 
-## Missing lines
+### Missing lines
 
 Add missing lines to the terminal report
 ```unix

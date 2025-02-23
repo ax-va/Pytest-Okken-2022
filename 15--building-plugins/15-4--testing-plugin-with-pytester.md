@@ -1,10 +1,12 @@
-# Testing the plugin with pytester
+# Building plugins
 
-## Installable plugin with pytester
+## Testing the plugin with pytester
+
+### Installable plugin with pytester
 
 See `15--building-plugins/installable-plugin-with-pytester`.
 
-## Pytester
+### Pytester
 
 pytester creates a temporary directory for each test with the `pytester` fixture.
 
@@ -32,7 +34,7 @@ See also:
 
 https://docs.pytest.org/en/latest/reference/reference.html#std-fixture-pytester
 
-## runpytest()
+### runpytest()
 
 See `15--building-plugins/installable-plugin-with-pytester/tests/test_plugin.py`.
 

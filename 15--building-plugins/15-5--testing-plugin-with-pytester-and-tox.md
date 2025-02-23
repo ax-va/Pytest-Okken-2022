@@ -1,4 +1,4 @@
-## Testing the plugin with pytester and tox
+# Testing the plugin with pytester and tox
 
 See `15--building-plugins/installable-plugin-with-pytester-and-tox/tox.ini`.
 

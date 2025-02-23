@@ -1,6 +1,6 @@
-# Configuration files
+# Configuration
 
-## Root directory
+## Root Directory
 
 Once pytest finds a configuration file in a directory, it marks the directory as the root directory, or `rootdir`.
 Therefore, the best practice is to place an empty configuration file at the top of a project, even if there aren't any configuration settings.
@@ -15,27 +15,30 @@ plugins: Faker-24.11.0
 collected 0 items
 ```
 
-## Configuration files
+## Configuration Files
 
-- `pytest.ini`
+### `pytest.ini`
 
-changes pytest's default behavior. 
+- changes pytest's default behavior. 
+
 Its location also defines the pytest root directory, or `rootdir`.
 
-- `conftest.py`
+### `conftest.py`
 
-contains *fixtures* and *hook functions* shared by all tests in the same directory or all subdirectories.
+- contains *fixtures* and *hook functions* shared by all tests in the same directory or all subdirectories.
+
 It can exist at the `rootdir` or in any subdirectory.
 
-- `__init__.py`
+### `__init__.py`
 
-only to duplicate names of test files in different directories.
+- only to duplicate names of test files in different directories.
 
-- `tox.ini`, `pyproject.toml`, and `setup.cfg`
+### `tox.ini`, `pyproject.toml`, `setup.cfg`
 
-take the place of `pytest.ini` for settings in one of these alternate configuration files.
+- take the place of `pytest.ini` for settings in one of these alternate configuration files.
 
 ## Example of a project directory structure
+
 ```
 cards_proj
 |---- <top level project files, src dir, docs, etc>

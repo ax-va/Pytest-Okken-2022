@@ -1,4 +1,4 @@
-## How to run subsets of tests
+# How to run subsets of tests
 
 | Subset                        | Syntax                                                 |
 |-------------------------------|--------------------------------------------------------|

@@ -1,4 +1,4 @@
-## How to get available fixtures
+# How to get available fixtures
 
 List all the available fixtures
 ```unix

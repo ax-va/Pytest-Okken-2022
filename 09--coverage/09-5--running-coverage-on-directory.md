@@ -1,6 +1,8 @@
-# Running coverage on a directory
+# Coverage
 
-## Using Coverage.py at a path instead a package
+## Running coverage on a directory
+
+### Using Coverage.py at a path instead a package
 
 Run pytest with a test directory
 ```unix
