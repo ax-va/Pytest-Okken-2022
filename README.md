@@ -15,11 +15,11 @@ The third-party packages are listed in `requirements.txt`.
 ## Original source code
 The link to the original source code is given on the official book's side
 
-https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
+- https://pragprog.com/titles/bopytest2/python-testing-with-pytest-second-edition/
 
 Original installable plugin for `15--building-plugins`
 
-https://github.com/okken/pytest-skip-slow
+- https://github.com/okken/pytest-skip-slow
 
 ## Upgrade pip
 
@@ -34,7 +34,9 @@ As of Python 3.3, the build-in `venv` package created a virtual environment
 The `--prompt` parameter is optional. If it is not supplied, the prompt will match the directory name.
 As of Python 3.9, providing `--prompt .` will tell `venv` to use the parent directory as the prompt.
 
-See also: https://docs.python.org/3/library/venv.html
+See also: 
+
+- https://docs.python.org/3/library/venv.html
 
 Create a virtual environment, activate it on POSIX systems, and install **pytest**
 ```unix
@@ -88,7 +90,9 @@ certifi            2024.8.30
 ...
 ```
 
-See also: https://pip.pypa.io/en/stable/
+See also: 
+
+- https://pip.pypa.io/en/stable/
 
 ## Run pytest
 
