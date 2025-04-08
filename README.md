@@ -1,4 +1,4 @@
-# Pytest-Okken-2022
+# Learning pytest
 
 These **pytest** examples are based on the book *"Python Testing with pytest: Simple, Rapid, Effective, 
 and Scalable"*, Second Edition, written by Brian Okken and published by *The Pragmatic Programmers* in 2022.
