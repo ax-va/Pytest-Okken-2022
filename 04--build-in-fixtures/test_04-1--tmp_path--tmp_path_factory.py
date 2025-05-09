@@ -12,8 +12,8 @@ e.g.,
 $ pytest --basetemp=04--build-in-fixtures/tmp -k=test_04
 
 See also:
-- tmpdir is similar to tmp_path, but returns a py.path.local instance (not recommended).
-- mpdir_factory is similar to tmp_path_factory, except its mktemp function returns a py.path.local instance.
+- tmpdir is similar to tmp_path, but returns a `py.path.local` instance (not recommended).
+- mpdir_factory is similar to tmp_path_factory, except its mktemp function returns a `py.path.local` instance.
 """
 
 
